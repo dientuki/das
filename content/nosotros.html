@@ -1,0 +1,24 @@
+---
+title: nosotros
+banner: true
+page: nosotros
+selected: nosotros
+sidebar: two-sidebar
+---
+<%
+	items = ['Nuestra vision', 'Por qué nos eligen', '¿Como lo hacemos?']
+%>
+
+<header class="title">
+	<h1>Nosotros</h1>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/left-sidebar', :items => items, :selected => 2 %>
+	<section class="main-content">
+		<%= render 'nosotros/article', :h1 => 'Nuestra visión', :h2 => 'Un enfoque integrador para su marca', :id => 1 %>
+		<%= render 'nosotros/article', :h1 => 'Por qué nos eligen', :h2 => 'Cuatro razones esenciales', :id => 2 %>
+		<%= render 'nosotros/article', :h1 => '¿Cómo lo hacemos?', :h2 => 'Branding integrado y diseño Innovativo', :id => 3 %>
+	</section>	
+	<%= render 'sidebar/right-sidebar', :items => false %>
+</section>

@@ -1,0 +1,20 @@
+<header class="<% if (@item[:banner] == false) %>no-banner<%else%>has-banner<%end%>">
+	<div class="wrapper">
+		<a href="#" class="logo">DAS</a>
+		<p class="tagline">Soluciones en <span>imagen de marca</span></p>
+		<nav>
+			<ul class="clearfix">
+				<li <% if (@item[:selected] == 'home') %>class="selected"<%end%>><a href="index.html">Inicio</a></li>
+				<li <% if (@item[:selected] == 'nosotros') %>class="selected"<%end%>><a  href="nosotros.html">Nosotros</a></li>
+				<li <% if (@item[:selected] == 'servicios') %>class="selected"<%end%>><a  href="servicios.html">Servicios</a></li>
+				<li <% if (@item[:selected] == 'trabajos') %>class="selected"<%end%>><a  href="trabajos.html">Trabajos</a></li>
+				<li <% if (@item[:selected] == 'clientes') %>class="selected"<%end%> ><a href="clientes.html">Clientes</a></li>
+				<li <% if (@item[:selected] == 'contacto') %>class="selected"<%end%>><a  href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<ul id="languaje-selector">
+			<li class="selected"><a href="#">español</a></li>
+			<li><a href="#">english</a></li>
+		</ul>
+	</div>
+</header>

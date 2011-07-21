@@ -1,0 +1,6 @@
+<project name="Das" basedir=".">
+<description>simple example build file</description>
+<target name="nanoc">
+<exec command="nanoc compile"/>
+</target>
+</project>

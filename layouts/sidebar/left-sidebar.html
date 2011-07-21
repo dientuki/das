@@ -1,0 +1,10 @@
+<% @selected = @selected - 1 %>
+	<aside id="left-sidebar">
+    <div class="bg-top"></div>
+		<ul>
+		<% @items.each_index { |i| %>
+			<li <% if (i == @selected)%>class="selected"<% end %>><a href=""><%= @items[i] %></a></li>
+		<% } %>
+		</ul>
+	  <div class="bg-bottom"></div>
+	</aside>

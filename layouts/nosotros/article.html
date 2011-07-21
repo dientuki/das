@@ -1,0 +1,20 @@
+<article class="item-<%= @id %> <% if (@id == 3)%>last<%end%>">
+	<header>
+		<hgroup>
+			<h1><%= @h1 %></h1>
+			<h2><%= @h2 %></h2>
+		</hgroup>
+	</header>
+	<div class="content">
+		<p>Nuestra visión está orientada a la marca en todas sus formas 
+		de expresión.</p>
+		<p>Productos, impresos, web sites y puntos de exhibición requieren 
+		soluciones integradas, de manera que aseguren la consistencia 
+		del mensaje, potencien la diferenciación con la competencia 
+		y fortalezcan el vínculo entre su marca y el consumidor.</p>
+		<p>Brindamos soluciones innovadoras, creativas y diferenciales, que 
+		satisfacen las necesidades del cliente y su marca; como así 
+		también los deseos emocionales del consumidor.</p>
+	</div>
+	<% if (@id != 3)%><div class="bg"></div><%end%>
+</article>

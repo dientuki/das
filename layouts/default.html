@@ -1,0 +1,24 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie" id="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie" id="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie" id="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<%= render 'head' %>
+	</head>
+	
+	<body id="<%= @item[:page] %>" class="<%= @item[:sidebar] %>">
+		<%= render 'header' %>
+		
+		<% if (@item[:banner] != false) %>
+			<%= render 'banners/banner', :first => @item[:first], :first => @item[:count]%>
+		<% end %>
+
+		<section id="container" class="wrapper clearfix">
+			<%= yield %>
+		</section>
+
+		<%= render 'footer' %>
+		<%= render 'script' %>	
+	</body>
+</html>
