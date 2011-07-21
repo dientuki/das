@@ -1,6 +1,6 @@
 body {
 	background: #fff;
-	color:#666;
+	color: #666;
 }
 
 .wrapper {
@@ -9,21 +9,22 @@ body {
 	position: relative;
 }
 
-body > header {
+body>header {
 	background-color: #1E1F2C;
 	height: 255px;
 	padding-top: 40px;
 }
 
-body > header .wrapper {height: 78px;}
+body>header .wrapper {
+	height: 78px;
+}
 
-body > header.no-banner {
+body>header.no-banner {
 	height: 150px;
 	margin-bottom: 20px;
 }
 
-body > header.no-banner,
-#banner footer {
+body>header.no-banner,#banner footer {
 	background-image: url(../images/shadow-top.png);
 	background-position: center bottom;
 	background-repeat: no-repeat;
@@ -43,53 +44,60 @@ header .logo {
 
 header .tagline {
 	color: #C5E4A0;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 17px;
-    position: absolute;
-    right: 0;
-    text-align: right;
-    text-transform: uppercase;
-    top: -2px;   
+	font-size: 18px;
+	letter-spacing: 0;
+	line-height: 17px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	text-transform: uppercase;
+	top: -2px;
 }
 
-header .tagline span{
-	color:#53c300;
+header .tagline span {
+	color: #53c300;
 	display: block;
 	word-spacing: -3px;
 }
 
-header nav {width: 475px;margin: 0 auto}
+header nav {
+	width: 475px;
+	margin: 0 auto
+}
 
-nav ul {position: absolute; bottom: 0px;}
+nav ul {
+	position: absolute;
+	bottom: 0px;
+}
 
-header nav ul,
-header nav ul li,
-header nav ul li a {
+header nav ul,header nav ul li,header nav ul li a {
 	height: 13px
 }
 
 header ul li {
-	float:left;
+	float: left;
 	border-left: solid 1px #BCBEC0;
 }
 
-header ul li:first-child {border:none}
+header ul li:first-child {
+	border: none
+}
 
-header ul li a{
-	float:left;
+header ul li a {
+	float: left;
 	padding: 0 15px;
 	font-size: 11px;
 	line-height: 12px;
-	color:#BCBEC0;
+	color: #BCBEC0;
 	text-decoration: none;
 }
 
-header nav ul li a {text-transform: uppercase;}
+header nav ul li a {
+	text-transform: uppercase;
+}
 
-header ul .selected a,
-header ul li:hover a {
-	color:#B5E132;
+header ul .selected a,header ul li:hover a {
+	color: #B5E132;
 }
 
 #languaje-selector {
@@ -103,13 +111,20 @@ header ul li:hover a {
 	padding: 0 0 0 5px;
 }
 
-#languaje-selector li {border:none;}
-#languaje-selector li:first-child {border-right:solid 1px #B5E132}
+#languaje-selector li {
+	border: none;
+}
 
-#languaje-selector li:first-child a {padding-right: 5px;}
+#languaje-selector li:first-child {
+	border-right: solid 1px #B5E132
+}
+
+#languaje-selector li:first-child a {
+	padding-right: 5px;
+}
 
 #banner {
-	margin-top:-167px;
+	margin-top: -167px;
 }
 
 #banner footer {
@@ -117,42 +132,41 @@ header ul li:hover a {
 	background-color: #1E1F2C;
 }
 
-body > footer {
+body>footer {
 	background-image: url(../images/shadow-bottom.png);
 	background-position: center top;
 	background-repeat: no-repeat;
 	padding-top: 17px;
 }
 
-body > footer .top {
+body>footer .top {
 	height: 71px;
 	border-bottom: solid 1px #666;
 	background-color: #1F492F;
 }
 
-body > footer .top section {
+body>footer .top section {
 	position: relative;
 	float: left;
 	height: 43px;
 	padding-top: 28px;
 }
 
-body > footer .top h2 {
+body>footer .top h2 {
 	color: white;
 	font-weight: normal;
 	text-transform: uppercase;
-	float:left;
+	float: left;
 	margin: 2px 13px 0 25px;
 }
 
 #container {
 	width: 888px;
-	
 }
 
 #home #container {
 	margin-top: 38px;
-	margin-bottom: 100px;	
+	margin-bottom: 100px;
 }
 
 #home article {
@@ -163,46 +177,60 @@ body > footer .top h2 {
 	position: relative;
 }
 
-#home article figure {height: 213px;}
+#home article figure {
+	height: 213px;
+}
 
 #home article h1 {
 	text-transform: uppercase;
 	font-size: 14px;
-    letter-spacing: -1px;
-    word-spacing: -1px;
+	letter-spacing: -1px;
+	word-spacing: -1px;
 }
 
 #home article h2 {
-	color:#307430;
+	color: #307430;
 	font-size: 11px;
 	margin-top: 3px
 }
 
-#home article.item-1{}
-#home article.item-2{background: #ebebeb;margin: 0 30px;}
-#home article.item-3{background: black;}
-
-#home article.item-3 h1{
-	color:#C5E4A0;
+#home article.item-1 {
+	
 }
 
-#home article.item-3 h2,
-#home article.item-3 .content {
+#home article.item-2 {
+	background: #ebebeb;
+	margin: 0 30px;
+}
+
+#home article.item-3 {
+	background: black;
+}
+
+#home article.item-3 h1 {
+	color: #C5E4A0;
+}
+
+#home article.item-3 h2,#home article.item-3 .content {
 	color: #ccc;
 }
 
-#home article .more {
-	background: url("../images/more-arrow.png") no-repeat  right top ;
-	bottom: 11px;
+.more {
+	background: url("../images/more-arrow.png") no-repeat right top;
 	color: #53C300;
 	font-size: 9px;
 	height: 9px;
 	line-height: 9px;
 	padding-right: 20px;
-	position: absolute;
-	right: 26px;
 	text-decoration: none;
 }
+
+#home article .more {
+  bottom: 11px;
+  position: absolute;
+  right: 26px;
+}
+
 
 #home article hgroup {
 	padding: 0 27px;
@@ -217,56 +245,59 @@ body > footer .top h2 {
 }
 
 aside#left-sidebar {
-	position:absolute;
-	left:0;
+	position: absolute;
+	left: 0;
 	width: 186px;
 	height: 100%;
-	top:0;
+	top: 0;
 	background: #41404A;
 }
 
 aside#left-sidebar .bg-top {
-  height: 10px;
-  background: url(../images/left-sidebar-arrow.png) left top #fff no-repeat;
+	height: 10px;
+	background: url(../images/left-sidebar-arrow.png) left top #fff no-repeat;
 }
+
 aside#left-sidebar .bg-bottom {
-  height: 10px;
-  background: url(../images/left-sidebar-arrow.png) left bottom #fff no-repeat;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;  
+	height: 10px;
+	background: url(../images/left-sidebar-arrow.png) left bottom #fff no-repeat;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 }
 
-aside#left-sidebar ul {margin-top: 25px;}
+aside#left-sidebar ul {
+	margin-top: 25px;
+}
 
-aside#left-sidebar li {margin-bottom:11px; }
+aside#left-sidebar li {
+	margin-bottom: 11px;
+}
 
 aside#left-sidebar a {
-	color:#53C300;
-  display: block;
-  padding: 7px 0 7px 15px;
-  text-decoration: none;	
-  font-weight: bold;
-  font-size: 12px;
+	color: #53C300;
+	display: block;
+	padding: 7px 0 7px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
 }
 
-aside#left-sidebar li.selected,
-aside#left-sidebar li:hover {
-  background: #61606A;
+aside#left-sidebar li.selected,aside#left-sidebar li:hover {
+	background: #61606A;
 }
 
-aside#left-sidebar li.selected a,
-aside#left-sidebar li:hover a{
-	color:white;
+aside#left-sidebar li.selected a,aside#left-sidebar li:hover a {
+	color: white;
 }
 
 aside#right-sidebar {
-	position:absolute;
-	right:0;
+	position: absolute;
+	right: 0;
 	width: 210px;
 	height: 100%;
-	top:0;
+	top: 0;
 	background: url(../images/right-sidebar-shadow.png) left top repeat-y #fff;
 }
 
@@ -284,13 +315,13 @@ aside#right-sidebar {
 }
 
 .two-sidebar #container header.title {
-
+	
 }
 
-#nosotros header.title h1{
-  background: url(../images/text-us.png);
-  width: 180px;
-  height: 49px;
+#nosotros header.title h1 {
+	background: url(../images/text-us.png);
+	width: 180px;
+	height: 49px;
 }
 
 #nosotros .main-content article {
@@ -305,10 +336,10 @@ aside#right-sidebar {
 }
 
 #nosotros .main-content article h1 {
- color: #307430;
-    font-size: 21px;
-    font-weight: normal;
-    margin-bottom: 20px;
+	color: #307430;
+	font-size: 21px;
+	font-weight: normal;
+	margin-bottom: 20px;
 }
 
 #nosotros .main-content article h2 {
@@ -339,76 +370,148 @@ aside#right-sidebar {
 
 #nosotros .main-content article.last .content {
 	padding-bottom: 0;
-	margin-bottom: 0;	
+	margin-bottom: 0;
 }
 
 #works header.title h1 {
-  background: url(../images/text-work.png);
-  width: 405px;
+	background: url(../images/text-work.png);
+	width: 405px;
+}
+
+#services header.title h1 {
+  background: url(../images/text-services.png);
+  width: 171px;
+}
+
+.our-products .main-content {
+  background: #41404A;
+  margin: 70px 0;
+  padding: 30px 0px;
+}
+
+.our-products .main-content article {
+  float:left;
+  width: 295px;
+  border-right: dotted 1px #fff;
+}
+
+.our-products .main-content article ul {
+	padding-left: 15px;
+}
+
+.our-products .main-content article li {
+	list-style: square;
+}
+
+.our-products .main-content article.last {
+  border: none;
+}
+
+.our-products .main-content article .wrapper {
+  width: 248px;
+  top:-60px;
+  margin-bottom: 0;
+}
+
+.our-products .main-content article.first-row .wrapper{
+  margin-bottom: 60px;
+}
+
+.our-products .main-content article figure {
+  width: 248px;
+  height: 102px;
+  margin-bottom: 20px;
+}
+
+.our-products .main-content article h1 {
+  color:#53C300;
+  font-size: 15px;
+}
+
+.our-products .main-content article header {
+  margin-bottom: 10px;
+}
+
+.our-products .main-content article .content {
+  font-size: 11px;
+  line-height: 14px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+#works .main-content article .more {
+  float:left;
+}
+
+#services .main-content article .more {
+  float:right;
 }
 
 header.title {
-  position: relative;
-  padding:17px 0 0 2px;
+	position: relative;
+	margin: 15px 0 0 0;
 }
 
-header.title h1{
-  height: 49px;
-  text-indent: -999em;
+header.title h1 {
+	height: 49px;
+	text-indent: -999em;
+}
+
+header.title .content {
+	margin-top: 20px;
+	line-height: 20px;
 }
 
 footer .subcribe {
 	width: 335px;
-	color:white;
-	}
-	
+	color: white;
+}
+
 footer .top .subcribe h2 {
 	margin-left: 0;
-}	
+}
 
 footer .subcribe a {
 	height: 20px;
 	display: inline-block;
-	line-height:20px;
-	padding:0 5px;
-	color:white;
-	text-decoration:none;
-	text-transform:lowercase;
-	font-size:11px;
-	margin:0 5px;
-	
+	line-height: 20px;
+	padding: 0 5px;
+	color: white;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-size: 11px;
+	margin: 0 5px;
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
-	
 	background: #16eb51; /* Old browsers */
 	background: -moz-linear-gradient(top, #16eb51 0%, #007431 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#16eb51), color-stop(100%,#007431)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #16eb51 0%,#007431 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #16eb51 0%,#007431 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #16eb51 0%,#007431 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16eb51', endColorstr='#007431',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, #16eb51 0%,#007431 100%); /* W3C */	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #16eb51), color-stop(100%, #007431) ); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #16eb51 0%, #007431 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #16eb51 0%, #007431 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #16eb51 0%, #007431 100%); /* IE10+ */
+	filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr = '#16eb51', endColorstr = '#007431', GradientType = 0 ); /* IE6-9 */
+	background: linear-gradient(top, #16eb51 0%, #007431 100%); /* W3C */
 }
 
 footer .subcribe a:hover {
 	background: #007431; /* Old browsers */
 	background: -moz-linear-gradient(top, #007431 0%, #16eb51 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#007431), color-stop(100%,#16eb51)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #007431 0%,#16eb51 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #007431 0%,#16eb51 100%); /* Opera11.10+ */
-	background: -ms-linear-gradient(top, #007431 0%,#16eb51 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007431', endColorstr='#16eb51',GradientType=0 ); /* IE6-9 */
-	background: linear-gradient(top, #007431 0%,#16eb51 100%); /* W3C */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #007431), color-stop(100%, #16eb51) ); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #007431 0%, #16eb51 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #007431 0%, #16eb51 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #007431 0%, #16eb51 100%); /* IE10+ */
+	filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr = '#007431', endColorstr = '#16eb51', GradientType = 0 ); /* IE6-9 */
+	background: linear-gradient(top, #007431 0%, #16eb51 100%); /* W3C */
 }
 
 footer .brochure {
-	border-left:solid 1px #666;
+	border-left: solid 1px #666;
 	border-right: solid 1px #666;
 	width: 291px;
 	overflow: hidden;
-	 }
-	 
+}
+
 footer .brochure a {
 	display: block;
 	float: left;
@@ -418,35 +521,47 @@ footer .brochure a {
 	margin-top: -2px;
 }
 
-footer .top .brochure h2 {margin-right: 25px;}
+footer .top .brochure h2 {
+	margin-right: 25px;
+}
 
-footer .brochure a.pdf {background: url(../images/logo-pdf.png) no-repeat;margin-right: 50px;}
-footer .brochure a.issuu {background: url(../images/logo-issuu.png) no-repeat;}
+footer .brochure a.pdf {
+	background: url(../images/logo-pdf.png) no-repeat;
+	margin-right: 50px;
+}
 
-footer .top .clients {width: 302px}
+footer .brochure a.issuu {
+	background: url(../images/logo-issuu.png) no-repeat;
+}
+
+footer .top .clients {
+	width: 302px
+}
 
 footer .clients .sony {
 	position: absolute;
 	right: 2px;
-	top:-11px;
+	top: -11px;
 }
 
-body > footer .bottom {
+body>footer .bottom {
 	height: 171px;
 	background-color: #1E1F2C;
-	color:#999;
+	color: #999;
 	font-size: 9px;
 	padding-top: 20px;
 }
 
-footer .bottom .wrapper{height: 100%;}
+footer .bottom .wrapper {
+	height: 100%;
+}
 
 footer .bottom .bg {
 	width: 166px;
 	height: 83px;
 	background: url(../images/map.png);
 	position: absolute;
-	top:22px;
+	top: 22px;
 	left: 168px;
 }
 
@@ -463,12 +578,11 @@ footer .follow-us ul {
 }
 
 footer .follow-us li {
-margin-right: 8px;
+	margin-right: 8px;
 }
 
-footer .follow-us li,
-footer .follow-us li a {
-	float:left;
+footer .follow-us li,footer .follow-us li a {
+	float: left;
 }
 
 footer .follow-us li a {
@@ -478,9 +592,17 @@ footer .follow-us li a {
 	text-indent: -999em;
 }
 
-footer .follow-us li .twitter {background: url(../images/logo-tw.png);}
-footer .follow-us li .facebook {background: url(../images/logo-fb.png);}
-footer .follow-us li .linkdin {background: url(../images/logo-ln.png);}
+footer .follow-us li .twitter {
+	background: url(../images/logo-tw.png);
+}
+
+footer .follow-us li .facebook {
+	background: url(../images/logo-fb.png);
+}
+
+footer .follow-us li .linkdin {
+	background: url(../images/logo-ln.png);
+}
 
 footer .contact-us {
 	line-height: 13px;
@@ -491,19 +613,19 @@ footer .contact-us .mail-to {
 }
 
 footer .contact-us .mail-to a {
-	color:#999;
+	color: #999;
 	text-decoration: none;
 	padding-right: 15px;
 	background: url(../images/email.png) no-repeat right top;
 	height: 9px;
-	float:left;
+	float: left;
 	line-height: 9px;
 }
 
 footer .bottom .sitemap {
 	position: absolute;
 	right: 0px;
-	top:30px;
+	top: 30px;
 	width: 570px;
 }
 
@@ -519,7 +641,7 @@ footer .bottom .sitemap span {
 }
 
 footer .bottom .sitemap .home {
-	border:none;
+	border: none;
 	margin-right: 8px;
 }
 
@@ -531,24 +653,37 @@ footer .bottom .sitemap li.home a {
 	text-indent: -999em;
 }
 
-footer .bottom .sitemap li.us a{padding-right: 40px;}
-footer .bottom .sitemap li.services a{padding-right: 65px;}
-footer .bottom .sitemap li.works a{padding-right: 72px;}
-footer .bottom .sitemap li.clients a{padding-right: 66px;}
-footer .bottom .sitemap li.contact a{padding-right: 5px;}
+footer .bottom .sitemap li.us a {
+	padding-right: 40px;
+}
+
+footer .bottom .sitemap li.services a {
+	padding-right: 65px;
+}
+
+footer .bottom .sitemap li.works a {
+	padding-right: 72px;
+}
+
+footer .bottom .sitemap li.clients a {
+	padding-right: 66px;
+}
+
+footer .bottom .sitemap li.contact a {
+	padding-right: 5px;
+}
 
 footer .bottom .sitemap li {
 	border-left: solid 1px #53C300;
 	position: relative;
 }
 
-footer .bottom .sitemap li,
-footer .bottom .sitemap li a {
-	float:left;
+footer .bottom .sitemap li,footer .bottom .sitemap li a {
+	float: left;
 	height: 9px;
 	line-height: 9px;
 	overflow: visible;
-	color:#999;
+	color: #999;
 	display: block;
 	text-transform: uppercase;
 }
@@ -564,14 +699,13 @@ footer .bottom .sitemap ul {
 
 footer .bottom .sitemap ul ul {
 	position: absolute;
-	top:20px;
+	top: 20px;
 	left: 10px;
 }
 
-footer .bottom .sitemap li li,
-footer .bottom .sitemap li li a {
-	border:none;
-	float:none;
+footer .bottom .sitemap li li,footer .bottom .sitemap li li a {
+	border: none;
+	float: none;
 	display: block;
 	text-transform: none;
 	padding: 0 !important;
@@ -583,5 +717,5 @@ footer .bottom .sitemap li li {
 
 footer .bottom .legal {
 	position: absolute;
-	bottom:5px;
+	bottom: 5px;
 }
