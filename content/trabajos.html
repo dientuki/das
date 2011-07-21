@@ -8,6 +8,8 @@ extraclass: our-products
 page: works
 selected: trabajos
 ---
+<% last = 7 %>
+
 
 <header class="title">
 	<h1>Trabajos Destacados</h1>
@@ -15,13 +17,14 @@ selected: trabajos
 </header>
 
 <section class="main-content clearfix">
-	<%= render 'trabajos/article', :h1 => 'Smeterling', :id => 1 %>
-	<%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 2 %>
-	<%= render 'trabajos/article', :h1 => 'Smeterling', :id => 3, :extra => true %>
-	<%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 4 %>
-	<%= render 'trabajos/article', :h1 => 'Smeterling', :id => 5 %>
-	<%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 6, :extra => true %>
-  <%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 7 %>
-  <%= render 'trabajos/article', :h1 => 'Smeterling', :id => 8 %>
-  <%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 9, :extra => true %> 		
+
+	<%= render 'trabajos/article', :h1 => 'Smeterling', :id => 1, :last => last %>
+	<%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 2, :last => last %>
+	<%= render 'trabajos/article', :h1 => 'Smeterling', :id => 3, :extra => true, :last => last %>
+	<%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 4, :last => last %>
+	<%= render 'trabajos/article', :h1 => 'Smeterling', :id => 5, :last => last %>
+	<%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 6, :extra => true, :last => last %>
+  <%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 7, :last => last %>
+  <%= render 'trabajos/article', :h1 => 'Smeterling', :id => 8, :last => last %>
+  <%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 9, :extra => true, :last => last %> 		
 </section>	

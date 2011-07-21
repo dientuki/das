@@ -1,5 +1,5 @@
-<article class="item-<%= @id %><% if (@extra == true) %> last<%end%> <% if (@id <= 3) %>first-row<%end%>">
-	<div class="wrapper">
+<article class="item-<%= @id %><% if (@extra == true) %> last<%end%> <% if (@id >= @last) %>last-row<%end%>">
+	<div class="wrapper clearfix">
 		<header>
 			<figure><img width="248" height="102" src="images/services/service-<%= @id %>.jpg" alt="<%= @h1 %>" title="<%= @h1 %>" /></figure>
 			<h1><%= @h1 %></h1>
@@ -12,6 +12,6 @@
         <li>Naming: Generación de nombres para marcas y productos.</li>
 		  </ul>
 		</div>
-		<a href="#" class="more">+ info & casos</a>
+		<a href="servicios-servicio.html" class="more">+ info & casos</a>
 	</div>
 </article>

@@ -1,5 +1,5 @@
-<article class="item-<%= @id %><% if (@extra == true) %> last<%end%> <% if (@id <= 3) %>first-row<%end%>">
-	<div class="wrapper">
+<article class="item-<%= @id %><% if (@extra == true) %> last<%end%> <% if (@id >= @last) %>last-row<%end%>">
+	<div class="wrapper clearfix">
 		<header>
 			<figure><img width="248" height="102" src="images/works/work-<%= @id %>.jpg" alt="<%= @h1 %>" title="<%= @h1 %>" /></figure>
 			<h1><%= @h1 %></h1>
@@ -8,6 +8,6 @@
 			<p>Texto simulado Texto simulado</p>
 			<p>Texto simulado Texto simulado</p>
 		</div>
-		<a href="#" class="more">Ver casos</a>
+		<a href="trabajos-trabajo.html" class="more">Ver casos</a>
 	</div>
 </article>

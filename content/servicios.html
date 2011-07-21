@@ -8,6 +8,7 @@ extraclass: our-products
 page: services
 selected: servicios
 ---
+<% last = 4 %>
 
 <header class="title">
 	<h1>Trabajos Destacados</h1>
@@ -17,10 +18,10 @@ puntos de venta y su presencia digital en la web.</div>
 </header>
 
 <section class="main-content clearfix">
-	<%= render 'servicios/article', :h1 => 'Estrategia de Marca', :id => 1 %>
-	<%= render 'servicios/article', :h1 => 'Identidad Visual', :id => 2 %>
-	<%= render 'servicios/article', :h1 => 'Espacios y Exhibicion', :id => 3, :extra => true %>
-	<%= render 'servicios/article', :h1 => 'Packaging', :id => 4 %>
-	<%= render 'servicios/article', :h1 => 'Diseño Industrial', :id => 5 %>
-	<%= render 'servicios/article', :h1 => 'Soluciones web', :id => 6, :extra => true %>
+	<%= render 'servicios/article', :h1 => 'Estrategia de Marca', :id => 1, :last => last %>
+	<%= render 'servicios/article', :h1 => 'Identidad Visual', :id => 2, :last => last %>
+	<%= render 'servicios/article', :h1 => 'Espacios y Exhibicion', :id => 3, :extra => true, :last => last %>
+	<%= render 'servicios/article', :h1 => 'Packaging', :id => 4, :last => last %>
+	<%= render 'servicios/article', :h1 => 'Diseño Industrial', :id => 5, :last => last %>
+	<%= render 'servicios/article', :h1 => 'Soluciones web', :id => 6, :extra => true, :last => last %>
 </section>	
