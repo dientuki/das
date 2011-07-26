@@ -1,3 +1,5 @@
 .externalToolBuilders/
 .project
 .buildpath
+.swp
+*.swp
