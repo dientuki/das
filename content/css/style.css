@@ -20,7 +20,7 @@ body>header .wrapper {
 }
 
 body>header.no-banner {
-	height: 150px;
+	height: 130px;
 	margin-bottom: 20px;
 }
 
@@ -295,7 +295,7 @@ aside#left-sidebar li.selected a,aside#left-sidebar li:hover a {
 aside#right-sidebar {
 	position: absolute;
 	right: 0;
-	width: 210px;
+	width: 245px;
 	height: 100%;
 	top: 0;
 	background: url(../images/right-sidebar-shadow.png) left top repeat-y #fff;
@@ -444,6 +444,31 @@ aside#right-sidebar {
 }
 
 #services .main-content article .more {
+  float:right;
+}
+
+#contact header.title h1 {
+  background: url(../images/text-contact-us.png);
+  width: 176px;
+  height: 49px;
+}
+
+#contact .main-content {
+  width: 600px;
+  float:left;
+}
+
+#contact aside#right-sidebar {
+  float: right;
+  position: static;
+}
+
+#contact form aside {
+  float: left;
+  width: 100px; 
+}
+
+#contact form fieldset {
   float:right;
 }
 

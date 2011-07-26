@@ -1,8 +1,57 @@
 ---
 title: contactos
 banner: false
-page: contacto
+page: contact
 selected: contacto
 sidebar: two-sidebar
 ---
-contacto
+
+<header class="title">
+  <h1>Contacto</h1>
+</header>
+
+<section class="clearfix container">
+  <section class="main-content clearfix">
+    <form class="clearfix">
+      <fieldset>
+        <ul>
+          <li class="text">
+            <label for="name">Nombre y Apellido <span class="required">*</span></label>
+            <input type="text" class="text" id="name" />
+          </li>
+          <li class="text">
+            <label for="phone">Teléfono <span class="required">*</span></label>
+            <input type="text" class="text" id="phone" />
+          </li>
+          <li class="text">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="text" class="text" id="email" />
+          </li>
+          <li class="text">
+            <label for=company>Empresa <span class="required">*</span></label>
+            <input type="text" class="text" id="company" />
+          </li>
+          <li class="text">
+            <label for="charge">Cargo</label>
+            <input type="text"class="text" id="charge" />
+          </li>          
+          <li class="textarea">
+            <label for="comment">Coemntarios</label>
+            <textarea id="comment"></textarea>
+          </li>          
+        </ul>
+        <input type="submit" class="submit" value="enviar" />
+      </fieldset>
+      <aside>
+        <h2>Complete el formulario <span>y nos comunicaremos con usted a la brevedad</span></h2>
+        <ul>
+          <li>¿Desea concretar una entrevista?</li>
+          <li>¿Desea concer más sobre DAS?</li>
+          <li>¿Desea recibir información sobre nuestros servicios?</li>
+        </ul>
+        <p>Los ítems acompañados por un asterisco son obligatorios.</p>
+      </aside>      
+    </form>
+  </section>  
+  <%= render 'sidebar/contactos-sidebar' %>
+</section>

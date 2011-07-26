@@ -125,6 +125,24 @@ input:invalid, textarea:invalid {
 }
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
+input.text,
+textarea {
+	background: #dadada;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border:solid 1px #dadada;
+	border-top-color: #aaa;
+}
+
+input.submit {
+background: #efefef;
+border:none;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
 
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
