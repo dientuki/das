@@ -40,6 +40,7 @@ header .logo {
 	position: absolute;
 	left: 2px;
 	top: 0;
+	outline: none;
 }
 
 header .tagline {
@@ -305,9 +306,10 @@ aside#right-sidebar {
 
 aside#right-sidebar .title {
 	font-size: 15px;
-    letter-spacing: -1px;
-    margin: 15px 0;
-    padding-left: 21px;
+  margin: 15px 0;
+  padding-left: 21px;
+  color:#307430;
+  background: url(../images/contact-arrow.png) left center no-repeat;
 }
 
 .two-sidebar .container {
@@ -460,12 +462,114 @@ aside#right-sidebar .title {
   float:right;
 }
 
+#contact #right-sidebar .block {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top:1px dotted black
+}
+
+#contact #right-sidebar .block-first {
+  padding: 0;
+  margin: 0;
+  border:none;
+}
+
 #contact #right-sidebar .block h2 {
 	padding-left: 40px;
 	height:20px;
 	line-height:20px;
 	text-transform:uppercase;
 	margin-bottom:5px;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+#contact #right-sidebar .block .argentina {
+  background: url(../images/flag-argentina.png) left center no-repeat;
+}
+#contact #right-sidebar .block .chile {
+  background: url(../images/flag-chile.png) left center no-repeat;
+}
+#contact #right-sidebar .block .spain {
+  background: url(../images/flag-spain.png) left center no-repeat;
+}
+
+#contact #right-sidebar .mail-to a{
+  text-decoration: none;
+  padding-left: 15px;
+  background: url(../images/email.png) no-repeat left center;
+  height: 9px;
+  line-height: 9px;
+  display: block;
+  color:#666;
+}
+
+#contact #right-sidebar .item {
+  margin-top: 25px;
+}
+
+#contact #right-sidebar .item-first {
+  margin: 0;
+}
+
+#contact #right-sidebar .contact-us .mail-to {
+  margin-top: 25px;
+}
+
+#contact #right-sidebar .work-us .mail-to {
+  margin-top: 10px;
+}
+
+#contact #right-sidebar .misc li{
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+#contact #right-sidebar .misc .skype{
+  height: 21px;
+  line-height: 21px;
+  background: url(../images/skype-logo.png) left center no-repeat;
+}
+
+#contact #right-sidebar .misc .llegar{
+  background: url(../images/place.png) left center no-repeat;
+  height: 28px;
+  line-height: 17px;
+}
+
+#contact #right-sidebar .follow-us h2 {
+   font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    line-height: 17px;
+    margin-bottom: 10px;
+    padding: 0;
+    text-transform: none;
+}
+
+#contact #right-sidebar .follow-us a,
+#contact #right-sidebar .follow-us li {
+  float:left;
+  height: 16px;
+  text-indent: -999em;
+  outline: none;
+  width: 16px;
+}
+
+#contact #right-sidebar .follow-us li {
+  margin-right: 5px;
+}
+
+#contact #right-sidebar .follow-us a.twitter {
+  background: url(../images/logo-tw.png) left top;
+}
+
+#contact #right-sidebar .follow-us a.facebook {
+  background: url(../images/logo-fb.png) left top;
+}
+
+#contact #right-sidebar .follow-us a.linkdin {
+  background: url(../images/logo-ln.png) left top;
 }
 
 #contact header.title h1 {
@@ -527,6 +631,12 @@ aside#right-sidebar .title {
 	font-size:21px;
 	line-height:25px;
 	margin-bottom:25px;
+	color:#307430;
+}
+
+#contact form h2 span {
+  color:#7BC138;
+  display: block;
 }
 
 #contact form aside ul li{
@@ -541,7 +651,7 @@ aside#right-sidebar .title {
 }
 
 #contact form aside p {
-	border-top: 1px dashed black;
+	border-top: 1px dotted black;
     font-size: 10px;
     line-height: 16px;
     padding-right: 25px;
@@ -557,6 +667,7 @@ header.title {
 header.title h1 {
 	height: 49px;
 	text-indent: -999em;
+	outline: none;
 }
 
 header.title .content {
@@ -621,6 +732,7 @@ footer .brochure a {
 	height: 48px;
 	text-indent: -999em;
 	margin-top: -2px;
+	outline: none;
 }
 
 footer .top .brochure h2 {
@@ -692,6 +804,7 @@ footer .follow-us li a {
 	height: 31px;
 	width: 16px;
 	text-indent: -999em;
+	outline: none;
 }
 
 footer .follow-us li .twitter {
@@ -718,7 +831,7 @@ footer .contact-us .mail-to a {
 	color: #999;
 	text-decoration: none;
 	padding-right: 15px;
-	background: url(../images/email.png) no-repeat right top;
+	background: url(../images/email.png) no-repeat right center;
 	height: 9px;
 	float: left;
 	line-height: 9px;
@@ -753,6 +866,7 @@ footer .bottom .sitemap li.home a {
 	padding: 1px 5px 1px 0;
 	background: url(../images/home.png) no-repeat left center;
 	text-indent: -999em;
+	outline: none;
 }
 
 footer .bottom .sitemap li.us a {
