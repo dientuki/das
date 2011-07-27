@@ -469,11 +469,68 @@ aside#right-sidebar {
 
 #contact form aside {
   float: left;
-  width: 100px; 
+  width: 265px; 
+}
+
+#contact form {
+  padding-top:25px;
 }
 
 #contact form fieldset {
   float:right;
+  width:310px;
+  padding-top:40px;
+}
+
+#contact form label{
+	margin-bottom: 2px;
+}
+
+#contact form li {
+	margin-bottom:20px;
+}
+
+#contact form input,
+#contact form textarea{
+	display:block;
+	width:300px;
+	padding:4px;
+}
+
+#contact form textarea {
+	height:100px;
+}
+
+#contact form input.submit {
+	width:90px;
+	float:right;
+}
+
+#contact form h2 {
+	font-weight:normal;
+	font-size:21px;
+	line-height:25px;
+	margin-bottom:25px;
+}
+
+#contact form aside ul li{
+	list-style:disc;
+	color:green;
+	margin-left:20px;
+}
+
+#contact form aside ul li span{
+	color:#666;
+	line-height:16px;
+}
+
+#contact form aside p {
+	border-top: 1px dashed black;
+    font-size: 10px;
+    line-height: 16px;
+    padding-right: 25px;
+    padding-top: 20px;
+    width: 220px;
 }
 
 header.title {
