@@ -295,10 +295,16 @@ aside#left-sidebar li.selected a,aside#left-sidebar li:hover a {
 aside#right-sidebar {
 	position: absolute;
 	right: 0;
-	width: 245px;
+	width: 210px;
 	height: 100%;
 	top: 0;
+	padding-left:35px;
 	background: url(../images/right-sidebar-shadow.png) left top repeat-y #fff;
+}
+
+aside#right-sidebar h1,
+aside#right-sidebar h2 {
+	font-weight:bold;
 }
 
 .two-sidebar .container {
@@ -457,6 +463,9 @@ aside#right-sidebar {
   height: 49px;
 }
 
+#contact .container {
+	padding-top:25px;
+}
 #contact .main-content {
   width: 610px;
   float:left;
@@ -470,10 +479,6 @@ aside#right-sidebar {
 #contact form aside {
   float: left;
   width: 265px; 
-}
-
-#contact form {
-  padding-top:25px;
 }
 
 #contact form fieldset {
