@@ -439,6 +439,10 @@ aside#right-sidebar {
   margin-bottom: 5px;
 }
 
+#works .content {
+	padding-top: 30px;
+}
+
 #works .main-content article .more {
   float:left;
 }
@@ -454,7 +458,7 @@ aside#right-sidebar {
 }
 
 #contact .main-content {
-  width: 600px;
+  width: 610px;
   float:left;
 }
 
