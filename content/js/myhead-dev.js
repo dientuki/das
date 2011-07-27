@@ -1,4 +1,5 @@
 head.js('js/libs/jquery-1.6.2-min.js',
+		'js/plugins/easySlider1.7.js',
 		'js/init.js');
 
 if (head.browser.ie)  {
