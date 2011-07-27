@@ -300,11 +300,14 @@ aside#right-sidebar {
 	top: 0;
 	padding-left:35px;
 	background: url(../images/right-sidebar-shadow.png) left top repeat-y #fff;
+	line-height:17px;
 }
 
-aside#right-sidebar h1,
-aside#right-sidebar h2 {
-	font-weight:bold;
+aside#right-sidebar .title {
+	font-size: 15px;
+    letter-spacing: -1px;
+    margin: 15px 0;
+    padding-left: 21px;
 }
 
 .two-sidebar .container {
@@ -455,6 +458,14 @@ aside#right-sidebar h2 {
 
 #services .main-content article .more {
   float:right;
+}
+
+#contact #right-sidebar .block h2 {
+	padding-left: 40px;
+	height:20px;
+	line-height:20px;
+	text-transform:uppercase;
+	margin-bottom:5px;
 }
 
 #contact header.title h1 {
