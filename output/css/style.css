@@ -124,20 +124,30 @@ header ul .selected a,header ul li:hover a {
 	padding-right: 5px;
 }
 
-#banner {
+#home #banner {
 	margin-top: -167px;
 }
 
+#banner {
+	margin-top: -125px;
+}
+
 #slider {
-	height: 400px;
 	overflow:hidden;
 }
 
-#home #slider,
-#home #slider a,
-#home #slider img {
-	width:930px;
+#slider,
+#slider a,
+#slider img,
+#slider figure {
 	height:424px;
+}
+
+#banner a,
+#banner img,
+#banner figure {
+	width:930px;
+	height:382px;
 	display: block;
 }
 

@@ -32,7 +32,7 @@ function fixedSidebar (sidebar){
 
 $(document).ready(function() {
 
-	$('#slider').easySlider({
+	$('#home #slider').easySlider({
 		controlsShow:	false,
 		controlsFade:	false,
 		auto:			true,
@@ -42,7 +42,7 @@ $(document).ready(function() {
 	switch ($('body').attr('id'))	{
 		case 'company':
 			fixedSidebar('#left-sidebar ul');
-		  break;
+		break;
 	}
 	
 	$('body').addClass('js-finished');

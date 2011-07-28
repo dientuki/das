@@ -1,22 +1,24 @@
 <section id="banner" role="banner" class="wrapper">
 
+	<% if (@item[:page] == 'home') %>
 	<section id="slider">
-		 <ul>
-		 	<% if (@item[:page] == 'home') %>
-		        <li><a href=""><img src="images/banner/home-1.jpg" /></a></li>
-		        <li><a href=""><img src="images/banner/home-2.jpg" /></a></li>
-		        <li><a href=""><img src="images/banner/home-3.jpg" /></a></li>
-		        <li><a href=""><img src="images/banner/home-4.jpg" /></a></li>
-	        <% else %>
-		        <li><a href=""><img src="images/banner/site-1.jpg" /></a></li>
-		        <li><a href=""><img src="images/banner/site-1.jpg" /></a></li>
-		        <li><a href=""><img src="images/banner/site-1.jpg" /></a></li>
-		        <li><a href=""><img src="images/banner/site-1.jpg" /></a></li>	        
-	        <%end%>
+		 <ul>	
+			<% for i in (1..4) %>
+				<li>
+					<figure><a href=""><img src="images/banner/home-<%= i %>.jpg" width="930" height="424" /></a></figure>
+				</li>
+			<% end %>
 	     </ul>
 	</section>
+	<% else %>
+		<figure>
+			<img src="images/banner/<%= @item[:page] %>.jpg" width="930" height="382" />
+		</figure>
+	<% end %>
 
 	<footer>
+	<% if (@item[:page] == 'home') %>
 	
+	<% end %>
 	</footer>
 </section>
