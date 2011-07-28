@@ -32,16 +32,18 @@ function fixedSidebar (sidebar){
 
 $(document).ready(function() {
 
-	/*
 	$('#slider').easySlider({
 		controlsShow:	false,
 		controlsFade:	false,
 		auto:			true,
 		continuous:		true
 	});
-	*/
-	fixedSidebar('#left-sidebar ul');
 	
+	switch ($('body').attr('id'))	{
+		case 'company':
+			fixedSidebar('#left-sidebar ul');
+		  break;
+	}
 	
 	$('body').addClass('js-finished');
 });
