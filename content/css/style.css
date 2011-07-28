@@ -128,6 +128,8 @@ header ul .selected a,header ul li:hover a {
 	margin-top: -167px;
 }
 
+#banner #slider{ overflow:hidden }
+
 #banner footer {
 	height: 23px;
 	background-color: #1E1F2C;
@@ -272,14 +274,10 @@ aside#left-sidebar ul {
 	margin-top: 25px;
 }
 
-aside#left-sidebar li {
-	margin-bottom: 11px;
-}
-
 aside#left-sidebar a {
 	color: #53C300;
 	display: block;
-	padding: 7px 0 7px 15px;
+	padding: 13px 0 13px 15px;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 12px;
@@ -339,6 +337,7 @@ aside#right-sidebar .title {
 	padding-bottom: 37px;
 	position: relative;
 	margin-bottom: 10px;
+	height: 400px;
 }
 
 #nosotros .main-content article header {
@@ -934,4 +933,19 @@ footer .bottom .sitemap li li {
 footer .bottom .legal {
 	position: absolute;
 	bottom: 5px;
+}
+
+
+/* Fixed Sidebar */
+#left-sidebar ul.static {
+	position: absolute;
+	bottom:35px;
+	z-index: 1000;
+	width: 186px;
+}
+
+#left-sidebar ul.fixed  {
+	position: fixed;
+	top: 0;
+	width: 186px;
 }
