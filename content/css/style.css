@@ -302,6 +302,7 @@ aside#left-sidebar a {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 12px;
+	outline: none;
 }
 
 aside#left-sidebar li.selected,aside#left-sidebar li:hover {
