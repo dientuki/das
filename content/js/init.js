@@ -40,15 +40,16 @@ function fixedSidebar (sidebar){
 
 
 $(document).ready(function() {
-
-	$('#home #slider').easySlider({
-		controlsShow:	false,
-		controlsFade:	false,
-		auto:			true,
-		continuous:		true
-	});
 	
-	switch ($('body').attr('id'))	{
+	switch ($('body').data('page'))	{
+		case 'home':
+			$('#slider').easySlider({
+				controlsShow:	false,
+				controlsFade:	false,
+				auto:			true,
+				continuous:		true
+			});			
+		break;
 		case 'company':
 			fixedSidebar('#left-sidebar ul');
 			$('#left-sidebar ul').localScroll();

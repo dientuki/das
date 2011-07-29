@@ -1,0 +1,36 @@
+---
+title: clientes
+banner: true
+sidebar: no-sidebar
+page: clients
+datapage: clients
+selected: clientes
+---
+<%
+col = 1
+cols = 5
+%>
+<header class="title">
+	<h1>Clientes</h1>
+	<div class="content">Estas empresas confian en nuestros servicios.</div>
+</header>
+
+<section class="main-content clearfix">
+	<h2>Clientes por orden Alfabetico</h2>
+	<table class="client-list">	
+		<% for i in (97..122) %>
+			<% if (col == 1) %>
+				<tr>
+			<% end %>
+					<td <% if (col == 1) %>class="first"<%end%> <% if (i == 122) %>colspan="<%= cols - col %>"<%end%> >
+						<%= render 'clientes/letter', :letter => i.chr %>
+					</td>
+			<% if (col == cols) %>
+				<% col = 0 %>
+				</tr>
+			<% end %>
+			<% col = col + 1 %> 
+		<%end%>
+		</tr>
+	</table>
+</section>	
