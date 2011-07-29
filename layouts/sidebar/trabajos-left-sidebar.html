@@ -1,0 +1,16 @@
+<% @selected = @selected - 1 %>
+	<aside id="left-sidebar">
+    <div class="bg-top"></div>
+		<ul>
+		<% @items.each_index { |i| %>
+			<li <% if (i == @selected)%>class="selected"<% end %>>
+				<h2><a href="trabajos-trabajo.html"><%= @items[i] %></a></h2>
+				<div class="content">
+					<p>texto simulado</p>
+				</div>
+				<a href="trabajos-trabajo.html">Ver +</a>
+			</li>
+		<% } %>
+		</ul>
+	  <div class="bg-bottom"></div>
+	</aside>

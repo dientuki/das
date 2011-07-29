@@ -1,0 +1,11 @@
+<%
+items = ['empresa', 'aminoacido', 'bayer y asociados', 'ubuntu linux', 'ogame', 'imperia online', 'das', 'lorem', 'ipsum'];
+count = rand(5) + 1;
+ %>
+
+<h3><%= @letter %></h3>
+<ul>
+	<% for i in (1..count) %>
+		<li><%= @letter.upcase %><%= items[rand(items.length)] %></li>
+	<% end %>
+</ul>

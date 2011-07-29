@@ -7,7 +7,7 @@
 		<%= render 'head' %>
 	</head>
 	
-	<body id="<%= @item[:page] %>" class="<%= @item[:sidebar] %><% if(@item[:extraclass] != false) %> <%= @item[:extraclass] %><%end%>">
+	<body id="<%= @item[:page] %>" class="<%= @item[:sidebar] %><% if(@item[:extraclass] != false) %> <%= @item[:extraclass] %><%end%>" data-page="<%= @item[:datapage] %>">
 		<%= render 'header' %>
 		
 		<% if (@item[:banner] != false) %>

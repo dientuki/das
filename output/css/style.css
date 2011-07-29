@@ -275,6 +275,7 @@ aside#left-sidebar {
 	height: 100%;
 	top: 0;
 	background: #41404A;
+	overflow: hidden;
 }
 
 aside#left-sidebar .bg-top {
@@ -332,7 +333,7 @@ aside#right-sidebar .title {
   background: url(../images/contact-arrow.png) left center no-repeat;
 }
 
-.two-sidebar .container {
+.container {
 	position: relative;
 }
 
@@ -343,10 +344,6 @@ aside#right-sidebar .title {
 .two-sidebar .main-content {
 	width: 415px;
 	margin: 0 auto;
-}
-
-.two-sidebar #container header.title {
-	
 }
 
 #company header.title h1 {
@@ -415,7 +412,7 @@ aside#right-sidebar .title {
   width: 171px;
 }
 
-.our-products .main-content {
+.our-products section.main-content {
   background: #41404A;
   margin: 70px 0;
   padding: 30px 0px;
@@ -483,13 +480,13 @@ aside#right-sidebar .title {
   float:right;
 }
 
-#contact #right-sidebar .block {
+#right-sidebar .block {
   margin-top: 15px;
   padding-top: 15px;
   border-top:1px dotted black
 }
 
-#contact #right-sidebar .block-first {
+#right-sidebar .block-first {
   padding: 0;
   margin: 0;
   border:none;
@@ -678,6 +675,12 @@ aside#right-sidebar .title {
     padding-right: 25px;
     padding-top: 20px;
     width: 220px;
+}
+
+#works.two-sidebar .container,
+#services.two-sidebar .container,
+#gallery.left-sidebar .container{
+	height: 1000px;
 }
 
 header.title {

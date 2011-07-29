@@ -4,12 +4,13 @@ banner: true
 sidebar: no-sidebar
 extraclass: our-products
 page: services
+datapage: service
 selected: servicios
 ---
 <% last = 4 %>
 
 <header class="title">
-	<h1>Trabajos Destacados</h1>
+	<h1>Servicios</h1>
 	<div class="content">En <strong>DAS Branding & Design</strong> proveemos soluciones eficaces para su marca, construyendo el vínculo adecuado para su <strong>Público Objetivo</strong>. 
 <strong>Integramos su marca a todo lo que representa su compañía</strong>: nuevos productos o servicios, impresos, packaging, entornos corporativos, 
 puntos de venta y su presencia digital en la web.</div>
@@ -20,8 +21,8 @@ puntos de venta y su presencia digital en la web.</div>
 	<%= render 'servicios/article', :h1 => 'Estrategia de Marca', :id => 1, :last => last %>
 	<%= render 'servicios/article', :h1 => 'Identidad Visual', :id => 2, :last => last %>
 	<%= render 'servicios/article', :h1 => 'Espacios y Exhibicion', :id => 3, :extra => true, :last => last %>
-	</div>
-	<div class="clearfix">
+  </div>
+  <div class="clearfix">
 	<%= render 'servicios/article', :h1 => 'Packaging', :id => 4, :last => last %>
 	<%= render 'servicios/article', :h1 => 'Diseño Industrial', :id => 5, :last => last %>
 	<%= render 'servicios/article', :h1 => 'Soluciones web', :id => 6, :extra => true, :last => last %>

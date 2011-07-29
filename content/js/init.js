@@ -10,7 +10,7 @@ function fixedSidebar (sidebar){
 			var offset = window.pageYOffset;
 			var main_content = window.innerHeight/2;
 
-			$('a.anchor-item').each(function(index){
+			$bar.find('.anchor-item').each(function(index){
 				var t = $(this).offset().top - offset;
 				if ( t <= main_content) {
 					$bar.find('li').removeClass('selected');
@@ -40,19 +40,33 @@ function fixedSidebar (sidebar){
 
 
 $(document).ready(function() {
-
-	$('#home #slider').easySlider({
-		controlsShow:	false,
-		controlsFade:	false,
-		auto:			true,
-		continuous:		true
-	});
 	
-	switch ($('body').attr('id'))	{
+	switch ($('body').data('page'))	{
+		case 'home':
+			$('#slider').easySlider({
+				controlsShow:	false,
+				controlsFade:	false,
+				auto:			true,
+				continuous:		true
+			});			
+		break;
 		case 'company':
 			fixedSidebar('#left-sidebar ul');
 			$('#left-sidebar ul').localScroll();
 		break;
+		case 'work':
+			fixedSidebar('#left-sidebar ul');
+		break;
+		case 'service':
+			fixedSidebar('#left-sidebar ul');
+		break;
+		case 'work-gallery':
+			fixedSidebar('#left-sidebar ul');
+			//galeria
+		break;
+		case 'service-gallery':
+			//galeria
+		break;	
 	}
 	
 	$('body').addClass('js-finished');

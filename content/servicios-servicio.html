@@ -1,0 +1,31 @@
+---
+title: servicios
+banner: true
+sidebar: two-sidebar
+extraclass: our-products
+page: services
+datapage: service
+selected: servicios
+---
+<% items = ['alibué', 'ag', 'marvic', 'sony', 'hp'] %>
+<header class="title">
+	<h1>Servicios</h1>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/servicios-left-sidebar', :items => items, :selected => 2, :name => true %>
+	<article class="main-content clearfix">
+		<header>
+			<h1>Smeterling</h1>
+		</header>
+		<div class="content">
+			<p><strong>Acerca:</strong>Texto simulado</p>
+			<p>Especialidades intervinientes:
+				<ul>
+					<li>Identidad Visual</li>
+				</ul>
+			</p>
+		</div>	
+	</article>	
+	<%= render 'sidebar/servicios-right-sidebar' %>
+</section>
