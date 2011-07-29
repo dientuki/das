@@ -275,6 +275,7 @@ aside#left-sidebar {
 	height: 100%;
 	top: 0;
 	background: #41404A;
+	overflow: hidden;
 }
 
 aside#left-sidebar .bg-top {
@@ -343,10 +344,6 @@ aside#right-sidebar .title {
 .two-sidebar .main-content {
 	width: 415px;
 	margin: 0 auto;
-}
-
-.two-sidebar #container header.title {
-	
 }
 
 #company header.title h1 {
@@ -483,13 +480,13 @@ aside#right-sidebar .title {
   float:right;
 }
 
-#contact #right-sidebar .block {
+#right-sidebar .block {
   margin-top: 15px;
   padding-top: 15px;
   border-top:1px dotted black
 }
 
-#contact #right-sidebar .block-first {
+#right-sidebar .block-first {
   padding: 0;
   margin: 0;
   border:none;
@@ -678,6 +675,10 @@ aside#right-sidebar .title {
     padding-right: 25px;
     padding-top: 20px;
     width: 220px;
+}
+
+#work .container {
+	height: 1000px;
 }
 
 header.title {

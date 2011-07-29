@@ -10,7 +10,7 @@ function fixedSidebar (sidebar){
 			var offset = window.pageYOffset;
 			var main_content = window.innerHeight/2;
 
-			$('a.anchor-item').each(function(index){
+			$bar.find('.anchor-item').each(function(index){
 				var t = $(this).offset().top - offset;
 				if ( t <= main_content) {
 					$bar.find('li').removeClass('selected');
@@ -54,6 +54,12 @@ $(document).ready(function() {
 			fixedSidebar('#left-sidebar ul');
 			$('#left-sidebar ul').localScroll();
 		break;
+		case 'work':
+			fixedSidebar('#left-sidebar ul');
+		break;	
+		case 'service':
+			fixedSidebar('#left-sidebar ul');
+		break;	
 	}
 	
 	$('body').addClass('js-finished');
