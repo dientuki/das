@@ -56,9 +56,16 @@ $(document).ready(function() {
 		break;
 		case 'work':
 			fixedSidebar('#left-sidebar ul');
-		break;	
+		break;
 		case 'service':
 			fixedSidebar('#left-sidebar ul');
+		break;
+		case 'work-gallery':
+			fixedSidebar('#left-sidebar ul');
+			//galeria
+		break;
+		case 'service-gallery':
+			//galeria
 		break;	
 	}
 	

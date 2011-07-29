@@ -2,11 +2,12 @@
 title: trabajos
 banner: true
 sidebar: two-sidebar
-extraclass: our-product
+extraclass: our-products
 page: works
 datapage: work
 selected: trabajos
 ---
+
 <% items = ['alibué', 'ag', 'marvic', 'sony', 'hp'] %>
 <header class="title">
 	<h1>Trabajos</h1>
@@ -14,8 +15,10 @@ selected: trabajos
 
 <section class="clearfix container">
 	<%= render 'sidebar/trabajos-left-sidebar', :items => items, :selected => 2, :name => true %>
-	<section class="main-content clearfix">
-		<h2>Smeterling</h2>
+	<article class="main-content clearfix">
+		<header>
+			<h1>Smeterling</h1>
+		</header>
 		<div class="content">
 			<p><strong>Acerca:</strong>Texto simulado</p>
 			<p>Especialidades intervinientes:
@@ -24,16 +27,18 @@ selected: trabajos
 				</ul>
 			</p>
 		</div>
-		<div class="gallery-link block">
-			<h3>Galeria de imagenes</h3>
-			<figure><img src="#" /></figure>
-			<p>Vea las imagenes de los trabajos de todas las especialidades &middot; <a href="trabajos-galeria.html">click aqui</a>
-		</div>
-		<div class="consult block">
-			<div class="bg"></div>
-			<h3>Consulta de servicios</h3>
-			<p>Vea las imagenes de los trabajos de todas las especialidades &middot; <a href="contacto.html">click aqui</a>
-		</div>		
-	</section>	
-	<%= render 'sidebar/trabajos-right-sidebar', :items => false %>
+		<footer>
+			<div class="gallery-link block">
+				<h3>Galeria de imagenes</h3>
+				<figure><img src="#" /></figure>
+				<p>Vea las imagenes de los trabajos de todas las especialidades &middot; <a href="trabajos-galeria.html">click aqui</a>
+			</div>
+			<div class="consult block">
+				<div class="bg"></div>
+				<h3>Consulta de servicios</h3>
+				<p>Vea las imagenes de los trabajos de todas las especialidades &middot; <a href="contacto.html">click aqui</a>
+			</div>	
+		</footer>	
+	</article>	
+	<%= render 'sidebar/trabajos-right-sidebar' %>
 </section>

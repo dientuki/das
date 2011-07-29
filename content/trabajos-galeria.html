@@ -1,10 +1,21 @@
 ---
 title: trabajos
-banner: true
-first: 1
-sidebar: no-sidebar
-page: works
+banner: false
+sidebar: left-sidebar
+extraclass: our-products
+page: gallery
+datapage: work-gallery
 selected: trabajos
 ---
 
-galeria
+<% items = ['alibué', 'ag', 'marvic', 'sony', 'hp'] %>
+<header class="title">
+	<h1>Trabajos</h1>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/trabajos-left-sidebar', :items => items, :selected => 2, :name => true %>
+	<article class="main-content clearfix">
+		Galleria
+	</article>	
+</section>
