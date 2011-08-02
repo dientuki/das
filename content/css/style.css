@@ -325,12 +325,42 @@ aside#right-sidebar {
 	line-height:17px;
 }
 
-aside#right-sidebar .title {
+aside#right-sidebar .bg-top,
+aside#right-sidebar .bg-bottom{
+	height: 10px;
+	background: white;
+	width: 100%;
+	position: absolute;
+	left:0;
+	top:0;
+}
+
+aside#right-sidebar .bg-bottom {
+	bottom: 0;
+	top:auto;
+}
+
+aside#right-sidebar .title,
+.main-content .unsorted-list-title {
 	font-size: 15px;
   margin: 15px 0;
   padding-left: 21px;
   color:#307430;
   background: url(../images/contact-arrow.png) left center no-repeat;
+}
+
+.main-content .unsorted-list-title {
+	margin-top: 30px;
+}
+
+.main-content .unsorted-list {
+	list-style: square;
+	margin-left: 15px;
+}
+
+.main-content .unsorted-list li{
+	padding-left: 5px;
+	margin-bottom: 20px;
 }
 
 .container {
@@ -342,8 +372,10 @@ aside#right-sidebar .title {
 }
 
 .two-sidebar .main-content {
-	width: 415px;
-	margin: 0 auto;
+	left: -20px;
+    margin: 0 auto;
+    position: relative;
+    width: 380px;
 }
 
 #company header.title h1 {
@@ -359,23 +391,23 @@ aside#right-sidebar .title {
 	height: 400px;
 }
 
-#company .main-content article header {
+.main-content header {
 	padding-top: 10px;
 	margin-bottom: 20px;
 }
 
-#company .main-content article h1 {
+.main-content h1 {
 	color: #307430;
 	font-size: 21px;
 	font-weight: normal;
 	margin-bottom: 20px;
 }
 
-#company .main-content article h2 {
+.main-content h2 {
 	font-size: 15px;
 }
 
-#company .main-content article p {
+.main-content .content p {
 	line-height: 17px;
 	margin-bottom: 20px;
 }
@@ -410,6 +442,35 @@ aside#right-sidebar .title {
 #services header.title h1 {
   background: url(../images/text-services.png);
   width: 171px;
+}
+
+#services #right-sidebar article {
+
+    margin: 15px 0 0 21px;
+    width: 128px;
+}
+
+#services #right-sidebar a,
+#services #right-sidebar article .content {
+  	font-size: 11px;
+    line-height: 12px;
+    text-decoration: none;
+   }
+
+#services #right-sidebar article figure,
+#services #right-sidebar article figure a {
+	display: block;
+	height: 77px;
+	width: 128px;
+}
+
+#services #right-sidebar article h1 {
+	margin: 5px 0;
+	font-size: 15px;
+}
+
+#services .main-content h1{
+	margin: 5px 0 25px 0;
 }
 
 .our-products section.main-content {
