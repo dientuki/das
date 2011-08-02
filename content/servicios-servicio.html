@@ -2,12 +2,13 @@
 title: servicios
 banner: true
 sidebar: two-sidebar
-extraclass: our-products
+extraclass: our-product
 page: services
 datapage: service
 selected: servicios
 ---
-<% items = ['alibué', 'ag', 'marvic', 'sony', 'hp'] %>
+<% items = ['Estrategia de Marca', 'Identidad Visual', 'Espacios y Exhibición', 'Packaging', 'Diseño Industrial', 'Soluciones Web'] %>
+
 <header class="title">
 	<h1>Servicios</h1>
 </header>
@@ -16,15 +17,22 @@ selected: servicios
 	<%= render 'sidebar/servicios-left-sidebar', :items => items, :selected => 2, :name => true %>
 	<article class="main-content clearfix">
 		<header>
-			<h1>Smeterling</h1>
+			<hgroup>
+				<h2>Identidad visual</h2>
+				<h1>Haciendo su marca consistente</h1>
+			</hgroup>
+			
 		</header>
 		<div class="content">
-			<p><strong>Acerca:</strong>Texto simulado</p>
-			<p>Especialidades intervinientes:
-				<ul>
-					<li>Identidad Visual</li>
-				</ul>
-			</p>
+			<p><strong>La estrategia de marca es traducida en una identidad visual con un mensaje claro, distintivo e innovador. </strong>
+			<br />Su identidad proviene del núcleo de valores de su empresa, expresando una visión única. Esto asegura fuertes asociaciones en la mente del consumidor, inspirando confianza, recordación y reconocimiento a largo plazo más allá del ciclo de vida de cualquier producto.</p>
+			<h3 class="unsorted-list-title">Detalle servicios</h3>
+			<ul class="unsorted-list">
+				<li>Diseño y desarrollo de marcas y submarcas</li>
+				<li>Diseños de sistemas de Identidad</li>
+				<li>Manuales de normalización de marca</li>
+				<li>Impresos comerciales.</li>
+			</ul>
 		</div>	
 	</article>	
 	<%= render 'sidebar/servicios-right-sidebar' %>
