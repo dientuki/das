@@ -377,12 +377,17 @@ aside#right-sidebar .bg-bottom {
 }
 
 aside#right-sidebar .title,
+aside#right-sidebar .block-first .title,
 .main-content .unsorted-list-title {
 	font-size: 15px;
   margin: 15px 0;
   padding-left: 21px;
   color:#307430;
   background: url(../images/contact-arrow.png) left center no-repeat;
+}
+
+aside#right-sidebar section .title {
+  margin-top: 0
 }
 
 .main-content li.unsorted-list-title {
@@ -609,7 +614,7 @@ aside#right-sidebar .title,
 }
 
 #right-sidebar .block-first {
-  padding: 0;
+  padding: 10px 0 0 0;
   margin: 0;
   border:none;
 }
@@ -1086,11 +1091,14 @@ footer .bottom .legal {
 .main-content .block {
   position: relative;
   
-   margin-bottom: 30px;
+  height:58px;
+  padding: 13px 0 13px 60px;  
+   margin-bottom: 75px;
 }
 
 .main-content .gallery-link {
 
+	
 	/*
 	background: #f0f0f0 url(../images/gallery-link-top.png) repeat-y;
 	*/
@@ -1109,6 +1117,20 @@ background: linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
 	border-radius:6px;
 }
 
+.main-content .block h3 {
+  font-size: 14px;
+  color: #307430;
+  margin-bottom: 5px;
+}
+
+.main-content .block a {
+  text-decoration: none;
+}
+
+.main-content .block p {
+  line-height: 16px;
+}
+
 .main-content .gallery-link .bg{
   position: absolute;
   left: 0;
@@ -1125,6 +1147,32 @@ background: linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
   
+}
+
+.main-content .gallery-link figure {
+  position: absolute;
+  width: 71px;
+  height: 63px;
+  background: url(../images/picture-bg.png);
+  left: -18px;
+  top: 9px
+}
+
+.main-content .consult .bg {
+  width: 58px;
+  height: 54px;
+  background: url(../images/consult-bg.png);
+  position: absolute;
+  left: -9px;
+  top: 18px  
+}
+
+.main-content .gallery-link figure img {
+ width:48px;
+ height:38px;
+  position: absolute; 
+  left: 8px;
+  top:11px;
 }
 
 /* Fixed Sidebar */
