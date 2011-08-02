@@ -37,9 +37,8 @@
 			prevText: 		'Previous',
 			nextId: 		'nextBtn',	
 			nextText: 		'Next',
-			controlsShow:	true,
-			controlsBefore:	'',
-			controlsAfter:	'',	
+			controlsPlace:  false,
+			controlsId:     'controls',
 			controlsFade:	true,
 			firstId: 		'firstBtn',
 			firstText: 		'First',
@@ -52,37 +51,64 @@
 			auto:			true,
 			pause:			2000,
 			continuous:		false, 
-			numeric: 		false,
-			numericId: 		'controls'
+			numeric: 		false
 		}; 
 				
 		var options = $.extend(defaults, options);  
 				
 		this.each(function() {  
-			var obj = $(this); 				
-			var s = $("li", obj).length;
-			var w = $("li", obj).width(); 
-			var h = $("li", obj).height(); 
+			var $obj = $(this);
+			var $lis = $obj.find("li");
+			var $ul = $obj.find("ul");	
+			var s = $lis.length;
+			var w = $lis.width(); 
+			var h = $lis.height(); 
 			var clickable = true;
-			obj.width(w); 
-			obj.height(h); 
-			obj.css("overflow","hidden");
+			$obj.width(w); 
+			$obj.height(h); 
+			$obj.css("overflow","hidden");
+			$ul.css('width',s*w)
 			var ts = s-1;
 			var t = 0;
-			$("ul", obj).css('width',s*w);			
 			
 			if(options.continuous){
-				$("ul", obj).prepend($("ul li:last-child", obj).clone().css("margin-left","-"+ w +"px"));
-				$("ul", obj).append($("ul li:nth-child(2)", obj).clone());
-				$("ul", obj).css('width',(s+1)*w);
-			};				
+				$ul.prepend($("ul li:last-child",$obj).clone().css("margin-left","-"+ w +"px"));
+				$ul.append($("ul li:nth-child(2)",$obj).clone());
+				$ul.css('width',(s+1)*w);
+				$lis = $obj.find("li");
+			};			
 			
-			if(!options.vertical) $("li", obj).css('float','left');
-								
-			if(options.controlsShow){
-				var html = options.controlsBefore;				
+			if(!options.vertical) {
+				$lis.css('float','left');
+			}
+			
+			if(options.controlsPlace != false){ //have control
+				var html = new Array();
+				html[0] = '<ol id="' + options.controlsId + '">';
+				
+				for (var i=1; i<=s; i++){
+					if(options.numeric){
+						html[i] = '<li><a href="#" data-id="' + i + '">' + i + '</a></li>'
+					} else {
+						html[i] = '<li><a href="#" data-id="' + i + '">&nbsp;</a></li>'
+					}
+					
+				}
+				html[html.length] = '</ol>';
+				var $control = $(options.controlsPlace);
+				$control.append(html.join('\n'));
+				
+				$control.find('a').live('click', function(){
+					animate(  $(this).data('id') - 1,  true);
+					return false;
+				})
+			}
+			
+			/*
+			if(options.controlsPlace != false){
+				var html = new Array();				
 				if(options.numeric){
-					html += '<ol id="'+ options.numericId +'"></ol>';
+					html[0] += '<ol id="'+ options.numericId +'"></ol>';
 				} else {
 					if(options.firstShow) html += '<span id="'+ options.firstId +'"><a href=\"javascript:void(0);\">'+ options.firstText +'</a></span>';
 					html += ' <span id="'+ options.prevId +'"><a href=\"javascript:void(0);\">'+ options.prevText +'</a></span>';
@@ -118,23 +144,25 @@
 					animate("last",true);				
 				});				
 			};
-			
+			*/
 			function setCurrent(i){
-				i = parseInt(i)+1;
-				$("li", "#" + options.numericId).removeClass("current");
-				$("li#" + options.numericId + i).addClass("current");
+				if(options.controlsPlace != false) {
+					i = parseInt(i);
+					$control.find('li').removeClass("current");
+					$control.find('li:eq(' + i + ')').addClass("current");		
+				}
 			};
 			
 			function adjust(){
 				if(t>ts) t=0;		
 				if(t<0) t=ts;	
 				if(!options.vertical) {
-					$("ul",obj).css("margin-left",(t*w*-1));
+					$ul.css("margin-left",(t*w*-1));
 				} else {
-					$("ul",obj).css("margin-left",(t*h*-1));
+					$ul.css("margin-left",(t*h*-1));
 				}
 				clickable = true;
-				if(options.numeric) setCurrent(t);
+				setCurrent(t);
 			};
 			
 			function animate(dir,clicked){
@@ -163,18 +191,18 @@
 					var speed = diff*options.speed;						
 					if(!options.vertical) {
 						p = (t*w*-1);
-						$("ul",obj).animate(
+						$ul.animate(
 							{ marginLeft: p }, 
 							{ queue:false, duration:speed, complete:adjust }
 						);				
 					} else {
 						p = (t*h*-1);
-						$("ul",obj).animate(
+						$ul.animate(
 							{ marginTop: p }, 
 							{ queue:false, duration:speed, complete:adjust }
 						);					
 					};
-					
+					/*
 					if(!options.continuous && options.controlsFade){					
 						if(t==ts){
 							$("a","#"+options.nextId).hide();
@@ -191,8 +219,11 @@
 							$("a","#"+options.firstId).show();
 						};					
 					};				
+					*/
+					if(clicked) {
+						clearTimeout(timeout)
+					};
 					
-					if(clicked) clearTimeout(timeout);
 					if(options.auto && dir=="next" && !clicked){;
 						timeout = setTimeout(function(){
 							animate("next",false);
@@ -210,12 +241,13 @@
 				},options.pause);
 			};		
 			
-			if(options.numeric) setCurrent(0);
-		
+			setCurrent(0);
+			/*
 			if(!options.continuous && options.controlsFade){					
 				$("a","#"+options.prevId).hide();
 				$("a","#"+options.firstId).hide();				
-			};				
+			};
+			*/				
 			
 		});
 	  

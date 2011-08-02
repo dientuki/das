@@ -44,10 +44,12 @@ $(document).ready(function() {
 	switch ($('body').data('page'))	{
 		case 'home':
 			$('#slider').easySlider({
-				controlsShow:	false,
-				controlsFade:	false,
+				controlsPlace:	'#banner footer',
+				controlsShow:   false, //remove later
+				controlsFade:	true,
 				auto:			true,
-				continuous:		true
+				continuous:		true,
+				numeric: false
 			});			
 		break;
 		case 'company':
