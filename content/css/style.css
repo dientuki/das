@@ -306,12 +306,39 @@ aside#left-sidebar a {
 	outline: none;
 }
 
-aside#left-sidebar li.selected,aside#left-sidebar li:hover {
+#works.our-product aside#left-sidebar a {
+	padding: 3px 0 3px 15px;
+}
+
+aside#left-sidebar .more {
+	font-weight: normal;
+	background: none;
+	font-size: 11px;
+}
+
+aside#left-sidebar li {
+	padding: 10px 0;
+}
+
+aside#left-sidebar .content {
+	color:white;
+	padding: 3px 0 3px 15px;
+	font-size: 11px;
+}
+
+aside#left-sidebar li.selected,
+aside#left-sidebar li:hover {
 	background: #61606A;
 }
 
-aside#left-sidebar li.selected a,aside#left-sidebar li:hover a {
+aside#left-sidebar li.selected a,
+aside#left-sidebar li:hover a {
 	color: white;
+}
+
+#works.our-product aside#left-sidebar li.selected a,
+#works.our-product aside#left-sidebar li:hover a {
+	color: #53C300;
 }
 
 aside#right-sidebar {
