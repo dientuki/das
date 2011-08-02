@@ -469,7 +469,7 @@ aside#right-sidebar .title,
 	font-size: 15px;
 }
 
-#services .main-content h1{
+.our-product .main-content h1{
 	margin: 5px 0 25px 0;
 }
 
@@ -514,12 +514,19 @@ aside#right-sidebar .title,
 }
 
 .our-products .main-content article h1 {
-  color:#53C300;
-  font-size: 15px;
+	color: #53C300;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.our-products .main-content article a {
+	text-decoration: none;
 }
 
 .our-products .main-content article header {
   margin-bottom: 10px;
+  padding: 0;
 }
 
 .our-products .main-content article .content {
@@ -529,7 +536,12 @@ aside#right-sidebar .title,
   margin-bottom: 5px;
 }
 
-#works .content {
+.our-products .main-content article .content p {
+	margin: 0;
+	line-height: 14px;
+}
+
+#works.our-product .main-content .content {
 	padding-top: 30px;
 }
 
