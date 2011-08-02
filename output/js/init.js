@@ -6,11 +6,14 @@ function fixedSidebar (sidebar){
 		var height = $bar.outerHeight();
 
 		$(window).unbind('scroll').bind('scroll', function(e){
+			console.log('ev');
+			console.log($(window).is(':animated'))
+			e.isDefaultPrevented();
 			var parent_offset = ($parent.offset().top + $parent.height()) - (height + 10);
 			var offset = window.pageYOffset;
 			var main_content = window.innerHeight/2;
 
-			$bar.find('.anchor-item').each(function(index){
+			$('#container .anchor-item').each(function(index){
 				var t = $(this).offset().top - offset;
 				if ( t <= main_content) {
 					$bar.find('li').removeClass('selected');
@@ -52,7 +55,7 @@ $(document).ready(function() {
 		break;
 		case 'company':
 			fixedSidebar('#left-sidebar ul');
-			$('#left-sidebar ul').localScroll();
+			//$('#left-sidebar ul').localScroll();
 		break;
 		case 'work':
 			fixedSidebar('#left-sidebar ul');
