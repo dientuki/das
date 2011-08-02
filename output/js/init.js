@@ -5,10 +5,7 @@ function fixedSidebar (sidebar){
 		var top = $bar.offset().top - parseInt( $bar.css('margin-top'), 10 );
 		var height = $bar.outerHeight();
 
-		$(window).unbind('scroll').bind('scroll', function(e){
-			console.log('ev');
-			console.log($(window).is(':animated'))
-			e.isDefaultPrevented();
+		$(window).unbind('scroll').bind('scroll', function(){
 			var parent_offset = ($parent.offset().top + $parent.height()) - (height + 10);
 			var offset = window.pageYOffset;
 			var main_content = window.innerHeight/2;
@@ -68,6 +65,7 @@ $(document).ready(function() {
 			//galeria
 		break;
 		case 'service-gallery':
+			fixedSidebar('#left-sidebar ul');
 			//galeria
 		break;	
 	}
