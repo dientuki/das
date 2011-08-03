@@ -141,9 +141,9 @@ header ul .selected a,header ul li:hover a {
   height:424px !important;
 }
 
-#banner section a,
-#banner section img,
-#banner section figure {
+#banner a,
+#banner img,
+#banner figure {
 	width:930px;
 	height:382px;
 	display: block;
@@ -176,6 +176,7 @@ header ul .selected a,header ul li:hover a {
 	background: #666;
 	text-decoration: none;
 	font-size: 1px;
+	outline: none;
 }
 
 #controls li {
@@ -838,6 +839,12 @@ aside#right-sidebar section .title {
 #services.two-sidebar .container,
 #gallery.left-sidebar .container{
 	height: 1000px;
+}
+
+.left-sidebar .main-content {
+  width: 652px;
+  min-height: 1000px;
+  float:right;
 }
 
 header.title {

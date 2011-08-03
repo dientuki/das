@@ -145,7 +145,8 @@
         build: function() {
         	this.step 		= 0; //transition step count
        	//create the structure for pikachoose
-			this.wrap 		= $("<div class='pika-stage'></div>").insertBefore(this.list);
+			//this.wrap 		= $("<div class='pika-stage'></div>").insertBefore(this.list);
+        	this.wrap		= this.list.parent().find('.pika-stage');
 			this.image 		= $("<img>").appendTo(this.wrap);
 			this.imgNav 	= $("<div class='pika-imgnav'></div>").insertAfter(this.image);
 			this.imgPlay 	= $("<a></a>").appendTo(this.imgNav);
@@ -154,7 +155,9 @@
 			this.imgPrev 	= $("<a class='previous'></a>").insertAfter(this.imgPlay);
 			this.imgNext 	= $("<a class='next'></a>").insertAfter(this.imgPrev);
 			this.caption 	= $("<div class='caption'></div>").insertAfter(this.imgNav).hide();
-			this.tooltip 	= $("<div class='pika-tooltip'></div>").insertAfter(this.list).hide();
+			if (this.options.tooltip == true) {
+				this.tooltip 	= $("<div class='pika-tooltip'></div>").insertAfter(this.list).hide();
+			}
 			this.aniWrap	= $("<div class='pika-aniwrap'></div>").insertAfter(this.caption);
 			this.aniImg		= $("<img>").appendTo(this.aniWrap).hide();
 			this.aniDiv		= $("<div class='pika-ani'></div>").appendTo(this.aniWrap);

@@ -56,20 +56,14 @@ $(document).ready(function() {
 			fixedSidebar('#left-sidebar ul');
 			//$('#left-sidebar ul').localScroll();
 		break;
-		case 'work':
+		case 'site':
 			fixedSidebar('#left-sidebar ul');
 		break;
-		case 'service':
-			fixedSidebar('#left-sidebar ul');
-		break;
-		case 'work-gallery':
+		case 'gallery':
 			fixedSidebar('#left-sidebar ul');
 			//galeria
+			$("#pikaname").PikaChoose();
 		break;
-		case 'service-gallery':
-			fixedSidebar('#left-sidebar ul');
-			//galeria
-		break;	
 	}
 	
 	$('body').addClass('js-finished');
