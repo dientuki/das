@@ -1,0 +1,25 @@
+---
+title: clientes
+banner: false
+sidebar: left-sidebar
+extraclass: gallery
+page: clients
+datapage: client-gallery
+selected: clientes
+---
+<% last = 2 %>
+
+<header class="title">
+	<h1>Servicios</h1>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/clientes-left-sidebar', :letter => 's' %>
+	<article class="main-content clearfix">
+	
+		<footer>
+			<%= render 'trabajos/article', :h1 => 'Smeterling', :id => 1, :last => last %>
+			<%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 2, :last => last %>
+		</footer>
+	</article>	
+</section>

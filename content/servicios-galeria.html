@@ -1,0 +1,29 @@
+---
+title: servicios
+banner: false
+sidebar: left-sidebar
+extraclass: gallery
+page: services
+datapage: service-gallery
+selected: servicios
+---
+<% items = ['Estrategia de Marca', 'Identidad Visual', 'Espacios y Exhibición', 'Packaging', 'Diseño Industrial', 'Soluciones Web'] %>
+
+<header class="title">
+	<h1>Servicios</h1>
+	<h3>h3</h3>
+	<h2>h2</h2>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/servicios-left-sidebar', :items => items, :selected => 2, :name => true %>
+	<article class="main-content clearfix">
+	
+		<footer>
+			<%= render 'servicios/sidebar-article', :h1 => 'AG', :content => 'Diseño e imagen de marca', :id => 1 %>
+			<%= render 'servicios/sidebar-article', :h1 => 'AG', :content => 'Diseño e imagen de marca', :id => 2 %>
+			<%= render 'servicios/sidebar-article', :h1 => 'AG', :content => 'Diseño e imagen de marca', :id => 3 %>
+			<%= render 'servicios/sidebar-article', :h1 => 'AG', :content => 'Diseño e imagen de marca', :id => 4 %>		
+		</footer>
+	</article>	
+</section>
