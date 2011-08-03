@@ -84,7 +84,7 @@
 			
 			if(options.controlsPlace != false){ //have control
 				var html = new Array();
-				html[0] = '<ol id="' + options.controlsId + '">';
+				html[0] = '<ol id="' + options.controlsId + '" class="clearfix">';
 				
 				for (var i=1; i<=s; i++){
 					if(options.numeric){

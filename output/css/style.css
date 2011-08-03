@@ -159,7 +159,32 @@ header ul .selected a,header ul li:hover a {
   overflow:hidden;
 }
 
+#controls {
+	float:right;
+	margin: 8px 15px;
+}
 
+#controls a,
+#controls li {
+	float:left;
+	width: 8px;
+	height: 8px;
+	display: block;
+}
+
+#controls a {
+	background: #666;
+	text-decoration: none;
+	font-size: 1px;
+}
+
+#controls li {
+	margin-left: 5px;
+}
+
+#controls li.current a{
+	background: #53C300;
+}
 
 body>footer {
 	background-image: url(../images/shadow-bottom.png);
