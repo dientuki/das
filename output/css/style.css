@@ -336,7 +336,7 @@ aside#left-sidebar a {
 	outline: none;
 }
 
-#works.our-product aside#left-sidebar a {
+#works #left-sidebar a {
 	padding: 3px 0 3px 15px;
 }
 
@@ -349,34 +349,34 @@ aside#left-sidebar a {
   margin-top: 25px;
 }
 
-aside#left-sidebar .more {
+#left-sidebar .more {
 	font-weight: normal;
 	background: none;
 	font-size: 11px;
 }
 
-#works.our-product aside#left-sidebar li {
+#works #left-sidebar li {
 	padding: 10px 0;
 }
 
-aside#left-sidebar .content {
+#left-sidebar .content {
 	color:white;
 	padding: 3px 0 3px 15px;
 	font-size: 11px;
 }
 
-aside#left-sidebar li.selected,
-aside#left-sidebar li:hover {
+#left-sidebar li.selected,
+#left-sidebar li:hover {
 	background: #61606A;
 }
 
-aside#left-sidebar li.selected a,
-aside#left-sidebar li:hover a {
+#left-sidebar li.selected a,
+#left-sidebar li:hover a {
 	color: white;
 }
 
-#works.our-product aside#left-sidebar li.selected a,
-#works.our-product aside#left-sidebar li:hover a {
+#works #left-sidebar li.selected a,
+#works #left-sidebar li:hover a {
 	color: #53C300;
 }
 

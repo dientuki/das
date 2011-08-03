@@ -6,6 +6,6 @@ count = rand(5) + 1;
 <h3><%= @letter %></h3>
 <ul>
 	<% for i in (1..count) %>
-		<li><%= @letter.upcase %><%= items[rand(items.length)] %></li>
+		<li><a href="clientes-galeria.html"><%= @letter.upcase %><%= items[rand(items.length)] %></a></li>
 	<% end %>
 </ul>
