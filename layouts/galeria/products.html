@@ -1,0 +1,9 @@
+	   <div class="pika-stage pika-loading">
+	   </div>
+	   <div class="pika-caption">
+	   </div>
+	   <ul id="pikaname" class="pika-thumbs clearfix">
+	   		<% for i in(1..10) %>
+	   		<li <% if (i == 5 || i == 10) %>class="last"<% end %>><img src="images/gallery/gallery-<%= i %>.jpg" width="125" height="72" /><span><strong>test:</strong>esto es. <strong>mas:</strong> mas texto, id <%= i %></span></li>
+	   		<% end %>
+	   	</ul>

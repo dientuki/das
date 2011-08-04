@@ -1,6 +1,6 @@
 .pika-stage {
 	width: 654px;
-	height: 358px;
+	height: 376px;
 	margin-top: 10px;
 }
 
@@ -12,10 +12,16 @@
 	position: relative;
 }
 
+.pika-thumbs {
+	padding-bottom: 25px;
+	background: url(../images/gallery-shadow-bottom.png) center bottom no-repeat;
+}
+
 .pika-thumbs li {
 	float: left;
-	margin-bottom: 15px;
-	margin-right: 7px
+	margin-bottom: 25px;
+	margin-right: 7px;
+	cursor: pointer;
 }
 
 .pika-thumbs li.last {
