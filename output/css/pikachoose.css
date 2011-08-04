@@ -5,7 +5,7 @@
 }
 
 .pika-loading {
-	background: red;
+	background: url(../images/loading.gif) center center no-repeat;
 }
 
 .pika-stage {
@@ -31,4 +31,10 @@
 .pika-thumbs span {
 	display: none;
 	visibility: hidden;
+}
+
+.pika-stage .pika-aniwrap {
+  position: absolute;
+  left: 0;
+  top: 0;
 }

@@ -45,7 +45,6 @@ $(document).ready(function() {
 		case 'home':
 			$('#slider').easySlider({
 				controlsPlace:	'#banner footer',
-				controlsShow:   false, //remove later
 				controlsFade:	true,
 				auto:			true,
 				continuous:		true,
@@ -63,9 +62,9 @@ $(document).ready(function() {
 			fixedSidebar('#left-sidebar ul');
 			//galeria
 			$("#pikaname").PikaChoose({
-				thumbOpacity: 0.6,
+				thumbOpacity: 0.4,
 				hoverPause: true,
-				transition: [2]
+				transition: [4]
 			});
 		break;
 	}
