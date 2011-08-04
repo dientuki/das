@@ -24,11 +24,22 @@ body>header.no-banner {
 	margin-bottom: 20px;
 }
 
-body>header.no-banner,#banner footer {
+body>header.no-banner,
+#banner footer,
+.pika-caption {
 	background-image: url(../images/shadow-top.png);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	padding-bottom: 17px;
+}
+.pika-caption {
+	background-position: -480px bottom;
+	color:white;
+}
+.pika-textnav,
+.pika-imgnav {
+	display: none;
+	visibility: hidden;
 }
 
 header .logo {
@@ -149,7 +160,8 @@ header ul .selected a,header ul li:hover a {
 	display: block;
 }
 
-#banner footer {
+#banner footer,
+.pika-caption {
 	height: 23px;
 	/*background-color: #1E1F2C;*/
 	background-color: black;
@@ -842,7 +854,7 @@ aside#right-sidebar section .title {
 }
 
 .left-sidebar .main-content {
-  width: 652px;
+  width: 654px;
   min-height: 1000px;
   float:right;
 }

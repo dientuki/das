@@ -154,17 +154,17 @@
 			if(this.options.autoPlay){ this.imgPlay.addClass('pause'); }else{ this.imgPlay.addClass('play'); }
 			this.imgPrev 	= $("<a class='previous'></a>").insertAfter(this.imgPlay);
 			this.imgNext 	= $("<a class='next'></a>").insertAfter(this.imgPrev);
-			this.caption 	= $("<div class='caption'></div>").insertAfter(this.imgNav).hide();
+			this.caption 	= this.list.parent().find('.pika-caption');//$("<div class='caption'></div>").insertAfter(this.imgNav).hide();
 			if (this.options.tooltip == true) {
 				this.tooltip 	= $("<div class='pika-tooltip'></div>").insertAfter(this.list).hide();
 			}
-			this.aniWrap	= $("<div class='pika-aniwrap'></div>").insertAfter(this.caption);
+			this.aniWrap	= $("<div class='pika-aniwrap'></div>").insertAfter(this.imgNav);
 			this.aniImg		= $("<img>").appendTo(this.aniWrap).hide();
 			this.aniDiv		= $("<div class='pika-ani'></div>").appendTo(this.aniWrap);
 			this.textNav 	= $("<div class='pika-textnav'></div>").insertAfter(this.aniWrap);
 			this.textPrev 	= $("<a class='previous'>"+this.options.text.previous+"</a>").appendTo(this.textNav);
 			this.textNext	= $("<a class='next'>"+this.options.text.next+"</a>").appendTo(this.textNav);
-			this.list.addClass('pika-thumbs');
+			//this.list.addClass('pika-thumbs');
         	this.list.children('li').wrapInner("<div class='clip' />");
 			this.thumbs = this.list.find('img');
 			this.active		= this.thumbs.eq(this.options.startOn);
@@ -180,6 +180,7 @@
 			if(typeof(this.options.buildFinished) == 'function'){
 	     		this.options.buildFinished(this);
 	     	}
+			this.wrap.removeClass('pika-loading');
 		}, //end setup
         /**
          * proccesses thumbnails
@@ -251,7 +252,6 @@
 						that.stillOut = setTimeout(that.hideTooltip,700);
 					}}
 				);
-
 				
 				if(data.order == that.options.startOn){
 					self.fadeTo(250,1);
@@ -292,12 +292,16 @@
 					})(e.data.self), e.data.self.options.speed);
 				}
         	});
-			this.tooltip.bind('mouseenter',{self:this},function(e){
-				clearTimeout(e.data.self.stillOut);
-			});
-			this.tooltip.bind('mouseleave',{self:this},function(e){
-				e.data.self.stillOut = setTimeout(e.data.self.hideTooltip,700);
-			});
+        	if (this.options.tooltip == true) {
+				this.tooltip.bind('mouseenter',{self:this},function(e){
+					clearTimeout(e.data.self.stillOut);
+				});
+        	}
+        	if (this.options.tooltip == true) {
+				this.tooltip.bind('mouseleave',{self:this},function(e){
+					e.data.self.stillOut = setTimeout(e.data.self.hideTooltip,700);
+				});
+        	}
 			if(typeof(this.options.bindsFinished) == 'function'){
 	     		this.options.bindsFinished(this);
 	     	}
@@ -331,7 +335,7 @@
 					return false;
 				}
 			}
-			self.caption.fadeOut('slow');
+			//self.caption.fadeOut('slow');
 	     	self.animating = true;
 	     	self.active.fadeTo(300,self.options.thumbOpacity).removeClass('active');
 			self.active.parents('.active').eq(0).removeClass('active');
@@ -361,7 +365,6 @@
 	     doAnimation: function(n,data){
 	     		var self = this; //self in this scope refers to PikaChoose object. Needed for callbacks on animations
 				self.image.stop(true,false);
-				self.caption.stop().fadeOut();
 				var aWidth = self.aniDiv.children('div').eq(0).width();
 				var aHeight = self.aniDiv.children('div').eq(0).height();
 				var img = new Image();
@@ -508,7 +511,7 @@
 				this.anchor = null;
 			}
      		if(this.options.showCaption && data.caption != "" && data.caption != null){
-     			this.caption.html(data.caption).fadeTo('slow',1);
+     			this.caption.html(data.caption)
      		}
      		if(this.options.autoPlay == true){
      			var self = this;

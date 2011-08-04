@@ -1,0 +1,28 @@
+.pika-stage {
+	width: 654px;
+	height: 358px;
+	margin-top: 10px;
+}
+
+.pika-loading {
+	background: red;
+}
+
+.pika-stage {
+	position: relative;
+}
+
+.pika-thumbs li {
+	float: left;
+	margin-bottom: 15px;
+	margin-right: 7px
+}
+
+.pika-thumbs li.last {
+	margin-right: 0;
+}
+
+.pika-thumbs span {
+	display: none;
+	visibility: hidden;
+}

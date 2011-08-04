@@ -18,13 +18,15 @@ selected: trabajos
 	<%= render 'sidebar/trabajos-left-sidebar', :items => items, :selected => 2, :name => true %>
 	<article class="main-content clearfix">
 	
-	   <div class="pika-stage">
-	   
-	   
+	   <div class="pika-stage pika-loading">
 	   </div>
-	   <div class="">
+	   <div class="pika-caption">
 	   </div>
-	   <ul id="pikaname"><li>asdf</li></ul>
+	   <ul id="pikaname" class="pika-thumbs clearfix">
+	   		<% for i in(1..10) %>
+	   		<li <% if (i == 5 || i == 10) %>class="last"<% end %>><img src="images/gallery/gallery-<%= i %>.jpg" width="125" height="68" /><span><strong>test:</strong>esto es. <strong>mas:</strong> mas texto, id <%= i %></span></li>
+	   		<% end %>
+	   	</ul>
 		<!-- 
 		<ul id="pikame" >
 			<li><a href="http://www.pikachoose.com"><img src="../../1.jpg"/></a><span>This is an example of the basic theme.</span></li>
