@@ -191,7 +191,7 @@
         createThumb: function(ele) {
         	var self = ele;
 			var that = this;
-        	self.hide();
+        	//self.hide();
         	
 			//store all the data with the image
         	$.data(ele[0],'clickThrough',self.parent('a').attr('href') || "");
@@ -209,6 +209,7 @@
 	    		if(typeof(that.options.buildThumbStart) == 'function'){
 		     		that.options.buildThumbStart(that);
 		     	}
+	    		/*
     			//in this scope self refers to the image
 				var img = $(this);
 				var w = this.width;
@@ -240,6 +241,7 @@
 					height: height+"px"
 				};
 				self.css(imgcss);
+				*/
 				self.hover(
 					function(e){
 						clearTimeout(that.stillOut);
@@ -252,7 +254,7 @@
 						that.stillOut = setTimeout(that.hideTooltip,700);
 					}}
 				);
-				
+
 				if(data.order == that.options.startOn){
 					self.fadeTo(250,1);
 					self.addClass('active');
@@ -260,6 +262,7 @@
 				}else{
 					self.fadeTo(250,that.options.thumbOpacity);
 				}
+
 				if(typeof(that.options.buildThumbFinish) == 'function'){
 		     		that.options.buildThumbFinish(that);
 		     	}

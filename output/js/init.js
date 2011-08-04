@@ -62,13 +62,11 @@ $(document).ready(function() {
 		case 'gallery':
 			fixedSidebar('#left-sidebar ul');
 			//galeria
-			/*
 			$("#pikaname").PikaChoose({
 				thumbOpacity: 0.6,
 				hoverPause: true,
 				transition: [2]
 			});
-			*/
 		break;
 	}
 	
