@@ -17,7 +17,8 @@ selected: clientes
 	<%= render 'sidebar/clientes-left-sidebar', :letter => 's' %>
 	<article class="main-content clearfix">
 	
-		<footer>
+		<%= render 'galeria/products' %>
+		<footer class="clearfix">
 			<%= render 'trabajos/article', :h1 => 'Smeterling', :id => 1, :last => last %>
 			<%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 2, :last => last %>
 		</footer>
