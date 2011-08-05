@@ -376,7 +376,7 @@ aside#left-sidebar a {
 	padding: 10px 0;
 }
 
-#left-sidebar .content {
+#left-sidebar li .content {
 	color:white;
 	padding: 3px 0 3px 15px;
 	font-size: 11px;
