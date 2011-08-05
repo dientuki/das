@@ -169,7 +169,12 @@
 			this.thumbs = this.list.find('img');
 			this.active		= this.thumbs.eq(this.options.startOn);
 			//fill in info for first image
-			this.finishAnimating({'source':this.active.attr('ref') || this.active.attr('src'),'caption':this.active.parents('li:first').find('span:first').html(), 'clickThrough':this.active.parent().attr('href') || "", 'clickThroughTitle':this.active.parent().attr('title') || ""});
+			this.finishAnimating({
+						'source':this.active.attr('ref') || this.active.attr('src'),
+						'caption':this.active.parents('li:first').find('span:first').html(),
+						'clickThrough':this.active.parent().attr('href') || "",
+						'clickThroughTitle':this.active.parent().attr('title') || ""
+			});
 
 			//process all the thumbnails
 			var self = this;
@@ -371,6 +376,7 @@
 				var aWidth = self.aniDiv.children('div').eq(0).width();
 				var aHeight = self.aniDiv.children('div').eq(0).height();
 				var img = new Image();
+				data.source = data.source.replace('-thumb', '');
 				$(img).attr('src',data.source);
 				if(img.height != self.image.height() || img.width != self.image.width()){
 					//Your images are not the same height? Well you get limited on transitions
@@ -491,6 +497,7 @@
 	     },//end doAnimation
 	     finishAnimating: function(data){
      		this.animating = false;
+     		data.source = data.source.replace('-thumb', '');
 			this.image.attr('src',data.source);
 			this.image.css({left:"0"});
 			this.image.show();
