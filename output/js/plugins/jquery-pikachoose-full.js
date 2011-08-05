@@ -42,7 +42,8 @@
 		bindFinished: null,
 		startOn: 0,
 		thumbOpacity: 0.4,
-		hoverPause: false
+		hoverPause: false,
+		thumbName: '-thumb'
 	};
    
     $.fn.PikaChoose = function(o) {
@@ -376,7 +377,7 @@
 				var aWidth = self.aniDiv.children('div').eq(0).width();
 				var aHeight = self.aniDiv.children('div').eq(0).height();
 				var img = new Image();
-				data.source = data.source.replace('-thumb', '');
+				data.source = data.source.replace(this.options.thumbName, '');
 				$(img).attr('src',data.source);
 				if(img.height != self.image.height() || img.width != self.image.width()){
 					//Your images are not the same height? Well you get limited on transitions
@@ -497,7 +498,7 @@
 	     },//end doAnimation
 	     finishAnimating: function(data){
      		this.animating = false;
-     		data.source = data.source.replace('-thumb', '');
+     		data.source = data.source.replace(this.options.thumbName, '');
 			this.image.attr('src',data.source);
 			this.image.css({left:"0"});
 			this.image.show();
