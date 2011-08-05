@@ -533,7 +533,8 @@ aside#right-sidebar section .title {
 
 #works header.title h1 {
 	background: url(../images/text-work.png);
-	width: 405px;
+	/*width: 405px;*/
+	width: 175px;
 }
 
 #services header.title h1 {
@@ -866,6 +867,26 @@ aside#right-sidebar section .title {
 header.title {
 	position: relative;
 	margin: 15px 0 0 0;
+}
+
+.gallery header.title {
+	margin: 15px 0;
+}
+
+.gallery header.title h2 {
+	font-size: 18px;
+    font-weight: normal;
+    left: 234px;
+    position: absolute;
+    top: 2px;
+    color:#307430;
+}
+
+.gallery header.title h3 {
+ 	font-size: 15px;
+    left: 234px;
+    position: absolute;
+    top: -15px;
 }
 
 header.title h1 {
