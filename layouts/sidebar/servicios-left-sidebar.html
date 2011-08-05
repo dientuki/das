@@ -1,7 +1,7 @@
 <% @selected = @selected - 1 %>
 	<aside id="left-sidebar">
     <div class="bg-top"></div>
-		<ul>
+		<ul class="content">
 		<% @items.each_index { |i| %>
 			<li <% if (i == @selected)%>class="selected"<% end %>>
 				<a href="servicios-servicio.html"><%= @items[i] %></a>

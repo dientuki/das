@@ -52,14 +52,14 @@ $(document).ready(function() {
 			});			
 		break;
 		case 'company':
-			fixedSidebar('#left-sidebar ul');
+			fixedSidebar('#left-sidebar .content');
 			//$('#left-sidebar ul').localScroll();
 		break;
 		case 'site':
-			fixedSidebar('#left-sidebar ul');
+			fixedSidebar('#left-sidebar .content');
 		break;
 		case 'gallery':
-			fixedSidebar('#left-sidebar ul');
+			fixedSidebar('#left-sidebar .content');
 			//galeria
 			$("#pikaname").PikaChoose({
 				thumbOpacity: 0.4,

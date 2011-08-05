@@ -532,7 +532,7 @@ aside#right-sidebar section .title {
 }
 
 #works header.title h1 {
-	background: url(../images/text-work.png);
+	background: url(../images/text-works.png);
 	/*width: 405px;*/
 	width: 175px;
 }
@@ -542,41 +542,43 @@ aside#right-sidebar section .title {
   width: 171px;
 }
 
-#services #right-sidebar article,
-.gallery .main-content article {
-    margin: 15px 0 0 21px;
-    width: 128px;
+#clients header.title h1 {
+	background: url(../images/text-clients.png);
+	width: 156px;
 }
 
-.gallery .main-content article {
+#previous-works article {
+	width: 128px;
+}
+
+#right-sidebar #previous-works article {
+    margin: 15px 0 0 21px;    
+}
+
+.gallery #previous-works article {
 	margin: 0 47px 33px 0;
 	float:left;
 }
-.gallery .main-content article.last {
+.gallery #previous-works article.last {
 	margin-right: 0;
 	margin-left: 1px;
 }
 
-#services #right-sidebar a,
-#services #right-sidebar article .content,
-.gallery .main-content a,
-.gallery .main-content article .content {
+#previous-works a,
+#previous-works article .content {
   	font-size: 11px;
     line-height: 12px;
     text-decoration: none;
    }
 
-#services #right-sidebar article figure,
-#services #right-sidebar article figure a,
-.gallery .main-content article figure,
-.gallery .main-content article figure a {
+#previous-works article figure,
+#previous-works article figure a {
 	display: block;
 	height: 77px;
 	width: 128px;
 }
 
-#services #right-sidebar article h1,
-.gallery .main-content article h1 {
+#previous-works article h1 {
 	margin: 5px 0;
 	font-size: 15px;
 }

@@ -3,21 +3,22 @@ items = ['empresa', 'aminoacido', 'bayer y asociados', 'ubuntu linux', 'ogame', 
 %>
 	<aside id="left-sidebar">
     <div class="bg-top"></div>
-    	<section>
-    		<h2>Por orden alfabetico</h2>
-    		<ul>
-    			<% for i in (97..122) %>
-    				<li <% if (i.chr == @letter) %>class="selected"<%end%>><a href="clientes-galeria.html"><%= i.chr %></a></li>
-    			<%end%>
-    		</ul>
-    	</section>
-    	<section>
-    		<ul>
-    			<% for i in (1..5) %>
-    				<li <%if (i == 3) %>class="selected"<%end%>><a href="clientes-galeria.html"><%= @letter.upcase %><%= items[rand(items.length)] %></a></li>
-				<% end %>
-    		</ul>
-    	</section>
-	
+    	<div class="content">
+	    	<section>
+	    		<h2>Por orden alfabetico</h2>
+	    		<ul>
+	    			<% for i in (97..122) %>
+	    				<li <% if (i.chr == @letter) %>class="selected"<%end%>><a href="clientes-galeria.html"><%= i.chr %></a></li>
+	    			<%end%>
+	    		</ul>
+	    	</section>
+	    	<section>
+	    		<ul>
+	    			<% for i in (1..5) %>
+	    				<li <%if (i == 3) %>class="selected"<%end%>><a href="clientes-galeria.html"><%= @letter.upcase %><%= items[rand(items.length)] %></a></li>
+					<% end %>
+	    		</ul>
+	    	</section>
+		</div>
 	<div class="bg-bottom"></div>
 	</aside>
