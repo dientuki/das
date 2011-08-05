@@ -334,16 +334,20 @@
 	     	var self = e.data.self;
 			var data = $.data(this);
 	     	if(self.animating){return;}
+	     	/*
      		if(typeof(x) == 'undefined' || x.how != "auto"){
 	     		//arrive here if natural click
+
 	     		if(self.options.autoPlay){
 	     			self.imgPlay.trigger('click');
 	     		}
 			}else{
+
 				if(self.options.autoPlay == false){
 					return false;
 				}
 			}
+			*/
 			//self.caption.fadeOut('slow');
 	     	self.animating = true;
 	     	self.active.fadeTo(300,self.options.thumbOpacity).removeClass('active');
