@@ -6,7 +6,7 @@ col = 1
     <div class="bg-top"></div>
     	<div class="content">
 	    	<section id="alphabetical-order">
-	    		<h2 class="title">Por orden alfabetico</h2>
+	    		<h2 class="title">Por orden alfabético</h2>
 	    		<ul class="clearfix">
 	    			<% for i in (97..122) %>
 	    				<li class="<% if (i.chr == @letter) %>selected<%end%><% if (col%7 == 0) %>last<%end%>" ><a href="clientes-galeria.html"><%= i.chr %></a></li>

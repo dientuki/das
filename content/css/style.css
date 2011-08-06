@@ -640,17 +640,27 @@ aside#right-sidebar section .title {
 
 #alphabetical-order li a {
 	text-transform: uppercase;
-	padding: 0;
 	font-size: 15px;
-	font-weight: normal;
+}
+
+#clients.gallery #left-sidebar a {
+	padding: 0;
+	font-weight: normal;	
 }
 #clients.gallery #left-sidebar li:hover,
 #clients.gallery #left-sidebar li.selected {
 	background: none;
 }
 
-.gallery .client-list {
+#clients.gallery .client-list {
 	margin: 0 15px;
+}
+
+#clients.gallery .client-list li.selected,
+#clients.gallery .client-list li.selected a,
+#clients.gallery .client-list li:hover,
+#clients.gallery .client-list li:hover a {
+	color:#55c300 !important;
 }
 
 #previous-works article {
