@@ -16,7 +16,7 @@ col = 1
 
 <section class="main-content clearfix">
 	<h2>Clientes por orden Alfabetico</h2>
-	<ul class="client-list">	
+	<ul class="client-list clearfix">	
 		<% for i in (97..122) %>
 			<%= render 'clientes/letter', :letter => i.chr, :last => col % 5 %>
 			<% col = col + 1 %> 

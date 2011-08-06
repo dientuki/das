@@ -553,6 +553,57 @@ aside#right-sidebar section .title {
 	width: 156px;
 }
 
+#clients .main-content{
+	margin-top:25px;
+	background: #41404A;
+	padding: 20px 15px;
+}
+
+#clients .client-list li {
+	float: left;
+	width: 155px;
+	height: 150px;
+	border-right: 2px dotted #838383;
+	overflow: hidden;
+	margin-right: 15px;
+}
+
+#clients .client-list li.last {
+	margin-left: 0;
+	border:none;
+}
+
+#clients .client-list ul {
+	margin-left: 15px;
+}
+
+#clients .client-list ul li{
+	border:none;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	list-style: square;
+	overflow: visible;
+	padding: 0;
+}
+
+#clients .client-list a,
+#clients .client-list ul li {
+	color:#ccc;
+}
+
+#clients .main-content h2 {
+		color:#55c300;
+		margin-bottom: 25px;
+}
+
+#clients .client-list h3 {
+	color:#55c300;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
 #previous-works article {
 	width: 128px;
 }
@@ -604,8 +655,9 @@ aside#right-sidebar section .title {
 
 .our-products .main-content article {
   float:left;
-  width: 295px;
-  border-right: dotted 1px #fff;
+  width: 294px;
+  padding-left:1px;
+  border-right: dotted 2px #838383;
 }
 
 .our-products .main-content article ul {
@@ -617,6 +669,7 @@ aside#right-sidebar section .title {
 }
 
 .our-products .main-content article.last {
+	padding:0;
   border: none;
 }
 
@@ -679,7 +732,7 @@ aside#right-sidebar section .title {
 #right-sidebar .block {
   margin-top: 15px;
   padding-top: 15px;
-  border-top:1px dotted black
+  border-top:2px dotted black
 }
 
 #right-sidebar .block-first {
@@ -865,7 +918,7 @@ aside#right-sidebar section .title {
 }
 
 #contact form aside p {
-	border-top: 1px dotted black;
+	border-top: 2px dotted black;
     font-size: 10px;
     line-height: 16px;
     padding-right: 25px;
