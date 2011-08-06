@@ -664,6 +664,29 @@ aside#right-sidebar section .title {
 	color:#55c300 !important;
 }
 
+.last-works h3 {
+	color: #307430;
+    font-size: 14px;
+    margin: 10px 0 25px 0;
+}
+
+.last-works article {
+	float:left;
+	width: 248px;
+	margin-right: 55px;
+}
+
+.last-works article figure {
+	display: block;
+	width: 248px;
+	height: 102px;
+	margin-bottom: 20px;
+}
+
+.last-works article .wrapper {
+	width: 100%;
+}
+
 #previous-works article {
 	width: 128px;
 }
@@ -743,13 +766,15 @@ aside#right-sidebar section .title {
   margin-bottom: 0px;
 }
 
-.our-products .main-content article figure {
+.our-products .main-content article figure,
+.last-works article figure {
   width: 248px;
   height: 102px;
   margin-bottom: 20px;
 }
 
-.our-products .main-content article h1 {
+.our-products .main-content article h1,
+.last-works article h1 {
 	color: #55C300;
     font-size: 15px;
     font-weight: bold;
@@ -760,19 +785,24 @@ aside#right-sidebar section .title {
 	text-decoration: none;
 }
 */
-.our-products .main-content article header {
+.our-products .main-content article header,
+.last-works article header {
   margin-bottom: 10px;
   padding: 0;
 }
 
-.our-products .main-content article .content {
+.our-products .main-content article .content,
+.last-works article .content {
   font-size: 11px;
   line-height: 14px;
-  color: #ccc;
   margin-bottom: 5px;
 }
+.our-products .main-content article .content {
+  color: #ccc;
+}
 
-.our-products .main-content article .content p {
+.our-products .main-content article .content p,
+.last-works article .content p {
 	margin: 0;
 	line-height: 14px;
 }

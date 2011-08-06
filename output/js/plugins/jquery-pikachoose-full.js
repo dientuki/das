@@ -186,7 +186,7 @@
 			if(typeof(this.options.buildFinished) == 'function'){
 	     		this.options.buildFinished(this);
 	     	}
-			this.wrap.removeClass('pika-loading');
+			//this.wrap.removeClass('pika-loading');
 		}, //end setup
         /**
          * proccesses thumbnails
