@@ -72,7 +72,7 @@ header .tagline {
 }
 
 header .tagline span {
-	color: #53c300;
+	color: #55C300;
 	display: block;
 	word-spacing: -3px;
 }
@@ -108,15 +108,20 @@ header ul li a {
 	font-size: 11px;
 	line-height: 12px;
 	color: #BCBEC0;
-	text-decoration: none;
+	/*color:#55C300;*/
+}
+
+header ul li a:visited {
+	color: #BCBEC0;
 }
 
 header nav ul li a {
 	text-transform: uppercase;
 }
 
-header ul .selected a,header ul li:hover a {
-	color: #B5E132;
+header ul .selected a,
+header ul li:hover a {
+	color: #B5E132 !important;
 }
 
 #languaje-selector {
@@ -190,7 +195,6 @@ header ul .selected a,header ul li:hover a {
 
 #controls a {
 	background: #666;
-	text-decoration: none;
 	font-size: 1px;
 	outline: none;
 }
@@ -200,7 +204,7 @@ header ul .selected a,header ul li:hover a {
 }
 
 #controls li.current a{
-	background: #53C300;
+	background: #55C300;
 }
 
 body>footer {
@@ -288,12 +292,12 @@ body>footer .top h2 {
 
 .more {
 	background: url("../images/more-arrow.png") no-repeat right top;
-	color: #53C300;
+	color: #55C300;
 	font-size: 9px;
 	height: 9px;
 	line-height: 9px;
 	padding-right: 20px;
-	text-decoration: none;
+
 }
 
 #home article .more {
@@ -344,10 +348,9 @@ aside#left-sidebar ul {
 }
 
 aside#left-sidebar a {
-	color: #53C300;
+	color: #55C300;
 	display: block;
 	padding: 13px 0 13px 15px;
-	text-decoration: none;
 	font-weight: bold;
 	font-size: 12px;
 	outline: none;
@@ -390,12 +393,15 @@ aside#left-sidebar a {
 #left-sidebar li.selected a,
 #left-sidebar li:hover a {
 	color: white;
+	text-decoration: none;
 }
 
 #works #left-sidebar li.selected a,
 #works #left-sidebar li:hover a {
-	color: #53C300;
+	color: #55C300;
 }
+
+#works #left-sidebar li a:hover {text-decoration: underline;}
 
 aside#right-sidebar {
 	position: absolute;
@@ -568,7 +574,6 @@ aside#right-sidebar section .title {
 #previous-works article .content {
   	font-size: 11px;
     line-height: 12px;
-    text-decoration: none;
    }
 
 #previous-works article figure,
@@ -632,16 +637,16 @@ aside#right-sidebar section .title {
 }
 
 .our-products .main-content article h1 {
-	color: #53C300;
+	color: #55C300;
     font-size: 15px;
     font-weight: bold;
     margin: 0;
 }
-
+/*
 .our-products .main-content article a {
 	text-decoration: none;
 }
-
+*/
 .our-products .main-content article header {
   margin-bottom: 10px;
   padding: 0;
@@ -704,7 +709,7 @@ aside#right-sidebar section .title {
 }
 
 #contact #right-sidebar .mail-to a{
-  text-decoration: none;
+
   padding-left: 15px;
   background: url(../images/email.png) no-repeat left center;
   height: 9px;
@@ -931,7 +936,7 @@ footer .subcribe a {
 	line-height: 20px;
 	padding: 0 5px;
 	color: white;
-	text-decoration: none;
+	
 	text-transform: lowercase;
 	font-size: 11px;
 	margin: 0 5px;
@@ -1070,7 +1075,7 @@ footer .contact-us .mail-to {
 
 footer .contact-us .mail-to a {
 	color: #999;
-	text-decoration: none;
+	
 	padding-right: 15px;
 	background: url(../images/email.png) no-repeat right center;
 	height: 9px;
@@ -1131,7 +1136,7 @@ footer .bottom .sitemap li.contact a {
 }
 
 footer .bottom .sitemap li {
-	border-left: solid 1px #53C300;
+	border-left: solid 1px #55C300;
 	position: relative;
 }
 
@@ -1146,7 +1151,7 @@ footer .bottom .sitemap li,footer .bottom .sitemap li a {
 }
 
 footer .bottom .sitemap a {
-	text-decoration: none;
+	
 	padding: 0 10px;
 }
 
@@ -1212,11 +1217,11 @@ background: linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
   color: #307430;
   margin-bottom: 5px;
 }
-
+/*
 .main-content .block a {
   text-decoration: none;
 }
-
+*/
 .main-content .block p {
   line-height: 16px;
 }
