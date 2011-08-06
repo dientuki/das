@@ -530,6 +530,7 @@
      		}
      		if(this.options.autoPlay == true){
      			var self = this;
+     			clearTimeout(this.timeOut);
      			this.timeOut = setTimeout((function(self){
 					return function(){ self.nextClick(); };
 				})(this), this.options.speed, this.timeOut);
