@@ -1384,14 +1384,14 @@ background: linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
 }
 
 /* Fixed Sidebar */
-#left-sidebar ul.static {
+#left-sidebar .static {
 	position: absolute;
 	bottom:35px;
 	z-index: 1000;
 	width: 186px;
 }
 
-#left-sidebar ul.fixed  {
+#left-sidebar .fixed  {
 	position: fixed;
 	top: 0;
 	width: 186px;

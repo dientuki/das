@@ -53,7 +53,7 @@ $(document).ready(function() {
 		break;
 		case 'company':
 			fixedSidebar('#left-sidebar .content');
-			//$('#left-sidebar ul').localScroll();
+			$('#left-sidebar .content').localScroll();
 		break;
 		case 'site':
 			fixedSidebar('#left-sidebar .content');
