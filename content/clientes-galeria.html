@@ -7,7 +7,10 @@ page: clients
 datapage: gallery
 selected: clientes
 ---
-<% last = 2 %>
+<%
+last = 2
+letter = rand(25) + 99
+%>
 
 <header class="title">
 	<h1>Clientes</h1>
@@ -15,11 +18,12 @@ selected: clientes
 </header>
 
 <section class="clearfix container">
-	<%= render 'sidebar/clientes-left-sidebar', :letter => 's' %>
+	<%= render 'sidebar/clientes-left-sidebar', :letter => letter.chr %>
 	<article class="main-content clearfix">
 	
 		<%= render 'galeria/products' %>
 		<footer class="clearfix">
+			<h3>Trabajos Anteriores</h3>
 			<%= render 'trabajos/article', :h1 => 'Smeterling', :id => 1, :last => last %>
 			<%= render 'trabajos/article', :h1 => 'AG &middot; Flexibilidad Confiable', :id => 2, :last => last %>
 		</footer>

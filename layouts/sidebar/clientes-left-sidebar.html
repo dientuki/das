@@ -1,6 +1,7 @@
 <% 
 items = ['empresa', 'aminoacido', 'bayer y asociados', 'ubuntu linux', 'ogame', 'imperia online', 'das', 'lorem', 'ipsum'];
 col = 1
+selected = rand(5) + 1
 %>
 	<aside id="left-sidebar">
     <div class="bg-top"></div>
@@ -17,7 +18,7 @@ col = 1
 	    	<section class="client-list">
 	    		<ul class="clearfix">
 	    			<% for i in (1..5) %>
-	    				<li <%if (i == 3) %>class="selected"<%end%>><a href="clientes-galeria.html"><%= @letter.upcase %><%= items[rand(items.length)] %></a></li>
+	    				<li <%if (i == selected) %>class="selected"<%end%>><a href="clientes-galeria.html"><%= @letter.upcase %><%= items[rand(items.length)] %></a></li>
 					<% end %>
 	    		</ul>
 	    	</section>

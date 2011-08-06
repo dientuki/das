@@ -237,6 +237,7 @@ body>footer .top h2 {
 
 #container {
 	width: 888px;
+	margin-bottom: 25px;
 }
 
 #home #container {
@@ -470,8 +471,8 @@ aside#right-sidebar section .title {
 	position: relative;
 }
 
-.two-sidebar #container {
-	margin-bottom: 25px;
+.no-sidebar #container {
+	margin-bottom: 0
 }
 
 .two-sidebar .main-content {
