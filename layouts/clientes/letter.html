@@ -4,7 +4,7 @@ count = rand(7) + 1;
  %>
 <li <% if (@last == 0) %>class="last"<%end%>>
 	<h3><%= @letter %></h3>
-	<ul>
+	<ul class="clearfix">
 		<% for i in (1..count) %>
 			<li><a href="clientes-galeria.html"><%= @letter.upcase %><%= items[rand(items.length)] %></a></li>
 		<% end %>

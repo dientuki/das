@@ -1,19 +1,21 @@
 <% 
 items = ['empresa', 'aminoacido', 'bayer y asociados', 'ubuntu linux', 'ogame', 'imperia online', 'das', 'lorem', 'ipsum'];
+col = 1
 %>
 	<aside id="left-sidebar">
     <div class="bg-top"></div>
     	<div class="content">
 	    	<section id="alphabetical-order">
 	    		<h2 class="title">Por orden alfabetico</h2>
-	    		<ul>
+	    		<ul class="clearfix">
 	    			<% for i in (97..122) %>
-	    				<li <% if (i.chr == @letter) %>class="selected"<%end%>><a href="clientes-galeria.html"><%= i.chr %></a></li>
+	    				<li class="<% if (i.chr == @letter) %>selected<%end%><% if (col%7 == 0) %>last<%end%>" ><a href="clientes-galeria.html"><%= i.chr %></a></li>
+	    				<% col = col + 1 %>
 	    			<%end%>
 	    		</ul>
 	    	</section>
 	    	<section class="client-list">
-	    		<ul>
+	    		<ul class="clearfix">
 	    			<% for i in (1..5) %>
 	    				<li <%if (i == 3) %>class="selected"<%end%>><a href="clientes-galeria.html"><%= @letter.upcase %><%= items[rand(items.length)] %></a></li>
 					<% end %>
