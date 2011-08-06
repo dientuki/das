@@ -556,7 +556,8 @@ aside#right-sidebar section .title {
 #clients .main-content{
 	margin-top:25px;
 	background: #41404A;
-	padding: 20px 15px;
+	padding: 20px 15px 40px 15px;
+	margin-bottom: 70px;
 }
 
 #clients .client-list li {
@@ -585,11 +586,19 @@ aside#right-sidebar section .title {
 	list-style: square;
 	overflow: visible;
 	padding: 0;
+	font-size: 9px;
+	height: 15px;
+	line-height: 15px;
+	
 }
 
 #clients .client-list a,
 #clients .client-list ul li {
 	color:#ccc;
+}
+
+#clients .client-list a {
+	font-size: 11px;
 }
 
 #clients .main-content h2 {
