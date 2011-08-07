@@ -22,3 +22,10 @@ El nombre de archivo debe ser imagen.jpg para la grande, e imagen-thumb.jpg para
 
 El alto de los sidebar siempre sera igual al alto del contenido principal.
 Si hay mas contenido en el sidebar que en el contenido, habra que repensar el css.
+
+
+>> Imagenes
+
+En la carpeta images estan todas las imagenes usadas a modo de historico
+El archivo main-sprite.png es el sprite
+El archivo main-sprite source.png es el archivo fuente, es un png de fireworks.
