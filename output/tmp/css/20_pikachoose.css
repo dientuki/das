@@ -61,30 +61,8 @@
 		
 
 		<section id="container" class="wrapper clearfix">
-			>> Iniciacion de javascript.
-
-El tag body tiene un data-page para que el js sepa que codigo usar, ahi hay que poner:
-
-home: para cuando esta en el home
-site: para cuando esta en las paginas que necesita la animacion del sidebar
-company: para la pagina de la empresa
-gallery: para cuando esta en la galeria
-
->> Llamada de archivos
-
-La llamada de archivos se hace de manera asincronica con head.js
-El archivo que tiene las llamadas es myhead.js, si algun archivo js no carga aqui deben revisar.
-
->> Galeria de imagenes
-
-Hay que usar 2 imagenes por imagen. Una grande y una thumb.
-El nombre de archivo debe ser imagen.jpg para la grande, e imagen-thumb.jpg para el thumb.
-
-
->> Alto de los sidebar.
-
-El alto de los sidebar siempre sera igual al alto del contenido principal.
-Si hay mas contenido en el sidebar que en el contenido, habra que repensar el css.
+			.pika-stage{width:654px;height:376px;margin-top:10px}.pika-loading{background:url(../images/loading.gif) center center no-repeat}.pika-stage{position:relative}.pika-bg{height:37px;background:url(../images/main-sprite.png) center -80px no-repeat}
+.pika-thumbs li{float:left;margin-bottom:25px;margin-right:7px;cursor:pointer}.pika-thumbs li.last{margin-right:0}.pika-thumbs span{display:none;visibility:hidden}.pika-stage .pika-aniwrap{position:absolute;left:0;top:0}
 		</section>
 
 		<footer id="footer">
