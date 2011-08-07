@@ -1,5 +1,5 @@
 .ie7 .gallery .pika-thumbs {
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 }
 
 .ie6 header nav {
@@ -19,4 +19,23 @@
 .ie9 footer .subcribe a,
 .ie9 footer .subcribe a:hover { {
 	filter:none !important;
+}
+
+.ie6 .main-content .gallery-link,
+.ie7 .main-content .gallery-link,
+.ie8 .main-content .gallery-link,
+.ie9 .main-content .gallery-link,
+.ie6 .main-content .gallery-link .bg,
+.ie7 .main-content .gallery-link .bg,
+.ie8 .main-content .gallery-link .bg,
+.ie9 .main-content .gallery-link .bg {
+	filter:none;
+	background: url(../images/main-sprite.png) -1293px -18px;
+}
+
+.ie6 .main-content .gallery-link .bg,
+.ie7 .main-content .gallery-link .bg,
+.ie8 .main-content .gallery-link .bg,
+.ie9 .main-content .gallery-link .bg {
+	background-position: -1293px -102px;
 }

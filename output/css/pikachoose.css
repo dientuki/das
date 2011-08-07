@@ -12,9 +12,9 @@
 	position: relative;
 }
 
-.pika-thumbs {
-	padding-bottom: 25px;
-	background: url(../images/gallery-shadow-bottom.png) center bottom no-repeat;
+.pika-bg {
+	height: 37px;
+	background: url(../images/main-sprite.png) center -80px no-repeat;	
 }
 
 .pika-thumbs li {

@@ -27,7 +27,7 @@ body {
 #header.no-banner,
 #banner footer,
 .pika-caption {
-	background-image: url(../images/shadow-top.png);
+	background-image: url(../images/main-sprite.png);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	padding-bottom: 17px;
@@ -53,7 +53,7 @@ header .logo {
 	display: block;
 	width: 164px;
 	height: 73px;
-	background: url(../images/logo.png) no-repeat;
+	background: url(../images/main-sprite.png) no-repeat 0px -19px;
 	text-indent: -999em;
 	position: absolute;
 	left: 2px;
@@ -213,7 +213,7 @@ header ul li:hover a {
 }
 
 #footer {
-	background-image: url(../images/shadow-bottom.png);
+	background-image: url(../images/main-sprite.png);
 	background-position: center top;
 	background-repeat: no-repeat;
 	padding-top: 17px;
@@ -297,7 +297,7 @@ header ul li:hover a {
 }
 
 .more {
-	background: url("../images/more-arrow.png") no-repeat right top;
+	background: url("../images/main-sprite.png") no-repeat right -32px;
 	color: #55C300;
 	font-size: 9px;
 	height: 9px;
@@ -337,12 +337,12 @@ aside#left-sidebar {
 
 aside#left-sidebar .bg-top {
 	height: 10px;
-	background: url(../images/left-sidebar-arrow.png) left top #fff no-repeat;
+	background: url(../images/main-sprite.png) left -172px #fff no-repeat;
 }
 
 aside#left-sidebar .bg-bottom {
 	height: 10px;
-	background: url(../images/left-sidebar-arrow.png) left bottom #fff no-repeat;
+	background: url(../images/main-sprite.png) left -182px #fff no-repeat;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -443,7 +443,7 @@ aside#right-sidebar .block-first .title,
   margin: 15px 0;
   padding-left: 21px;
   color:#307430;
-  background: url(../images/contact-arrow.png) left center no-repeat;
+  background: url(../images/main-sprite.png) 0px -204px no-repeat;
 }
 
 aside#right-sidebar section .title {
@@ -490,7 +490,7 @@ aside#right-sidebar section .title {
 }
 
 #company header.title h1 {
-	background: url(../images/text-us.png);
+	background: url(../images/main-sprite.png) -443px -153px;
 	width: 180px;
 	height: 49px;
 }
@@ -532,7 +532,7 @@ aside#right-sidebar section .title {
 	bottom: 0;
 	height: 37px;
 	width: 100%;
-	background: url(../images/article-shadow-bottom) center center;
+	background: url(../images/main-sprite.png) center -36px;
 }
 
 #company .main-content article.last {
@@ -546,18 +546,22 @@ aside#right-sidebar section .title {
 }
 
 #works header.title h1 {
-	background: url(../images/text-works.png);
-	/*width: 405px;*/
-	width: 175px;
+	background: url(../images/main-sprite.png) -764px -125px no-repeat;
+	width: 405px;
+}
+
+#works.gallery header.title h1 {
+	background: url(../images/main-sprite.png) -444px -41px no-repeat;
+	width: 165px;
 }
 
 #services header.title h1 {
-  background: url(../images/text-services.png);
+  background: url(../images/main-sprite.png) -271px -155px;
   width: 171px;
 }
 
 #clients header.title h1 {
-	background: url(../images/text-clients.png);
+	background: url(../images/main-sprite.png) -453px -104px no-repeat;
 	width: 156px;
 }
 
@@ -850,19 +854,19 @@ aside#right-sidebar section .title {
 }
 
 #contact #right-sidebar .block .argentina {
-  background: url(../images/flag-argentina.png) left center no-repeat;
+  background: url(../images/main-sprite.png) left -246px no-repeat #fff;
 }
 #contact #right-sidebar .block .chile {
-  background: url(../images/flag-chile.png) left center no-repeat;
+  background: url(../images/main-sprite.png) left -267px no-repeat #fff;
 }
 #contact #right-sidebar .block .spain {
-  background: url(../images/flag-spain.png) left center no-repeat;
+  background: url(../images/main-sprite.png) left -225px no-repeat #fff;
 }
 
 #contact #right-sidebar .mail-to a{
 
   padding-left: 15px;
-  background: url(../images/email.png) no-repeat left center;
+  background: url(../images/main-sprite.png) no-repeat -1920px -19px;
   height: 9px;
   line-height: 9px;
   display: block;
@@ -893,11 +897,11 @@ aside#right-sidebar section .title {
 #contact #right-sidebar .misc .skype{
   height: 21px;
   line-height: 21px;
-  background: url(../images/skype-logo.png) left center no-repeat;
+  background: url(../images/main-sprite.png) left -126px no-repeat #fff;
 }
 
 #contact #right-sidebar .misc .llegar{
-  background: url(../images/place.png) left center no-repeat;
+  background: url(../images/main-sprite.png) left -94px no-repeat;
   height: 28px;
   line-height: 17px;
 }
@@ -925,20 +929,24 @@ aside#right-sidebar section .title {
   margin-right: 5px;
 }
 
+#contact #right-sidebar .follow-us a {
+	background: url(../images/main-sprite.png) no-repeat;
+}
+
 #contact #right-sidebar .follow-us a.twitter {
-  background: url(../images/logo-tw.png) left top;
+	background-position: -166px -19px;
 }
 
 #contact #right-sidebar .follow-us a.facebook {
-  background: url(../images/logo-fb.png) left top;
+  background-position: -200px -19px;
 }
 
 #contact #right-sidebar .follow-us a.linkdin {
-  background: url(../images/logo-ln.png) left top;
+  background-position: -183px -19px;
 }
 
 #contact header.title h1 {
-  background: url(../images/text-contact-us.png);
+  background: url(../images/main-sprite.png) -271px -104px no-repeat;
   width: 176px;
   height: 49px;
 }
@@ -1067,6 +1075,18 @@ header.title h1 {
 	outline: none;
 }
 
+.gallery header.title {
+	margin-bottom: 26px;
+}
+
+#works.gallery header.title {
+	margin-bottom: 15px;
+}
+
+#works.gallery header.title h1 {
+	height: 60px;
+}
+
 header.title .content {
 	margin-top: 20px;
 	line-height: 20px;
@@ -1132,6 +1152,7 @@ footer .brochure a {
 	text-indent: -999em;
 	margin-top: -2px;
 	outline: none;
+	background: url(../images/main-sprite.png);
 }
 
 footer .top .brochure h2 {
@@ -1139,12 +1160,12 @@ footer .top .brochure h2 {
 }
 
 footer .brochure a.pdf {
-	background: url(../images/logo-pdf.png) no-repeat;
 	margin-right: 50px;
+	background-position: -217px -19px;
 }
 
 footer .brochure a.issuu {
-	background: url(../images/logo-issuu.png) no-repeat;
+	background-position: -244px -19px;
 }
 
 footer .top .clients {
@@ -1172,7 +1193,7 @@ footer .bottom .wrapper {
 footer .bottom .bg {
 	width: 166px;
 	height: 83px;
-	background: url(../images/map.png);
+	background: url(../images/main-sprite.png) -271px -19px no-repeat;
 	position: absolute;
 	top: 22px;
 	left: 168px;
@@ -1204,18 +1225,19 @@ footer .follow-us li a {
 	width: 16px;
 	text-indent: -999em;
 	outline: none;
+	background: url(../images/main-sprite.png);
 }
 
 footer .follow-us li .twitter {
-	background: url(../images/logo-tw.png);
+	background-position: -166px -19px;
 }
 
 footer .follow-us li .facebook {
-	background: url(../images/logo-fb.png);
+	background-position: -200px -19px;
 }
 
 footer .follow-us li .linkdin {
-	background: url(../images/logo-ln.png);
+	background-position: -183px -19px;
 }
 
 footer .contact-us {
@@ -1228,9 +1250,8 @@ footer .contact-us .mail-to {
 
 footer .contact-us .mail-to a {
 	color: #999;
-	
+	background: url(../images/main-sprite.png) no-repeat right -20px;
 	padding-right: 15px;
-	background: url(../images/email.png) no-repeat right center;
 	height: 9px;
 	float: left;
 	line-height: 9px;
@@ -1263,7 +1284,7 @@ footer .bottom .sitemap li.home a {
 	width: 9px;
 	height: 7px;
 	padding: 1px 5px 1px 0;
-	background: url(../images/home.png) no-repeat left center;
+	background: url(../images/main-sprite.png) no-repeat -167px -83px;
 	text-indent: -999em;
 	outline: none;
 }
@@ -1384,7 +1405,16 @@ background: linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
   width:100%;
   height:20px;
   
-  background: url(../images/gallery-link-reflection.png) repeat-x;
+
+background: #e5e5e5; /* Old browsers */
+background: -moz-linear-gradient(top, #e5e5e5 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* Opera11.10+ */
+background: -ms-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */  
+  
   
 	-webkit-border-top-left-radius: 6px;
 	-webkit-border-top-right-radius: 6px;
@@ -1399,7 +1429,7 @@ background: linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
   position: absolute;
   width: 71px;
   height: 63px;
-  background: url(../images/picture-bg.png);
+  background: url(../images/main-sprite.png) -1375px -126px no-repeat;
   left: -18px;
   top: 9px
 }
@@ -1407,7 +1437,7 @@ background: linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
 .main-content .consult .bg {
   width: 58px;
   height: 54px;
-  background: url(../images/consult-bg.png);
+  background: url(../images/main-sprite.png) -1302px -131px no-repeat;
   position: absolute;
   left: -9px;
   top: 18px  
