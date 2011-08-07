@@ -664,7 +664,8 @@ aside#right-sidebar section .title {
 	color:#55c300 !important;
 }
 
-.last-works h3 {
+.last-works h3,
+#previous-works h3 {
 	color: #307430;
     font-size: 14px;
     margin: 10px 0 25px 0;
@@ -1092,7 +1093,7 @@ footer .subcribe a {
 	background: -webkit-linear-gradient(top, #16eb51 0%, #007431 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #16eb51 0%, #007431 100%); /* Opera11.10+ */
 	background: -ms-linear-gradient(top, #16eb51 0%, #007431 100%); /* IE10+ */
-	filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr = '#16eb51', endColorstr = '#007431', GradientType = 0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr='#16eb51',endColorstr='#007431',GradientType=0); /* IE6-9 */
 	background: linear-gradient(top, #16eb51 0%, #007431 100%); /* W3C */
 }
 
@@ -1103,8 +1104,9 @@ footer .subcribe a:hover {
 	background: -webkit-linear-gradient(top, #007431 0%, #16eb51 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #007431 0%, #16eb51 100%); /* Opera11.10+ */
 	background: -ms-linear-gradient(top, #007431 0%, #16eb51 100%); /* IE10+ */
-	filter: progid : DXImageTransform.Microsoft.gradient (   startColorstr = '#007431', endColorstr = '#16eb51', GradientType = 0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr='#007431',endColorstr='#16eb51',GradientType=0); /* IE6-9 */
 	background: linear-gradient(top, #007431 0%, #16eb51 100%); /* W3C */
+	text-decoration: none;
 }
 
 footer .brochure {
@@ -1230,7 +1232,7 @@ footer .bottom .sitemap {
 	position: absolute;
 	right: 0px;
 	top: 30px;
-	width: 570px;
+	width: 580px;
 }
 
 footer .bottom .sitemap header {

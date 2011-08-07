@@ -1,12 +1,10 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html class="no-js ie" id="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie" id="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie" id="ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if lt IE 7 ]> <html class="no-js ie ie6" lang="es"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie ie7" lang="es"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie ie8" lang="es"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="es"><!--<![endif]-->
 	<head>
 				<meta charset="utf-8" />
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
 		<title></title>
 		<meta name="description" content="">
@@ -17,10 +15,10 @@
 		
 		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/pikachoose.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/pikachoose.css" />
 		
 		<!--[if IE ]>
-			<link rel="stylesheet" href="css/ie.css" type="text/css" />
+			<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
 		<![endif]-->
 		<script src="js/libs/head-min.js" type="text/javascript"></script>
 	</head>

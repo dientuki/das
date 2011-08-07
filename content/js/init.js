@@ -8,7 +8,13 @@ function fixedSidebar (sidebar){
 		$(window).unbind('scroll').bind('scroll', function(){
 			var parent_offset = ($parent.offset().top + $parent.height()) - (height + 10);
 			var offset = window.pageYOffset;
+			if (offset == undefined) {
+				offset = document.documentElement.scrollTop;
+			}
 			var main_content = window.innerHeight/2;
+			if (isNaN(main_content)) {
+				main_content = document.documentElement.clientHeight/2;
+			}
 
 			$('#container .anchor-item').each(function(index){
 				var t = $(this).offset().top - offset;
@@ -53,7 +59,7 @@ $(document).ready(function() {
 		break;
 		case 'company':
 			fixedSidebar('#scroll');
-			$('#left-sidebar .content').localScroll();
+			$('#scroll').localScroll();
 		break;
 		case 'site':
 			fixedSidebar('#scroll');
