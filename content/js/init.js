@@ -1,4 +1,4 @@
-function fixedSidebar (sidebar){
+function fixedSidebar(sidebar){
 	
 		if ($.browser.msie) {
 			if (parseInt($.browser.version)== 6) {	return false; }
@@ -71,7 +71,6 @@ $(document).ready(function() {
 		break;
 		case 'gallery':
 			fixedSidebar('#scroll');
-			//galeria
 			$("#pikaname").PikaChoose({
 				thumbOpacity: 0.4,
 				hoverPause: true,

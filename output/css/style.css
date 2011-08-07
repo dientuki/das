@@ -486,6 +486,7 @@ aside#right-sidebar section .title {
     margin: 0 auto;
     position: relative;
     width: 380px;
+    overflow: visible;
 }
 
 #company header.title h1 {
@@ -1344,8 +1345,6 @@ footer .bottom .legal {
 }
 
 .main-content .gallery-link {
-
-	
 	/*
 	background: #f0f0f0 url(../images/gallery-link-top.png) repeat-y;
 	*/
