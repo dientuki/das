@@ -5,3 +5,13 @@
 .ie6 header nav {
 	width: 500px;
 }
+
+.ie6 #footer .top h2 {
+	margin-left: 12px;
+	margin-right: 6px;
+}
+
+.ie6 aside#left-sidebar .bg-top,
+.ie6 aside#left-sidebar .bg-bottom {
+	font-size: 1px;
+}

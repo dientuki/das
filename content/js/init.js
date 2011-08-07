@@ -1,4 +1,9 @@
 function fixedSidebar (sidebar){
+	
+		if ($.browser.msie) {
+			if (parseInt($.browser.version)== 6) {	return false; }
+		}
+	
 		var fixed = false;
 		var $bar = $(sidebar).removeClass('fixed');
 		var $parent = $bar.parent();
@@ -73,6 +78,13 @@ $(document).ready(function() {
 				transition: [4]
 			});
 		break;
+	}
+
+	if ($.browser.msie) {
+		if (parseInt($.browser.version)== 6) {
+			$("#header nav li:first").addClass('first-child');
+			$('#container aside').css('height', $('#container .main-content').height());
+		}
 	}
 	
 	$('body').addClass('js-finished');

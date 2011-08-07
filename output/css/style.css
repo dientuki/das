@@ -43,8 +43,10 @@ body {
 }
 .pika-textnav,
 .pika-imgnav {
-	display: none;
-	visibility: hidden;
+	display: none !important;
+	visibility: hidden !important;
+	width: 0px !important;
+	height: 0px !important;
 }
 
 header .logo {
@@ -99,9 +101,11 @@ header ul li {
 	border-left: solid 1px #BCBEC0;
 }
 
+header ul li.first-child,
 header ul li:first-child {
 	border: none
 }
+header ul li.first-child {}
 
 header ul li a {
 	float: left;
@@ -414,6 +418,7 @@ aside#right-sidebar {
 	padding-left:35px;
 	background: url(../images/right-sidebar-shadow.png) left top repeat-y #fff;
 	line-height:17px;
+	overflow: hidden;
 }
 
 aside#right-sidebar .bg-top,
@@ -1017,13 +1022,13 @@ aside#right-sidebar section .title {
     padding-top: 20px;
     width: 220px;
 }
-
+/*
 #works.two-sidebar .container,
 #services.two-sidebar .container,
 #gallery.left-sidebar .container{
 	height: 1000px;
 }
-
+*/
 .left-sidebar .main-content {
   width: 654px;
   min-height: 1000px;
@@ -1080,7 +1085,7 @@ footer .subcribe a {
 	display: inline-block;
 	line-height: 20px;
 	padding: 0 5px;
-	color: #fff;
+	color: #fff !important;
 	
 	text-transform: lowercase;
 	font-size: 11px;

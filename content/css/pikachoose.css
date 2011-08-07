@@ -1,7 +1,11 @@
 .pika-stage {
 	width: 654px;
-	height: 376px;
+	height: 376px !important;
 	margin-top: 10px;
+}
+
+.pika-stage img{
+height: 376px !important;
 }
 
 .pika-loading {
