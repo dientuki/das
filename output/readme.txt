@@ -24,7 +24,7 @@
 	</head>
 	
 	<body id="" class=" " data-page="">
-		<header class="has-banner">
+		<header id="header" class="has-banner">
 	<div class="wrapper">
 		<a href="index.html" class="logo">DAS</a>
 		<p class="tagline">Soluciones en <span>imagen de marca</span></p>
@@ -84,7 +84,7 @@ Hay que usar 2 imagenes por imagen. Una grande y una thumb. El nombre de archivo
 
 		</section>
 
-		<footer>
+		<footer id="footer">
 	<section class="top">
 		<div class="wrapper">
 			<section class="subcribe">
@@ -161,6 +161,8 @@ Hay que usar 2 imagenes por imagen. Una grande y una thumb. El nombre de archivo
 </footer>
 			<!-- Google Analitic first please -->
 	
-	<script type="text/javascript" charset="utf-8">head.js("js/myhead-dev.js");</script>	
+	<script type="text/javascript" charset="utf-8">
+		head.js("js/myhead-dev.js");
+	</script>	
 	</body>
 </html>

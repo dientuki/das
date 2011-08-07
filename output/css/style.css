@@ -9,22 +9,22 @@ body {
 	position: relative;
 }
 
-body>header {
+#header {
 	background-color: #1E1F2C;
 	height: 255px;
 	padding-top: 40px;
 }
 
-body>header .wrapper {
+#header .wrapper {
 	height: 78px;
 }
 
-body>header.no-banner {
+#header.no-banner {
 	height: 130px;
 	margin-bottom: 20px;
 }
 
-body>header.no-banner,
+#header.no-banner,
 #banner footer,
 .pika-caption {
 	background-image: url(../images/shadow-top.png);
@@ -79,7 +79,8 @@ header .tagline span {
 
 header nav {
 	width: 475px;
-	margin: 0 auto
+	margin: 0 auto;
+	height: 13px;
 }
 
 nav ul {
@@ -207,27 +208,27 @@ header ul li:hover a {
 	background: #55C300;
 }
 
-body>footer {
+#footer {
 	background-image: url(../images/shadow-bottom.png);
 	background-position: center top;
 	background-repeat: no-repeat;
 	padding-top: 17px;
 }
 
-body>footer .top {
+#footer .top {
 	height: 71px;
 	border-bottom: solid 1px #666;
 	background-color: #1F492F;
 }
 
-body>footer .top section {
+#footer .top section {
 	position: relative;
 	float: left;
 	height: 43px;
 	padding-top: 28px;
 }
 
-body>footer .top h2 {
+#footer .top h2 {
 	color: white;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -1079,7 +1080,7 @@ footer .subcribe a {
 	display: inline-block;
 	line-height: 20px;
 	padding: 0 5px;
-	color: white;
+	color: #fff;
 	
 	text-transform: lowercase;
 	font-size: 11px;
@@ -1107,6 +1108,7 @@ footer .subcribe a:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr='#007431',endColorstr='#16eb51',GradientType=0); /* IE6-9 */
 	background: linear-gradient(top, #007431 0%, #16eb51 100%); /* W3C */
 	text-decoration: none;
+	color: #fff;
 }
 
 footer .brochure {
@@ -1149,7 +1151,7 @@ footer .clients .sony {
 	top: -11px;
 }
 
-body>footer .bottom {
+#footer .bottom {
 	height: 171px;
 	background-color: #1E1F2C;
 	color: #999;

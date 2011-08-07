@@ -7,6 +7,7 @@ head.js('js/libs/jquery-1.6.2-min.js',
 
 if (head.browser.ie)  {
 	if (parseInt(head.browser.version) <= 6)   {
+
 		head.js('js/libs/dd_belatedpng.js','js/pngfix.js');
 	}
-}
+}¡
