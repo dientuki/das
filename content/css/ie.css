@@ -17,8 +17,10 @@
 }
 
 .ie9 footer .subcribe a,
-.ie9 footer .subcribe a:hover { {
-	filter:none !important;
+.ie9 footer .subcribe a:hover {
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
 }
 
 .ie6 .main-content .gallery-link,

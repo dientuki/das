@@ -8,8 +8,8 @@ text_extensions: [ 'css', 'erb', 'haml', 'htm', 'html', 'js', 'less', 'markdown'
 # relative to the site directory.
 output_dir: output
 
-environment: prod
-#environment: dev
+#environment: prod
+environment: dev
 
 # A list of index filenames, i.e. names of files that will be served by a web
 # server when a directory is requested. Usually, index files are named
