@@ -20,18 +20,33 @@ body {
 }
 
 #header.no-banner {
-	height: 130px;
+	height: 113px;
 	margin-bottom: 20px;
+	padding-bottom: 17px;
 }
 
 #header.no-banner,
 #banner footer,
 .pika-caption {
-	background-image: url(../images/main-sprite.png);
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	padding-bottom: 17px;
+	position: relative;
 }
+
+#header.no-banner .bg,
+#banner .bg,
+.pika-content .bg{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 17px;
+	background: url(../images/main-sprite.png) center bottom no-repeat;
+}
+
+.pika-content {
+	position: relative;
+	padding-bottom: 17px;
+	margin-bottom: 15px;
+}
+
 .pika-caption {
 	background-color:black;
 	background-position: -500px bottom;
@@ -39,7 +54,7 @@ body {
 	height: 40px;
 	line-height: 40px;
 	padding-left: 10px;
-	margin-bottom: 15px;
+	
 }
 .pika-textnav,
 .pika-imgnav {
@@ -158,6 +173,7 @@ header ul li:hover a {
 
 #banner {
 	margin-top: -125px;
+	padding-bottom: 17px;
 }
 
 #slider,
@@ -213,10 +229,16 @@ header ul li:hover a {
 }
 
 #footer {
-	background-image: url(../images/main-sprite.png);
-	background-position: center top;
-	background-repeat: no-repeat;
+	position:relative;
 	padding-top: 17px;
+}
+
+#footer .bg {
+	background: url(../images/shadows-sprite.png) center bottom no-repeat;
+	height: 17px;
+	position: absolute;
+	width: 100%;
+	top:0;
 }
 
 #footer .top {
@@ -1190,7 +1212,7 @@ footer .bottom .wrapper {
 	height: 100%;
 }
 
-footer .bottom .bg {
+#footer .bottom .bg {
 	width: 166px;
 	height: 83px;
 	background: url(../images/main-sprite.png) -271px -19px no-repeat;

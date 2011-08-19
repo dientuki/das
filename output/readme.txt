@@ -15,10 +15,14 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		
 		
-		<link rel="stylesheet" type="text/css" media="all" href="css/das-site.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/pikachoose.css" />
+		
 		<!--[if IE ]>
-			<link rel="stylesheet" href="css/ie-min.css" type="text/css" media="all"/>
+			<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
 		<![endif]-->
+		
 				
 		
 		<script src="js/libs/head-min.js" type="text/javascript"></script>
@@ -44,6 +48,7 @@
 			<li><a href="#">english</a></li>
 		</ul>
 	</div>
+	<div class="bg"></div>
 </header>
 		
 		
@@ -58,6 +63,7 @@
 	<footer>
 	
 	</footer>
+	<div class="bg"></div>
 </section>
 		
 
@@ -96,6 +102,7 @@ El archivo main-sprite source.png es el archivo fuente, es un png de fireworks.
 		</section>
 
 		<footer id="footer">
+	<div class="bg"></div>
 	<section class="top">
 		<div class="wrapper">
 			<section class="subcribe">
@@ -174,7 +181,7 @@ El archivo main-sprite source.png es el archivo fuente, es un png de fireworks.
 	
 	<script type="text/javascript" charset="utf-8">
 	
-		head.js("js/myhead-prod.js");
+		head.js("js/myhead-dev.js");
 	</script>	
 	</body>
 </html>
