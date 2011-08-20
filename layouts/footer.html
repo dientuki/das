@@ -12,7 +12,11 @@
 			</section>
 			<section class="clients">
 				<h2>Clientes</h2>
-				<a class="sony" href="clients.html"><img src="images/clients/sony.png" width="186" height="82" alt="" title="" /></a>	
+				<ul id="clients-list" class="pika-thumbs clearfix">
+					<% for i in(1..10) %>
+					<li><a href="clients.html"><img src="images/clients/gallery-<%= i %>-thumb.jpg" width="123" height="60" /></a></li>
+					<% end %>
+				</ul>	
 			</section>						
 		</div>
 	</section>

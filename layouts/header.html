@@ -1,7 +1,10 @@
 <header id="header" class="<% if (@item[:banner] == false) %>no-banner<%else%>has-banner<%end%>">
 	<div class="wrapper">
 		<a href="index.html" class="logo">DAS</a>
-		<p class="tagline">Soluciones en <span>imagen de marca</span></p>
+		<div class="tagline">
+			<p class="active">Soluciones en <span>imagen de marca</span></p>
+			<p>Creaciones de <span>logos para ti</span></p>
+		</div>
 		<nav>
 			<ul class="clearfix">
 				<li <% if (@item[:selected] == 'home') %>class="selected"<%end%>><a href="index.html">Inicio</a></li>

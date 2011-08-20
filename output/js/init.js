@@ -47,10 +47,31 @@ function fixedSidebar(sidebar){
 		});
 
 		$(window).scroll();
-	}
+}
+
+function slideSwitch(e) {
+	var $main = $(e);
+	
+    var $active = $main.find('.active');
+
+    if ($active.length === 0) $active = $main.children(':last');
+
+    var $next = $active.next().length ? $active.next() : $main.children(':first');
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
 
 
 $(document).ready(function() {
+	
+	//setInterval( "slideSwitch('#header .tagline')", 2000 );
+	//setInterval( "slideSwitch('#header .tagline')", 2000 );
 	
 	switch ($('body').data('page'))	{
 		case 'home':
@@ -71,7 +92,7 @@ $(document).ready(function() {
 		break;
 		case 'gallery':
 			fixedSidebar('#scroll');
-			$("#pikaname").PikaChoose({
+			$("#gallery").PikaChoose({
 				thumbOpacity: 0.4,
 				hoverPause: true,
 				transition: [4]
