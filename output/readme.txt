@@ -15,14 +15,10 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		
 		
-		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/pikachoose.css" />
-		
+		<link rel="stylesheet" type="text/css" media="all" href="css/das-site.css" />
 		<!--[if IE ]>
-			<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
+			<link rel="stylesheet" href="css/ie-min.css" type="text/css" media="all"/>
 		<![endif]-->
-		
 				
 		
 		<script src="js/libs/head-min.js" type="text/javascript"></script>
@@ -116,7 +112,7 @@ Si quieren mas/menos tiempo deben cambiar alli.
 >> Bloques del sidebar
 
 Cada section/div/tag-principal debe tener la clase "block".
-El primer bloque debe tener la clase "block-first" tambien
+El primer bloque debe tener la clase "block-first" tambien.
 		</section>
 
 		<footer id="footer">
@@ -207,7 +203,7 @@ El primer bloque debe tener la clase "block-first" tambien
 	
 	<script type="text/javascript" charset="utf-8">
 	
-		head.js("js/myhead-dev.js");
+		head.js("js/myhead-prod.js");
 	</script>	
 	</body>
 </html>
