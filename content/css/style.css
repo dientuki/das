@@ -43,7 +43,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 17px;
-	background: url(../images/shadows-sprite.png) center top no-repeat;
+	background: url(../images/main-sprite.png) center -18px no-repeat;
 }
 
 .pika-content {
@@ -73,7 +73,7 @@ header .logo {
 	display: block;
 	width: 164px;
 	height: 73px;
-	background: url(../images/main-sprite.png) no-repeat 0px -19px;
+	background: url(../images/main-sprite.png) no-repeat 0px -37px;
 	text-indent: -999em;
 	position: absolute;
 	left: 2px;
@@ -239,7 +239,7 @@ header ul li:hover a {
 }
 
 #footer .bg {
-	background: url(../images/shadows-sprite.png) center bottom no-repeat;
+	background: url(../images/main-sprite.png) center top no-repeat;
 	height: 17px;
 	position: absolute;
 	width: 100%;
@@ -324,7 +324,7 @@ header ul li:hover a {
 }
 
 .more {
-	background: url("../images/main-sprite.png") no-repeat right -32px;
+	background: url("../images/main-sprite.png") no-repeat right -50px;
 	color: #55C300;
 	font-size: 9px;
 	height: 9px;
@@ -1188,11 +1188,11 @@ footer .top .brochure h2 {
 
 footer .brochure a.pdf {
 	margin-right: 50px;
-	background-position: -217px -19px;
+	background-position: -217px -37px;
 }
 
 footer .brochure a.issuu {
-	background-position: -244px -19px;
+	background-position: -244px -37px;
 }
 
 footer .top .clients {
@@ -1220,7 +1220,7 @@ footer .bottom .wrapper {
 #footer .bottom .bg {
 	width: 166px;
 	height: 83px;
-	background: url(../images/main-sprite.png) -271px -19px no-repeat;
+	background: url(../images/main-sprite.png) -271px -37px no-repeat;
 	position: absolute;
 	top: 22px;
 	left: 168px;
@@ -1256,15 +1256,15 @@ footer .follow-us li a {
 }
 
 footer .follow-us li .twitter {
-	background-position: -166px -19px;
+	background-position: -166px -37px;
 }
 
 footer .follow-us li .facebook {
-	background-position: -200px -19px;
+	background-position: -200px -37px;
 }
 
 footer .follow-us li .linkdin {
-	background-position: -183px -19px;
+	background-position: -183px -37px;
 }
 
 footer .contact-us {
@@ -1311,7 +1311,7 @@ footer .bottom .sitemap li.home a {
 	width: 9px;
 	height: 7px;
 	padding: 1px 5px 1px 0;
-	background: url(../images/main-sprite.png) no-repeat -167px -83px;
+	background: url(../images/main-sprite.png) no-repeat -167px -102px;
 	text-indent: -999em;
 	outline: none;
 }
