@@ -112,6 +112,11 @@ Son la lineas
 	
 el segundo parametro que se pasa es la cantidad de milisegundos entre una imagen/texto y otro.
 Si quieren mas/menos tiempo deben cambiar alli.
+
+>> Bloques del sidebar
+
+Cada section/div/tag-principal debe tener la clase "block".
+El primer bloque debe tener la clase "block-first" tambien
 		</section>
 
 		<footer id="footer">

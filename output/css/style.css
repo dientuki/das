@@ -1,5 +1,5 @@
 body {
-	background: red;
+	background: white;
 	color: #666;
 }
 
@@ -418,12 +418,12 @@ aside#left-sidebar a {
 	padding: 3px 0 3px 15px;
 }
 
-#works #blockquote h3,
-#works #blockquote .content {
+#blockquote h3,
+#blockquote .content {
   font-style: italic;
 }
 
-#works #blockquote .author {
+#blockquote .author {
   margin-top: 25px;
 }
 
