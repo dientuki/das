@@ -26,8 +26,11 @@ body {
 
 #header.no-banner {
 	height: 113px;
+	/*
 	margin-bottom: 20px;
 	padding-bottom: 17px;
+	*/
+	margin-bottom: 37px;
 }
 
 #header.no-banner,
@@ -44,6 +47,12 @@ body {
 	width: 100%;
 	height: 17px;
 	background: url(../images/main-sprite.png) center -18px no-repeat;
+}
+.pika-content .bg {
+	background-position: -498px -18px;
+}
+#header.no-banner .bg {
+	bottom: -17px;
 }
 
 .pika-content {
@@ -364,12 +373,12 @@ aside#left-sidebar {
 
 aside#left-sidebar .bg-top {
 	height: 10px;
-	background: url(../images/main-sprite.png) left -172px #fff no-repeat;
+	background: url(../images/main-sprite.png) left -116px #fff no-repeat;
 }
 
 aside#left-sidebar .bg-bottom {
 	height: 10px;
-	background: url(../images/main-sprite.png) left -182px #fff no-repeat;
+	background: url(../images/main-sprite.png) left -126px #fff no-repeat;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -470,7 +479,7 @@ aside#right-sidebar .block-first .title,
   margin: 15px 0;
   padding-left: 21px;
   color:#307430;
-  background: url(../images/main-sprite.png) 0px -204px no-repeat;
+  background: url(../images/main-sprite.png) -1923px -130px no-repeat;
 }
 
 aside#right-sidebar section .title {
@@ -517,7 +526,7 @@ aside#right-sidebar section .title {
 }
 
 #company header.title h1 {
-	background: url(../images/main-sprite.png) -443px -153px;
+	background: url(../images/main-sprite.png) -1546px -156px;
 	width: 180px;
 	height: 49px;
 }
@@ -559,7 +568,7 @@ aside#right-sidebar section .title {
 	bottom: 0;
 	height: 37px;
 	width: 100%;
-	background: url(../images/main-sprite.png) center -36px;
+	background: url(../images/main-sprite.png) center -54px;
 }
 
 #company .main-content article.last {
@@ -573,22 +582,22 @@ aside#right-sidebar section .title {
 }
 
 #works header.title h1 {
-	background: url(../images/main-sprite.png) -764px -125px no-repeat;
+	background: url(../images/main-sprite.png) -764px -143px no-repeat;
 	width: 405px;
 }
 
 #works.gallery header.title h1 {
-	background: url(../images/main-sprite.png) -444px -41px no-repeat;
+	background: url(../images/main-sprite.png) -444px -59px no-repeat;
 	width: 165px;
 }
 
 #services header.title h1 {
-  background: url(../images/main-sprite.png) -271px -155px;
+  background: url(../images/main-sprite.png) 0px -140px;
   width: 171px;
 }
 
 #clients header.title h1 {
-	background: url(../images/main-sprite.png) -453px -104px no-repeat;
+	background: url(../images/main-sprite.png) -453px -122px no-repeat;
 	width: 156px;
 }
 
@@ -881,19 +890,19 @@ aside#right-sidebar section .title {
 }
 
 #contact #right-sidebar .block .argentina {
-  background: url(../images/main-sprite.png) left -246px no-repeat #fff;
+  background: url(../images/main-sprite.png) -1902px -87px no-repeat #fff;
 }
 #contact #right-sidebar .block .chile {
-  background: url(../images/main-sprite.png) left -267px no-repeat #fff;
+  background: url(../images/main-sprite.png) -1902px -108px no-repeat #fff;
 }
 #contact #right-sidebar .block .spain {
-  background: url(../images/main-sprite.png) left -225px no-repeat #fff;
+  background: url(../images/main-sprite.png) -1902px -66px no-repeat #fff;
 }
 
 #contact #right-sidebar .mail-to a{
 
   padding-left: 15px;
-  background: url(../images/main-sprite.png) no-repeat -1920px -19px;
+  background: url(../images/main-sprite.png) no-repeat -1920px -38px;
   height: 9px;
   line-height: 9px;
   display: block;
@@ -924,11 +933,11 @@ aside#right-sidebar section .title {
 #contact #right-sidebar .misc .skype{
   height: 21px;
   line-height: 21px;
-  background: url(../images/main-sprite.png) left -126px no-repeat #fff;
+  background: url(../images/main-sprite.png) -1909px -185px no-repeat #fff;
 }
 
 #contact #right-sidebar .misc .llegar{
-  background: url(../images/main-sprite.png) left -94px no-repeat;
+  background: url(../images/main-sprite.png) -1906px -153px no-repeat;
   height: 28px;
   line-height: 17px;
 }
@@ -961,19 +970,19 @@ aside#right-sidebar section .title {
 }
 
 #contact #right-sidebar .follow-us a.twitter {
-	background-position: -166px -19px;
+	background-position: -166px -37px;
 }
 
 #contact #right-sidebar .follow-us a.facebook {
-  background-position: -200px -19px;
+  background-position: -200px -37px;
 }
 
 #contact #right-sidebar .follow-us a.linkdin {
-  background-position: -183px -19px;
+  background-position: -183px -37px;
 }
 
 #contact header.title h1 {
-  background: url(../images/main-sprite.png) -271px -104px no-repeat;
+  background: url(../images/main-sprite.png) -271px -122px no-repeat;
   width: 176px;
   height: 49px;
 }
@@ -1456,7 +1465,7 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
   position: absolute;
   width: 71px;
   height: 63px;
-  background: url(../images/main-sprite.png) -1375px -126px no-repeat;
+  background: url(../images/main-sprite.png) -1375px -144px no-repeat;
   left: -18px;
   top: 9px
 }
@@ -1464,7 +1473,7 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
 .main-content .consult .bg {
   width: 58px;
   height: 54px;
-  background: url(../images/main-sprite.png) -1302px -131px no-repeat;
+  background: url(../images/main-sprite.png) -1302px -149px no-repeat;
   position: absolute;
   left: -9px;
   top: 18px  
