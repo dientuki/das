@@ -12,9 +12,9 @@
 			</section>
 			<section class="clients">
 				<h2>Clientes</h2>
-				<ul id="clients-list" class="pika-thumbs clearfix">
-					<% for i in(1..10) %>
-					<li><a href="clients.html"><img src="images/clients/gallery-<%= i %>-thumb.jpg" width="123" height="60" /></a></li>
+				<ul id="clients-slide">
+					<% for i in(1..3) %>
+					<li <% if (i == 1) %>class="active"<%end%>><a href="clients.html"><img src="images/clients/logo-<%= i %>.png" width="123" height="60" /></a></li>
 					<% end %>
 				</ul>	
 			</section>						

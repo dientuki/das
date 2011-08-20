@@ -29,3 +29,13 @@ Si hay mas contenido en el sidebar que en el contenido, habra que repensar el cs
 En la carpeta images estan todas las imagenes usadas a modo de historico
 El archivo main-sprite.png es el sprite
 El archivo main-sprite source.png es el archivo fuente, es un png de fireworks.
+
+>> Slide del header y del footer
+
+Son la lineas
+
+	setInterval( "slideSwitch('#header .tagline')", 6000 );
+	setInterval( "slideSwitch('#clients-slide')", 5000 );
+	
+el segundo parametro que se pasa es la cantidad de milisegundos entre una imagen/texto y otro.
+Si quieren mas/menos tiempo deben cambiar alli.

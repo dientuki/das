@@ -102,6 +102,16 @@ Si hay mas contenido en el sidebar que en el contenido, habra que repensar el cs
 En la carpeta images estan todas las imagenes usadas a modo de historico
 El archivo main-sprite.png es el sprite
 El archivo main-sprite source.png es el archivo fuente, es un png de fireworks.
+
+>> Slide del header y del footer
+
+Son la lineas
+
+	setInterval( "slideSwitch('#header .tagline')", 6000 );
+	setInterval( "slideSwitch('#clients-slide')", 5000 );
+	
+el segundo parametro que se pasa es la cantidad de milisegundos entre una imagen/texto y otro.
+Si quieren mas/menos tiempo deben cambiar alli.
 		</section>
 
 		<footer id="footer">
@@ -118,27 +128,13 @@ El archivo main-sprite source.png es el archivo fuente, es un png de fireworks.
 			</section>
 			<section class="clients">
 				<h2>Clientes</h2>
-				<ul id="clients-list" class="pika-thumbs clearfix">
+				<ul id="clients-slide">
 					
-					<li><a href="clients.html"><img src="images/clients/gallery-1-thumb.jpg" width="123" height="60" /></a></li>
+					<li class="active"><a href="clients.html"><img src="images/clients/logo-1.png" width="123" height="60" /></a></li>
 					
-					<li><a href="clients.html"><img src="images/clients/gallery-2-thumb.jpg" width="123" height="60" /></a></li>
+					<li ><a href="clients.html"><img src="images/clients/logo-2.png" width="123" height="60" /></a></li>
 					
-					<li><a href="clients.html"><img src="images/clients/gallery-3-thumb.jpg" width="123" height="60" /></a></li>
-					
-					<li><a href="clients.html"><img src="images/clients/gallery-4-thumb.jpg" width="123" height="60" /></a></li>
-					
-					<li><a href="clients.html"><img src="images/clients/gallery-5-thumb.jpg" width="123" height="60" /></a></li>
-					
-					<li><a href="clients.html"><img src="images/clients/gallery-6-thumb.jpg" width="123" height="60" /></a></li>
-					
-					<li><a href="clients.html"><img src="images/clients/gallery-7-thumb.jpg" width="123" height="60" /></a></li>
-					
-					<li><a href="clients.html"><img src="images/clients/gallery-8-thumb.jpg" width="123" height="60" /></a></li>
-					
-					<li><a href="clients.html"><img src="images/clients/gallery-9-thumb.jpg" width="123" height="60" /></a></li>
-					
-					<li><a href="clients.html"><img src="images/clients/gallery-10-thumb.jpg" width="123" height="60" /></a></li>
+					<li ><a href="clients.html"><img src="images/clients/logo-3.png" width="123" height="60" /></a></li>
 					
 				</ul>	
 			</section>						

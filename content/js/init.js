@@ -70,8 +70,8 @@ function slideSwitch(e) {
 
 $(document).ready(function() {
 	
-	//setInterval( "slideSwitch('#header .tagline')", 2000 );
-	//setInterval( "slideSwitch('#header .tagline')", 2000 );
+	setInterval( "slideSwitch('#header .tagline')", 6000 );
+	setInterval( "slideSwitch('#clients-slide')", 5000 );
 	
 	switch ($('body').data('page'))	{
 		case 'home':

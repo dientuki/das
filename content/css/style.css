@@ -112,6 +112,7 @@ header .tagline p {
 	width: 100%;
 	height: 100%;
 	background: #1E1F2C;
+	z-index: 1;
 }
 
 header .tagline p.active {z-index: 10}
@@ -1223,11 +1224,32 @@ footer .top .clients {
 	width: 302px
 }
 
-footer .clients .sony {
+footer .clients #clients-slide {
 	position: absolute;
 	right: 2px;
 	top: -11px;
+	width: 186px;
+	height: 82px;
+	background: url(../images/main-sprite.png) -1693px -69px no-repeat;
 }
+
+#clients-slide li {
+	position: absolute;
+	width: 133px;
+	height: 60px;
+	top: 22px;
+	left: 20px;
+	z-index: 1;
+}
+
+#clients-slide li a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#clients-slide .active {z-index: 10;}
+#clients-slide .last-active {z-index: 5}
 
 #footer .bottom {
 	height: 171px;
