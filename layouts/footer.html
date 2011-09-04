@@ -1,3 +1,17 @@
+<%
+i = 1
+clients = ['sony']
+clients << '3m'
+clients << 'ag'
+clients << 'hp'
+clients << 'burkool'
+clients << 'mapfre'
+clients << 'personal'
+clients << 'psa'
+clients << 'silfab'
+clients << 'penn'
+%>
+
 <footer id="footer">
 	<div class="bg"></div>
 	<section class="top">
@@ -13,8 +27,9 @@
 			<section class="clients">
 				<h2>Clientes</h2>
 				<ul id="clients-slide">
-					<% for i in(1..3) %>
-					<li <% if (i == 1) %>class="active"<%end%>><a href="clients.html"><img src="images/clients/logo-<%= i %>.png" width="123" height="60" /></a></li>
+					<% clients.each do |client| %>
+					<li <% if (i == 1) %>class="active"<%end%>><a href="clients.html"><img src="images/clients/<%= client %>.jpg" width="133" height="60" /></a></li>
+					<% i = 0 %>
 					<% end %>
 				</ul>	
 			</section>						

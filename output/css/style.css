@@ -1,6 +1,12 @@
 body {
-	background: white;
+	background: #111111 url(../images/bg-small.jpg) center top fixed repeat-x;
 	color: #666;
+}
+
+#wrapper {
+	width: 982px;
+	background: white;
+	margin: 0 auto;
 }
 
 .wrapper {

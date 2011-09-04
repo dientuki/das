@@ -9,17 +9,19 @@
 	</head>
 	
 	<body id="<%= @item[:page] %>" class="<%= @item[:sidebar] %><% if(@item[:extraclass] != false) %> <%= @item[:extraclass] %><%end%>" data-page="<%= @item[:datapage] %>">
-		<%= render 'header' %>
-		
-		<% if (@item[:banner] != false) %>
-			<%= render 'banners/banner', :first => @item[:first], :first => @item[:count]%>
-		<% end %>
-
-		<section id="container" class="wrapper clearfix">
-			<%= yield %>
-		</section>
-
-		<%= render 'footer' %>
+		<div id="wrapper">
+			<%= render 'header' %>
+			
+			<% if (@item[:banner] != false) %>
+				<%= render 'banners/banner', :first => @item[:first], :first => @item[:count]%>
+			<% end %>
+	
+			<section id="container" class="wrapper clearfix">
+				<%= yield %>
+			</section>
+	
+			<%= render 'footer' %>
+		</div>
 		<%= render 'script' %>	
 	</body>
 </html>

@@ -15,17 +15,22 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		
 		
-		<link rel="stylesheet" type="text/css" media="all" href="css/das-site.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="css/pikachoose.css" />
+		
 		<!--[if IE ]>
-			<link rel="stylesheet" href="css/ie-min.css" type="text/css" media="all"/>
+			<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
 		<![endif]-->
+		
 				
 		
 		<script src="js/libs/head-min.js" type="text/javascript"></script>
 	</head>
 	
 	<body id="" class=" " data-page="">
-		<header id="header" class="has-banner">
+		<div id="wrapper">
+			<header id="header" class="has-banner">
 	<div class="wrapper">
 		<a href="index.html" class="logo">DAS</a>
 		<div class="tagline">
@@ -49,9 +54,9 @@
 	</div>
 	<div class="bg"></div>
 </header>
-		
-		
-			<section id="banner" role="banner" class="wrapper">
+			
+			
+				<section id="banner" role="banner" class="wrapper">
 
 	
 		<figure>
@@ -64,10 +69,10 @@
 	</footer>
 	<div class="bg"></div>
 </section>
-		
-
-		<section id="container" class="wrapper clearfix">
-			>> Iniciacion de javascript.
+			
+	
+			<section id="container" class="wrapper clearfix">
+				>> Iniciacion de javascript.
 
 El tag body tiene un data-page para que el js sepa que codigo usar, ahi hay que poner:
 
@@ -113,9 +118,11 @@ Si quieren mas/menos tiempo deben cambiar alli.
 
 Cada section/div/tag-principal debe tener la clase "block".
 El primer bloque debe tener la clase "block-first" tambien.
-		</section>
+			</section>
+	
+			
 
-		<footer id="footer">
+<footer id="footer">
 	<div class="bg"></div>
 	<section class="top">
 		<div class="wrapper">
@@ -131,11 +138,35 @@ El primer bloque debe tener la clase "block-first" tambien.
 				<h2>Clientes</h2>
 				<ul id="clients-slide">
 					
-					<li class="active"><a href="clients.html"><img src="images/clients/logo-1.png" width="123" height="60" /></a></li>
+					<li class="active"><a href="clients.html"><img src="images/clients/sony.jpg" width="133" height="60" /></a></li>
 					
-					<li ><a href="clients.html"><img src="images/clients/logo-2.png" width="123" height="60" /></a></li>
 					
-					<li ><a href="clients.html"><img src="images/clients/logo-3.png" width="123" height="60" /></a></li>
+					<li ><a href="clients.html"><img src="images/clients/3m.jpg" width="133" height="60" /></a></li>
+					
+					
+					<li ><a href="clients.html"><img src="images/clients/ag.jpg" width="133" height="60" /></a></li>
+					
+					
+					<li ><a href="clients.html"><img src="images/clients/hp.jpg" width="133" height="60" /></a></li>
+					
+					
+					<li ><a href="clients.html"><img src="images/clients/burkool.jpg" width="133" height="60" /></a></li>
+					
+					
+					<li ><a href="clients.html"><img src="images/clients/mapfre.jpg" width="133" height="60" /></a></li>
+					
+					
+					<li ><a href="clients.html"><img src="images/clients/personal.jpg" width="133" height="60" /></a></li>
+					
+					
+					<li ><a href="clients.html"><img src="images/clients/psa.jpg" width="133" height="60" /></a></li>
+					
+					
+					<li ><a href="clients.html"><img src="images/clients/silfab.jpg" width="133" height="60" /></a></li>
+					
+					
+					<li ><a href="clients.html"><img src="images/clients/penn.jpg" width="133" height="60" /></a></li>
+					
 					
 				</ul>	
 			</section>						
@@ -199,11 +230,12 @@ El primer bloque debe tener la clase "block-first" tambien.
 		</div>	
 	</section>
 </footer>
+		</div>
 			<!-- Google Analitic first please -->
 	
 	<script type="text/javascript" charset="utf-8">
 	
-		head.js("js/myhead-prod.js");
+		head.js("js/myhead-dev.js");
 	</script>	
 	</body>
 </html>
