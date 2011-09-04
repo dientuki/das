@@ -70,7 +70,7 @@ function slideSwitch(e) {
 
 $(document).ready(function() {
 	
-	setInterval( "slideSwitch('#header .tagline')", 6000 );
+	setInterval( "slideSwitch('#header .tagline')", 5000 );
 	setInterval( "slideSwitch('#clients-slide')", 5000 );
 	
 	switch ($('body').data('page'))	{
@@ -83,6 +83,15 @@ $(document).ready(function() {
 				numeric: false
 			});			
 		break;
+		case 'clients':
+			$('#slider').easySlider({
+				controlsPlace:	'#banner footer',
+				controlsFade:	true,
+				auto:			true,
+				continuous:		true,
+				numeric: false
+			});			
+		break;		
 		case 'company':
 			fixedSidebar('#scroll');
 			$('#scroll').localScroll();
@@ -95,7 +104,7 @@ $(document).ready(function() {
 			$("#gallery").PikaChoose({
 				thumbOpacity: 0.4,
 				hoverPause: true,
-				transition: [4]
+				transition: [0]
 			});
 		break;
 	}

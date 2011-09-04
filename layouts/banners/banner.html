@@ -1,15 +1,26 @@
 <section id="banner" role="banner" class="wrapper">
 
-	<% if (@item[:page] == 'home') %>
-	<section id="slider">
-		 <ul>	
-			<% for i in (1..4) %>
-				<li>
-					<figure><a href=""><img src="images/banner/home-<%= i %>.jpg" width="930" height="424" /></a></figure>
-				</li>
-			<% end %>
-	     </ul>
-	</section>
+	<% case @item[:page]
+		 when "home" %>
+		<section id="slider">
+			 <ul>	
+				<% for i in (1..4) %>
+					<li>
+						<figure><a href=""><img src="images/banner/home-<%= i %>.jpg" width="930" height="424" /></a></figure>
+					</li>
+				<% end %>
+		     </ul>
+		</section>
+	<% when "clients" %>
+		<section id="slider">
+			 <ul>	
+				<% for i in (1..4) %>
+					<li>
+						<figure><a href=""><img src="images/banner/home-<%= i %>.jpg" width="930" height="424" /></a></figure>
+					</li>
+				<% end %>
+		     </ul>
+		</section>
 	<% else %>
 		<figure>
 			<img src="images/banner/<%= @item[:page] %>.jpg" width="930" height="382" />

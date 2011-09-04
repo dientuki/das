@@ -188,7 +188,11 @@
 							break; 
 					};	
 					var diff = Math.abs(ot-t);
-					var speed = diff*options.speed;						
+					var e = s - 1;
+					var speed = diff*options.speed;
+					if (diff == e) {
+						speed = options.speed;
+					}
 					if(!options.vertical) {
 						p = (t*w*-1);
 						$ul.animate(
