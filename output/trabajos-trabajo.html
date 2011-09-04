@@ -35,7 +35,8 @@
 		<a href="index.html" class="logo">DAS</a>
 		<div class="tagline">
 			<p class="active">Soluciones en <span>imagen de marca</span></p>
-			<p>Creaciones de <span>logos para ti</span></p>
+			<p>Gestión estratégica de marcas<span>y diseño multidisciplinario</span></p>
+			<p>Innovación y creatividad<span>para su marca</span></p>
 		</div>
 		<nav>
 			<ul class="clearfix">

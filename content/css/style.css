@@ -105,10 +105,10 @@ header .tagline {
 	right: 0;
 	text-align: right;
 	text-transform: uppercase;
-	top: -2px;
-	height: 36px;
+	top: -6px;
+	height: 41px;
 	overflow: hidden;
-	width: 170px;
+	width: 350px;
 }
 
 header .tagline p {
@@ -119,6 +119,7 @@ header .tagline p {
 	height: 100%;
 	background: #1E1F2C;
 	z-index: 1;
+	line-height: 22px;
 }
 
 header .tagline p.active {z-index: 10}
