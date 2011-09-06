@@ -34,9 +34,9 @@
 	<div class="wrapper">
 		<a href="index.html" class="logo">DAS</a>
 		<div class="tagline">
-			<p class="active">Soluciones en <span>imagen de marca</span></p>
-			<p>Gestión estratégica de marcas<span>y diseño multidisciplinario</span></p>
+		  <p class="active">Gestión estratégica de marcas<span>y diseño multidisciplinario</span></p>
 			<p>Innovación y creatividad<span>para su marca</span></p>
+      <p>Soluciones en <span>imagen de marca</span></p>			
 		</div>
 		<nav>
 			<ul class="clearfix">
@@ -133,7 +133,7 @@ El primer bloque debe tener la clase "block-first" tambien.
 			</section>
 			<section class="brochure">
 				<h2>Brochure</h2>
-				<a class="pdf" href="#">PDF</a><a class="issuu" href="#">issue</a>				
+				<a class="pdf" href="#">PDF</a><a class="issuu" href="http://issuu.com/das_branding/docs/das_branding_general_3?mode=embed">issue</a>				
 			</section>
 			<section class="clients">
 				<h2>Clientes</h2>
@@ -180,9 +180,9 @@ El primer bloque debe tener la clase "block-first" tambien.
 			<section class="follow-us">
 				<h2>Siganos</h2>
 				<ul class="clearfix">
-					<li><a class="twitter" href="#">Twitter</a></li>
-					<li><a class="linkdin" href="#">Linkdin</a></li>
-					<li><a class="facebook" href="#">Facebook</a></li>
+					<li><a class="twitter" href="http://twitter.com/#!/DASBranding">Twitter</a></li>
+					<li><a class="linkdin" href="http://www.linkedin.com/company/das-branding-&-design">Linkedin</a></li>
+					<li><a class="facebook" href="http://www.facebook.com/pages/DAS-Branding-Design/273586335280">Facebook</a></li>
 				</ul>
 			</section>
 			
