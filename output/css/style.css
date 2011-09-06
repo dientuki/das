@@ -691,7 +691,8 @@ aside#right-sidebar section .title {
 	padding-top: 10px;
 }
 
-#alphabetical-order h2 {
+#alphabetical-order h2,
+.client-list h2 {
 	font-size: 15px;
 	font-weight: normal;
 	color:#55c300;
@@ -725,6 +726,7 @@ aside#right-sidebar section .title {
 
 #clients.gallery .client-list {
 	margin: 0 15px;
+	padding-top: 25px;
 }
 
 #clients.gallery .client-list li.selected,
@@ -1100,7 +1102,6 @@ aside#right-sidebar section .title {
 */
 .left-sidebar .main-content {
   width: 654px;
-  min-height: 1000px;
   float:right;
 }
 
@@ -1440,10 +1441,15 @@ footer .bottom .legal {
 
 .main-content .block {
   position: relative;
-  
   height:58px;
   padding: 13px 0 13px 60px;  
    margin-bottom: 75px;
+}
+
+
+.main-content footer .block,
+.main-content footer.last-works {
+  margin-bottom: 30px;
 }
 
 .main-content .gallery-link {

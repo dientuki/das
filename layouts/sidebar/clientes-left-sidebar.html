@@ -16,6 +16,7 @@ selected = rand(5) + 1
 	    		</ul>
 	    	</section>
 	    	<section class="client-list">
+	    	  <h2 class="title">Cliente seleccionados</h2>
 	    		<ul class="clearfix">
 	    			<% for i in (1..5) %>
 	    				<li <%if (i == selected) %>class="selected"<%end%>><a href="clientes-galeria.html"><%= @letter.upcase %><%= items[rand(items.length)] %></a></li>
