@@ -1,0 +1,38 @@
+---
+title: Servicios
+banner: true
+sidebar: two-sidebar
+extraclass: our-product
+page: services
+datapage: site
+selected: servicios
+---
+<% items = ['Estrategia de Marca', 'Identidad Visual', 'Espacios y Exhibición', 'Packaging', 'Diseño Industrial', 'Soluciones Web'] %>
+<% servs = ['Desarrollo, diseño y construcción de sistemas de exhibición.','Diseño y construcción de Espacios Comerciales.','Puntos de ventas.','Diseño y construcción de stands corporativos y comerciales.','Entornos Corporativos.','Showrooms.','Sistemas de señalización.','Equipos de asistencia al Punto de Venta.'] %>
+
+<header class="title">
+	<h1>Servicios</h1>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/servicios-left-sidebar', :items => items, :selected => 3, :name => true %>
+	<article class="main-content clearfix">
+		<header>
+			<hgroup>
+				<h2>Espacios y Exhibición</h2>
+				<h1>La experiencia es todo</h1>
+			</hgroup>
+			
+		</header>
+		<div class="content">
+			<p>Los entornos físicos son un elemento determinante en la experiencia que el público tiene con su marca.  En DAS B&D creamos soluciones estratégicas para todo tipo de espacios de exhibición que producen experiencias impactantes, potenciando el posicionamiento del producto y recreando la personalidad de la marca mientras se expande su poder comunicativo.</p>
+			<h3 class="unsorted-list-title">Detalle servicios</h3>
+			<ul class="unsorted-list">
+        <% servs.each do |serv| %>
+        <li><%= serv %></li>
+        <% end %>
+			</ul>
+		</div>	
+	</article>	
+	<%= render 'sidebar/servicios-right-sidebar' %>
+</section>

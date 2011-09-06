@@ -1,0 +1,38 @@
+---
+title: Servicios
+banner: true
+sidebar: two-sidebar
+extraclass: our-product
+page: services
+datapage: site
+selected: servicios
+---
+<% items = ['Estrategia de Marca', 'Identidad Visual', 'Espacios y Exhibición', 'Packaging', 'Diseño Industrial', 'Soluciones Web'] %>
+<% servs = ['Desarrollo, diseño y producción de sitios web.','Estrategia de comunicación web. Redes sociales.','On line marketing.','Desarrollos de Newsletters.','Mini sites.','E-mail marketing.','Flash Experts. Desarrollos exclusivos en FLASH. Videos, presentaciones, banners.'] %>
+
+<header class="title">
+	<h1>Servicios</h1>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/servicios-left-sidebar', :items => items, :selected => 6, :name => true %>
+	<article class="main-content clearfix">
+		<header>
+			<hgroup>
+				<h2>Soluciones Web</h2>
+				<h1>Espacios virtuales, oportunidades reales</h1>
+			</hgroup>
+			
+		</header>
+		<div class="content">
+			<p>El branding digital es un aspecto fundamental en el desarrollo, posicionamiento y comunicación de su marca. Con el crecimiento de Internet, los espacios virtuales se convirtieron en un elemento determinante del éxito comercial. Un mensaje creativo y consistente potencia la comunicación integral de su empresa en cada punto de interacción con el público.</p>
+			<h3 class="unsorted-list-title">Detalle servicios</h3>
+			<ul class="unsorted-list">
+        <% servs.each do |serv| %>
+        <li><%= serv %></li>
+        <% end %>
+			</ul>
+		</div>	
+	</article>	
+	<%= render 'sidebar/servicios-right-sidebar' %>
+</section>

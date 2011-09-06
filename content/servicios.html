@@ -11,20 +11,18 @@ selected: servicios
 
 <header class="title">
 	<h1>Servicios</h1>
-	<div class="content">En <strong>DAS Branding & Design</strong> proveemos soluciones eficaces para su marca, construyendo el vínculo adecuado para su <strong>Público Objetivo</strong>. 
-<strong>Integramos su marca a todo lo que representa su compañía</strong>: nuevos productos o servicios, impresos, packaging, entornos corporativos, 
-puntos de venta y su presencia digital en la web.</div>
+	<div class="content">En <strong>DAS Branding & Design</strong> proveemos soluciones eficaces para su marca, construyendo el vínculo adecuado para su <strong>Público Objetivo</strong>.Analizamos el mercado, elaboramos el posicionamiento apropiado y lo comunicamos a través de una identidad visual diferenciada e innovadora.  Integramos su marca a todo lo que representa su compañía: nuevos productos, servicios, impresos, packaging, entornos corporativos, puntos de venta y su presencia digital en la web.</div> 
 </header>
 
 <section class="main-content clearfix">
   <div class="clearfix">
-	<%= render 'servicios/article', :h1 => 'Estrategia de Marca', :id => 1, :last => last %>
-	<%= render 'servicios/article', :h1 => 'Identidad Visual', :id => 2, :last => last %>
-	<%= render 'servicios/article', :h1 => 'Espacios y Exhibicion', :id => 3, :extra => true, :last => last %>
+	<%= render 'servicios/article', :h1 => 'Estrategia de Marca', :id => 1, :last => last, :items => ['Conceptualización de marca.','Posicionamiento estratégico.','Arquitectura de marcas.','Naming: Generación de nombres para marcas y productos.'] %>
+	<%= render 'servicios/article', :h1 => 'Identidad Visual', :id => 2, :last => last, :items => ['Diseño y desarrollo de marcas y submarcas.','Diseños de sistemas de Identidad.','Manuales de normalización de marca.','Impresos comerciales.']%>
+	<%= render 'servicios/article', :h1 => 'Espacios y Exhibicion', :id => 3, :extra => true, :last => last, :items => ['Desarrollo, diseño y construcción de sistemas de exhibición.','Diseño y construcción de Espacios Comerciales.','Puntos de ventas.','Diseño y construcción de stands corporativos y comerciales.','Entornos Corporativos.','Showrooms.','Sistemas de señalización.','Equipos de asistencia al Punto de Venta.'] %>
   </div>
   <div class="clearfix">
-	<%= render 'servicios/article', :h1 => 'Packaging', :id => 4, :last => last %>
-	<%= render 'servicios/article', :h1 => 'Diseño Industrial', :id => 5, :last => last %>
-	<%= render 'servicios/article', :h1 => 'Soluciones web', :id => 6, :extra => true, :last => last %>
+	<%= render 'servicios/article', :h1 => 'Packaging', :id => 4, :last => last, :items => ['Diseño gráfico integral aplicado a packaging.','Desarrollo, diseño estructural y gráfico de envases. Plásticos, vidrio, metal, cartulina.','Desarrollo de modelos de apariencia o modelos de verificación técnica y funcional.','Prototipos rápidos.','Gestión y evaluación de proveedores.'] %>
+	<%= render 'servicios/article', :h1 => 'Diseño Industrial', :id => 5, :last => last, :items => ['Análisis y diagnóstico de su producto.','Desarrollo y diseño de producto.','Ingeniería de Producto.','Modelado 3D para matricería.','Desarrollo de modelos para verificación técnica y funcional. Prototipos rápidos.','Gestión de calidad en Pre-producción y Fabricación.','Gráfica para productos.','Revitalización del producto.','Gestión y evaluación de proveedores.'] %>
+	<%= render 'servicios/article', :h1 => 'Soluciones web', :id => 6, :extra => true, :last => last, :items => ['Desarrollo, diseño y producción de sitios web.','Estrategia de comunicación web. Redes sociales.','On line marketing.','Desarrollos de Newsletters.','Mini sites.','E-mail marketing.','Flash Experts. Desarrollos exclusivos en FLASH. Videos, presentaciones, banners.'] %>
 	</div>
 </section>	

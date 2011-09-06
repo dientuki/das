@@ -1,17 +1,19 @@
+<% require 'uri'
+url = @h1.split(" ").first.downcase.gsub("ñ","n") %>
+
 <article class="item-<%= @id %><% if (@extra == true) %> last<%end%> <% if (@id >= @last) %>last-row<%end%>">
 	<div class="wrapper clearfix">
 		<header>
-			<figure><a href="servicios-servicio.html"><img width="248" height="102" src="images/services/service-<%= @id %>.jpg" alt="<%= @h1 %>" title="<%= @h1 %>" /></a></figure>
-			<h1><a href="servicios-servicio.html"><%= @h1 %></a></h1>
+			<figure><a href="servicios-<%= url %>.html"><img width="248" height="102" src="images/services/service-<%= @id %>.jpg" alt="<%= @h1 %>" title="<%= @h1 %>" /></a></figure>
+			<h1><a href="servicios-<%= url %>.html"><%= @h1 %></a></h1>
 		</header>
 		<div class="content">
 		  <ul>
-        <li>Conceptualización de marca.</li>
-        <li>Posicionamiento estratégico.</li>
-        <li>Arquitectura de marcas.</li>
-        <li>Naming: Generación de nombres para marcas y productos.</li>
+		    <% @items.each do |item| %>
+        <li><%= item %></li>
+        <% end %>
 		  </ul>
 		</div>
-		<a href="servicios-servicio.html" class="more">+ info & casos</a>
+		<a href="servicios-<%= url %>.html" class="more">+ info & casos</a>
 	</div>
 </article>

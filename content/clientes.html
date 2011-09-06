@@ -7,18 +7,45 @@ datapage: clients
 selected: clientes
 ---
 <%
+clients = Array.new
+
+clients << {:letter =>'A', :jobs => ['3M','A. Caporelli','Abasto de Buenos Aires','Ad Hoc','AG','Agrimbau','Alibué','Alto Palermo','AOL','Arcametal','Argenvias','Aspen','Aventis Pharma']}
+clients << {:letter =>'B', :jobs => ['Behring','Bendito Glam','Berigripina','Bonafide','Bovera','Bramco','Briket','Buenos Aires Design','Burkool','Byside']}
+clients << {:letter =>'C', :jobs => ['Cangiani','Carrefour','CDA Informática','Citibank','Cler','Compaq','Continental']}
+clients << {:letter =>'D', :jobs => ['Dowen']}
+clients << {:letter =>'E', :jobs => ['Epuyen','Escorial']}
+clients << {:letter =>'F', :jobs => ['F. Gil & Asociados','Ferrero','Ficoinox','Finpak','Flehner','Fluidmec','Focusbrand','Fon Blanc','Freetex','Freudenberg']}
+clients << {:letter =>'G', :jobs => ['Galo','General Electric','Gráfica Latina']}
+clients << {:letter =>'H', :jobs => ['Highland Park','Highlander (Film)','Hoechst Marion Roussel','HP']}
+clients << {:letter =>'I', :jobs => ['Industrias Maro','International Logistic Service','International Seguros','Irsa','Issue Group']}
+clients << {:letter =>'J', :jobs => ['JS - Diestro','Just For Sport (JFS)','Jymsa']}
+clients << {:letter =>'K', :jobs => ['Knoll Argentina S.A.','Korn','Kronen']}
+clients << {:letter =>'L', :jobs => ['Laboratorios Victoria','Lexmark','Linksys']}
+clients << {:letter =>'M', :jobs => ['Maccarone','Mapfre','Marmark','Maro','Marroncelli','Marvic','Matripre','Mav Comunicaciones','Memopill','Metrolab','Microsoft','Migolú','Millet Franklin','Misatango','Modern Plac','Moldegom-Pruyer','Moretti','MPM Obras Civiles']}
+clients << {:letter =>'N', :jobs => ['Neoterra','Norcenter']}
+clients << {:letter =>'O', :jobs => ['Overseas Argentina','Oxigeno Shoes']}
+clients << {:letter =>'P', :jobs => ['Panasonic','Parque Sarmiento','Patio Bullrich','Patrick Fagor','Patuá Turismo','Pbe','Penn','Personal','Petromaster','Philco','Phillips','Plan Nacional de Diseño','Plasnavi','Porta','Prohygiene','PSA']}
+clients << {:letter =>'Q', :jobs => ['Química Estrella']}
+clients << {:letter =>'R', :jobs => ['Racklatina','Recursos Action','Repman','Rheem','Rivas','Romina Albizu','Rontag','Rosmar','Roxelectric','Royal','Rulid']}
+clients << {:letter =>'S', :jobs => ['']}
+clients << {:letter =>'T', :jobs => ['Tarewa','Tavanic','Tecgas','Tecpetrol','Tedear','Tenacta - Bellissima','Tip','Total Austral Argentina','Tren de la Costa','Triangle','TyC Sports']}
+clients << {:letter =>'U', :jobs => ['Unilever Argentina']}
+clients << {:letter =>'W', :jobs => ['Whirlpool Argentina - Eslabón de lujo']}
+clients << {:letter =>'X', :jobs => ['Xerox','X-net']}
+
 col = 1
 %>
+
 <header class="title">
 	<h1>Clientes</h1>
 	<div class="content">Estas empresas confian en nuestros servicios.</div>
 </header>
 
 <section class="main-content clearfix">
-	<h2>Clientes por orden Alfabetico</h2>
+	<h2>Clientes por orden Alfabético</h2>
 	<ul class="client-list clearfix">	
-		<% for i in (97..122) %>
-			<%= render 'clientes/letter', :letter => i.chr, :last => col % 5 %>
+		<% clients.sort_by { |clients| clients[:letter] }.each do |client| %>
+			<%= render 'clientes/letter', :letter => client[:letter], :last => col % 5, :jobs => client[:jobs] %>
 			<% col = col + 1 %> 
 		<%end%>
 	</ul>

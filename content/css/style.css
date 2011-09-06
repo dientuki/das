@@ -306,7 +306,7 @@ header ul li:hover a {
 
 #home #container {
 	margin-top: 38px;
-	margin-bottom: 100px;
+	margin-bottom: 38px;
 }
 
 #home article {
@@ -803,7 +803,7 @@ aside#right-sidebar section .title {
 
 .our-products section.main-content {
   background: #41404A;
-  margin: 70px 0;
+  margin: 70px 0 40px 0;
   padding: 30px 0px;
 }
 
@@ -888,6 +888,7 @@ aside#right-sidebar section .title {
 
 #services .main-content article .more {
   float:right;
+  text-transform: uppercase;
 }
 
 #right-sidebar .block {

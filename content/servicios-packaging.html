@@ -1,0 +1,38 @@
+---
+title: Servicios
+banner: true
+sidebar: two-sidebar
+extraclass: our-product
+page: services
+datapage: site
+selected: servicios
+---
+<% items = ['Estrategia de Marca', 'Identidad Visual', 'Espacios y Exhibición', 'Packaging', 'Diseño Industrial', 'Soluciones Web'] %>
+<% servs = ['Diseño gráfico integral aplicado a packaging.','Desarrollo, diseño estructural y gráfico de envases. Plásticos, vidrio, metal, cartulina.','Desarrollo de modelos de apariencia o modelos de verificación técnica y funcional.','Prototipos rápidos.','Gestión y evaluación de proveedores.'] %>
+
+<header class="title">
+	<h1>Servicios</h1>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/servicios-left-sidebar', :items => items, :selected => 4, :name => true %>
+	<article class="main-content clearfix">
+		<header>
+			<hgroup>
+				<h2>Packaging</h2>
+				<h1>Su marca es su empresa</h1>
+			</hgroup>
+			
+		</header>
+		<div class="content">
+			<p>Un potencial cliente se encuentra con su producto. Es uno de los “Momentos de la Verdad”. Un momento crítico. El packaging es crucial para la expresión de su marca en el punto de venta y orientar el proceso de decisión de compra.  Nuestros diseños capturan la atención y la imaginación de quienes visitan los locales comerciales creando la consistencia de una marca exitosa.</p>
+			<h3 class="unsorted-list-title">Detalle servicios</h3>
+			<ul class="unsorted-list">
+        <% servs.each do |serv| %>
+        <li><%= serv %></li>
+        <% end %>
+			</ul>
+		</div>	
+	</article>	
+	<%= render 'sidebar/servicios-right-sidebar' %>
+</section>

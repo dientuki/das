@@ -1,0 +1,40 @@
+---
+title: Servicios
+banner: true
+sidebar: two-sidebar
+extraclass: our-product
+page: services
+datapage: site
+selected: servicios
+---
+<% items = ['Estrategia de Marca', 'Identidad Visual', 'Espacios y Exhibición', 'Packaging', 'Diseño Industrial', 'Soluciones Web'] %>
+<% servs =['Conceptualización de marca.','Posicionamiento estratégico.','Arquitectura de marcas.','Naming: Generación de nombres para marcas y productos.'] %>
+
+<header class="title">
+	<h1>Servicios</h1>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/servicios-left-sidebar', :items => items, :selected => 1, :name => true %>
+	<article class="main-content clearfix">
+		<header>
+			<hgroup>
+				<h2>Estrategia de Marca</h2>
+				<h1>Su marca es su empresa</h1>
+			</hgroup>
+			
+		</header>
+		<div class="content">
+			<p><strong>Para el desarrollo de una marca fuerte es necesario comprender las tendencias culturales y del mercado, e identificar las fortalezas y debilidades. </strong>
+			<br />Creamos estrategias de Branding que le dan valor a su marca.
+			<br />Trabajamos con los clientes, definimos un posicionamiento consistente con los objetivos, estableciendo cuándo, dónde y cómo esa imagen tiene que estar presente frente al consumidor. </p>
+			<h3 class="unsorted-list-title">Detalle servicios</h3>
+			<ul class="unsorted-list">
+        <% servs.each do |serv| %>
+        <li><%= serv %></li>
+        <% end %>
+			</ul>
+		</div>	
+	</article>	
+	<%= render 'sidebar/servicios-right-sidebar' %>
+</section>

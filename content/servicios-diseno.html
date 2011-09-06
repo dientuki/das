@@ -1,0 +1,38 @@
+---
+title: Servicios
+banner: true
+sidebar: two-sidebar
+extraclass: our-product
+page: services
+datapage: site
+selected: servicios
+---
+<% items = ['Estrategia de Marca', 'Identidad Visual', 'Espacios y Exhibición', 'Packaging', 'Diseño Industrial', 'Soluciones Web'] %>
+<% servs = ['Análisis y diagnóstico de su producto.','Desarrollo y diseño de producto.','Ingeniería de Producto.','Modelado 3D para matricería.','Desarrollo de modelos para verificación técnica y funcional. Prototipos rápidos.','Gestión de calidad en Pre-producción y Fabricación.','Gráfica para productos.','Revitalización del producto.','Gestión y evaluación de proveedores.'] %>
+
+<header class="title">
+	<h1>Servicios</h1>
+</header>
+
+<section class="clearfix container">
+	<%= render 'sidebar/servicios-left-sidebar', :items => items, :selected => 5, :name => true %>
+	<article class="main-content clearfix">
+		<header>
+			<hgroup>
+				<h2>Diseño Industrial</h2>
+				<h1>Su producto es su marca</h1>
+			</hgroup>
+			
+		</header>
+		<div class="content">
+			<p>En DAS B&D creamos conceptos y diseños que resultan atractivos y apelativos al consumidor, concretando así las necesidades comerciales de nuestros clientes. Nuevas formas, diseños y texturas se traducen en nuevas experiencias sensoriales del consumidor que fortalecen el vínculo emocional con su marca.</p>
+			<h3 class="unsorted-list-title">Detalle servicios</h3>
+			<ul class="unsorted-list">
+        <% servs.each do |serv| %>
+        <li><%= serv %></li>
+        <% end %>
+			</ul>
+		</div>	
+	</article>	
+	<%= render 'sidebar/servicios-right-sidebar' %>
+</section>

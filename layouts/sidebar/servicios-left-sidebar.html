@@ -1,10 +1,15 @@
+<% require 'uri' %>
+
 <% @selected = @selected - 1 %>
 	<aside id="left-sidebar">
     <div class="bg-top"></div>
 		<ul id="scroll">
 		<% @items.each_index { |i| %>
 			<li <% if (i == @selected)%>class="selected"<% end %>>
-				<a href="servicios-servicio.html"><%= @items[i] %></a>
+  
+	      <% url = @items[i].split(" ").first.downcase.gsub("ñ","n") %> 			
+			
+				<a href="servicios-<%= url %>.html"><%= @items[i] %></a>
 			</li>
 		<% } %>
 		</ul>

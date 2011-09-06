@@ -1,12 +1,9 @@
-<%
-items = ['empresa', 'aminoacido', 'bayer y asociados', 'ubuntu linux', 'ogame', 'imperia online', 'das', 'lorem', 'ipsum'];
-count = rand(7) + 1;
- %>
+
 <li <% if (@last == 0) %>class="last"<%end%>>
 	<h3><%= @letter %></h3>
 	<ul class="clearfix">
-		<% for i in (1..count) %>
-			<li><a href="clientes-galeria.html"><%= @letter.upcase %><%= items[rand(items.length)] %></a></li>
+		<% @jobs.each do |client| %>
+			<li><a href="clientes-galeria.html"><%= client %></a></li>
 		<% end %>
 	</ul>
 </li>
