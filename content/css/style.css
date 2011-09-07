@@ -1566,6 +1566,7 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
 #company .main-content .item-2 .unsorted-list {
 list-style-position: inside;
     list-style-type: disc;
+    margin: 0;
 }
 
 #company .main-content .item-2 .unsorted-list li{
