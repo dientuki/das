@@ -32,12 +32,12 @@
 .ie8 .main-content .gallery-link .bg,
 .ie9 .main-content .gallery-link .bg {
 	filter:none;
-	background: url(../images/main-sprite.png) -1293px -18px;
+	background: url(../images/main-sprite.png) -1497px -37px;
 }
 
 .ie6 .main-content .gallery-link .bg,
 .ie7 .main-content .gallery-link .bg,
 .ie8 .main-content .gallery-link .bg,
 .ie9 .main-content .gallery-link .bg {
-	background-position: -1293px -102px;
+	background-position: -1497px -153px;
 }

@@ -549,7 +549,7 @@ aside#right-sidebar section .title {
 }
 
 #company header.title h1 {
-	background: url(../images/main-sprite.png) -1546px -156px;
+	background: url(../images/main-sprite.png) -1713px -66px;
 	width: 180px;
 	height: 49px;
 }
@@ -1238,7 +1238,7 @@ footer .clients #clients-slide {
 	top: -11px;
 	width: 186px;
 	height: 82px;
-	background: url(../images/main-sprite.png) -1693px -69px no-repeat;
+	background: url(../images/main-sprite.png) -1306px -54px no-repeat;
 }
 
 #clients-slide li {
