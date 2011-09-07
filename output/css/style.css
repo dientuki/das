@@ -1451,19 +1451,25 @@ footer .bottom .legal {
   margin-bottom: 30px;
 }
 
-.main-content .gallery-link {
+#gallery-link {
 	/*
 	background: #f0f0f0 url(../images/gallery-link-top.png) repeat-y;
 	*/
 	
+	margin:10px 0 30px 0 !important;
+	
+	height:90px;
+	padding: 13px 0 13px 60px !important;
+	position:relative;
+	
 background: #c8c8c8;
-background: -moz-linear-gradient(left, #c8c8c8 0%, #eeeeee 20%, #f0f0f0 100%);
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c8c8c8), color-stop(20%,#eeeeee), color-stop(100%,#f0f0f0));
-background: -webkit-linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
-background: -o-linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
-background: -ms-linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
+background: -moz-linear-gradient(left, #c8c8c8 0%, #eeeeee 25%, #f0f0f0 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c8c8c8), color-stop(25%,#eeeeee), color-stop(100%,#f0f0f0));
+background: -webkit-linear-gradient(left, #c8c8c8 0%,#eeeeee 25%,#f0f0f0 100%);
+background: -o-linear-gradient(left, #c8c8c8 0%,#eeeeee 25%,#f0f0f0 100%);
+background: -ms-linear-gradient(left, #c8c8c8 0%,#eeeeee 25%,#f0f0f0 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c8c8c8', endColorstr='#f0f0f0',GradientType=1 );
-background: linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);	
+background: linear-gradient(left, #c8c8c8 0%,#eeeeee 25%,#f0f0f0 100%);	
 	
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
@@ -1484,7 +1490,7 @@ background: linear-gradient(left, #c8c8c8 0%,#eeeeee 20%,#f0f0f0 100%);
   line-height: 16px;
 }
 
-.main-content .gallery-link .bg{
+#gallery-link .bg{
   position: absolute;
   left: 0;
   bottom:-20px;
@@ -1511,14 +1517,20 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
   
 }
 
-.main-content .gallery-link figure {
+#gallery-link h2 {
+ color: #307430;
+}
+
+#gallery-link figure {
   position: absolute;
   width: 71px;
   height: 63px;
   background: url(../images/main-sprite.png) -1375px -144px no-repeat;
   left: -18px;
-  top: 9px
+  top: 22px;
 }
+
+#gallery-link a {display: block;}
 
 .main-content .consult .bg {
   width: 58px;
@@ -1529,7 +1541,7 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
   top: 18px  
 }
 
-.main-content .gallery-link figure img {
+#gallery-link figure img {
  width:48px;
  height:38px;
   position: absolute; 
