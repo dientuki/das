@@ -1562,3 +1562,20 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
 	top: 0;
 	width: 186px;
 }
+
+#company .main-content .item-2 .unsorted-list {
+list-style-position: inside;
+    list-style-type: disc;
+}
+
+#company .main-content .item-2 .unsorted-list li{
+  color: #55C300;
+  font-size: 6px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+#company .main-content .item-2 .unsorted-list span{
+  color:#666;
+  font-size: 12px;
+}

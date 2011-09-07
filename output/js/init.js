@@ -20,6 +20,8 @@ function fixedSidebar(sidebar){
 			if (isNaN(main_content)) {
 				main_content = document.documentElement.clientHeight/2;
 			}
+			
+			console.log(window.pageXOffset)
 
 			$('#container .anchor-item').each(function(index){
 				var t = $(this).offset().top - offset;
