@@ -479,6 +479,11 @@ aside#right-sidebar {
 	overflow: hidden;
 }
 
+#company aside#right-sidebar {
+	width: 245px;
+	padding-left: 0;
+}
+
 aside#right-sidebar .bg-top,
 aside#right-sidebar .bg-bottom{
 	height: 10px;
@@ -923,7 +928,7 @@ aside#right-sidebar section .title {
   background: url(../images/main-sprite.png) -1902px -66px no-repeat #fff;
 }
 
-#contact #right-sidebar .mail-to a{
+#right-sidebar .mail-to a{
 
   padding-left: 15px;
   background: url(../images/main-sprite.png) no-repeat -1920px -38px;
@@ -1594,7 +1599,6 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
 }
 
 #company .main-content .item-4 table td{
-	width:50%;
 	padding: 2px 0 2px 2px;
 	}
 
@@ -1613,11 +1617,22 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
 	float:left;
 }
 
-aside#right-sidebar #prizes {height: 1175px}
+aside#right-sidebar #prizes {height: 1175px; border:none; width: 210px; margin-left: 35px}
 
 aside#right-sidebar #prizes .title {background: none !important; padding: 0; margin-top: 0}
 
 aside#right-sidebar #prizes article h2 {color:#55C300}
 aside#right-sidebar #prizes a {font-size: 11px;}
 
-#company .main-content .item-5 .unsorted-list {margin:0}
+aside#right-sidebar #boss {
+	background:url("../images/right-sidebar-shadow.png") repeat-y scroll left top #ededed;
+	padding: 30px;
+	border:none;
+	height: 100%;
+}
+
+aside#right-sidebar #boss .title{background: none; padding: 0;}
+
+aside#right-sidebar #boss p{margin-bottom: 10px}
+
+aside#right-sidebar #boss article {margin-bottom: 40px;}
