@@ -498,7 +498,7 @@ aside#right-sidebar .bg-bottom {
 aside#right-sidebar .title,
 aside#right-sidebar .block-first .title,
 .main-content .unsorted-list-title {
-	font-size: 15px;
+  font-size: 15px;
   margin: 15px 0;
   padding-left: 21px;
   color:#307430;
@@ -523,15 +523,22 @@ aside#right-sidebar section .title {
 }
 
 .main-content .unsorted-list {
-	list-style: square;
-	margin-left: 15px;
+	list-style-type: disc;
+	list-style-position: inside;
+	
 }
 
-.main-content .unsorted-list li{
+#company .main-content .item-2 .unsorted-list li{
+	color: #55C300;
+	font-size: 6px;
 	padding-left: 5px;
 	margin-bottom: 20px;
 }
 
+#company .main-content .item-2 .unsorted-list span{
+	color:#666;
+	font-size: 12px;
+}
 .container {
 	position: relative;
 }
@@ -1049,6 +1056,17 @@ aside#right-sidebar section .title {
 	display:block;
 	width:300px;
 	padding:4px;
+
+footer .bottom .sitemap {
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	width: 580px;
+}
+
+footer .bottom .sitemap header {
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 #contact form textarea {
@@ -1550,3 +1568,4 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
 	top: 0;
 	width: 186px;
 }
+
