@@ -1,6 +1,6 @@
-<article class="item-<%= @id %><% if (@last == true) %> last<%end%>">
-	<figure><a href="trabajos-trabajo.html"><img width="219" height="140" src="images/prizes/prize-<%= @id %>.jpg" alt="<%= @h1 %>" title="<%= @h1 %>" /></a></figure>
-	<h1><%= @h1 %></h1>
+<article class="item-<%= @id %> block <% if (@id == 1) %>block-first<%end%>">
+	<figure><a href="trabajos-trabajo.html"><img width="210" height="134" src="images/prizes/prize-<%= @id %>.jpg" alt="<%= @h1 %>" title="<%= @h1 %>" /></a></figure>
+	<h2><%= @h1 %></h2>
 	<p class="content"><%= @content %></p>
 	<a href="trabajos-trabajo.html">Ver +</a>
 </article>

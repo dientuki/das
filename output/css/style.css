@@ -188,7 +188,7 @@ header ul li:hover a {
 }
 
 #languaje-selector a {
-	font-size: 9px;
+	font-size: 10px;
 	padding: 0 0 0 5px;
 }
 
@@ -417,7 +417,6 @@ aside#left-sidebar a {
 	display: block;
 	padding: 13px 0 13px 15px;
 	font-weight: bold;
-	font-size: 12px;
 	outline: none;
 }
 
@@ -478,6 +477,11 @@ aside#right-sidebar {
 	background: url(../images/right-sidebar-shadow.png) left top repeat-y #fff;
 	line-height:17px;
 	overflow: hidden;
+}
+
+#company aside#right-sidebar {
+	width: 245px;
+	padding-left: 0;
 }
 
 aside#right-sidebar .bg-top,
@@ -924,7 +928,7 @@ aside#right-sidebar section .title {
   background: url(../images/main-sprite.png) -1902px -66px no-repeat #fff;
 }
 
-#contact #right-sidebar .mail-to a{
+#right-sidebar .mail-to a{
 
   padding-left: 15px;
   background: url(../images/main-sprite.png) no-repeat -1920px -38px;
@@ -1564,7 +1568,7 @@ background: linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* W3C */
 }
 
 #company .main-content .item-2 .unsorted-list {
-list-style-position: inside;
+	list-style-position: inside;
     list-style-type: disc;
     margin: 0;
 }
@@ -1578,13 +1582,13 @@ list-style-position: inside;
 
 #company .main-content .item-2 .unsorted-list span{
   color:#666;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 #company .main-content .item-4 h2{
 	padding-top:12px;
 	margin: 0;
-		}
+}
 		
 #company .main-content .item-4 h3{
 	color:#307430;
@@ -1595,25 +1599,40 @@ list-style-position: inside;
 }
 
 #company .main-content .item-4 table td{
-	width:55px;
-	padding-top:2px;
-	padding-botton:2px;
-	padding-left:2px;
+	padding: 2px 0 2px 2px;
 	}
+
 #company .main-content .item-5 .unsorted-list{
 	margin:0;
 	padding:0;
+	list-style: none;
 }
 
 #company .main-content .item-5 li {
-	list-style-position: inside;
-    list-style-type: none;
     padding:0px;
-    margin-top: 0px;  
 	margin-botton: 2px;
 }
 #company .main-content .item-5 div.logo{
 	width:90px;
 	float:left;
 }
-	
+
+aside#right-sidebar #prizes {height: 1175px; border:none; width: 210px; margin-left: 35px}
+
+aside#right-sidebar #prizes .title {background: none !important; padding: 0; margin-top: 0}
+
+aside#right-sidebar #prizes article h2 {color:#55C300}
+aside#right-sidebar #prizes a {font-size: 11px;}
+
+aside#right-sidebar #boss {
+	background:url("../images/right-sidebar-shadow.png") repeat-y scroll left top #ededed;
+	padding: 30px;
+	border:none;
+	height: 100%;
+}
+
+aside#right-sidebar #boss .title{background: none; padding: 0;}
+
+aside#right-sidebar #boss p{margin-bottom: 10px}
+
+aside#right-sidebar #boss article {margin-bottom: 40px;}
