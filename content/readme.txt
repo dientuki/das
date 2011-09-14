@@ -44,3 +44,13 @@ Si quieren mas/menos tiempo deben cambiar alli.
 
 Cada section/div/tag-principal debe tener la clase "block".
 El primer bloque debe tener la clase "block-first" tambien.
+
+
+>> Fix para mobile
+
+Puse una clase, user_agent.php, tiene muchas funciones utiles y tiene un manual, no es mia, es de codeigniter.
+
+Deben agregar al tag body
+data-desktop="false"
+data-desktop="true"
+segun corresponda, js se dara cuenta y no usara que los menues se queden fixed en mobile

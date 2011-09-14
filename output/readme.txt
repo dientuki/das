@@ -15,20 +15,16 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		
 		
-		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/pikachoose.css" />
-		
+		<link rel="stylesheet" type="text/css" media="all" href="css/das-site.css" />
 		<!--[if IE ]>
-			<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
+			<link rel="stylesheet" href="css/ie-min.css" type="text/css" media="all"/>
 		<![endif]-->
-		
 				
 		
 		<script src="js/libs/head-min.js" type="text/javascript"></script>
 	</head>
 	
-	<body id="" class=" " data-page="">
+	<body id="" class=" " data-page="" data-desktop="false">
 		<div id="wrapper">
 			<header id="header" class="has-banner">
 	<div class="wrapper">
@@ -119,6 +115,16 @@ Si quieren mas/menos tiempo deben cambiar alli.
 
 Cada section/div/tag-principal debe tener la clase "block".
 El primer bloque debe tener la clase "block-first" tambien.
+
+
+>> Fix para mobile
+
+Puse una clase, user_agent.php, tiene muchas funciones utiles y tiene un manual, no es mia, es de codeigniter.
+
+Deben agregar al tag body
+data-desktop="false"
+data-desktop="true"
+segun corresponda, js se dara cuenta y no usara que los menues se queden fixed en mobile
 			</section>
 	
 			
@@ -236,7 +242,7 @@ El primer bloque debe tener la clase "block-first" tambien.
 	
 	<script type="text/javascript" charset="utf-8">
 	
-		head.js("js/myhead-dev.js");
+		head.js("js/myhead-prod.js");
 	</script>	
 	</body>
 </html>

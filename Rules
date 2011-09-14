@@ -13,6 +13,9 @@
 compile '/compress/' do
 end
 
+compile '/tools/*' do
+end
+
 compile '/images/*' do
 end
 

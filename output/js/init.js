@@ -96,14 +96,20 @@ $(document).ready(function() {
 			});			
 		break;		
 		case 'company':
-			fixedSidebar('#scroll');
+			if ( $('body').data('desktop') == true){
+				fixedSidebar('#scroll');
+			}
 			$('#scroll').localScroll();
 		break;
 		case 'site':
-			fixedSidebar('#scroll');
+			if ($('body').data('desktop') == true){
+				fixedSidebar('#scroll');
+			}
 		break;
 		case 'gallery':
-			fixedSidebar('#scroll');
+			if ($('body').data('desktop') == true){
+				fixedSidebar('#scroll');
+			}
 			$("#gallery").PikaChoose({
 				thumbOpacity: 0.4,
 				hoverPause: true,
