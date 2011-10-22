@@ -213,10 +213,10 @@ header ul li:hover a {
 	padding-bottom: 17px;
 }
 
-#slider,
-#slider  a,
-#slider  img,
-#slider  figure {
+#home #slider,
+#home #slider  a,
+#home #slider  img,
+#home #slider  figure {
   height:424px !important;
 }
 
@@ -227,6 +227,8 @@ header ul li:hover a {
 	height:382px;
 	display: block;
 }
+
+
 
 #banner footer {
 	height: 23px;
