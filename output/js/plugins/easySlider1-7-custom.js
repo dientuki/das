@@ -168,7 +168,7 @@
 			function animate(dir,clicked){
 				if (clickable){
 					clickable = false;
-					var ot = t;				
+					var ot = t;		
 					switch(dir){
 						case "next":
 							//t = (ot>=ts) ? (options.continuous ? t+1 : ts) : t+1;	
@@ -228,10 +228,11 @@
 						clearTimeout(timeout)
 					};
 					
-					if(options.auto && dir=="next" && !clicked){;
+					if(options.auto && dir=="next" && !clicked){
+						//console.log(diff*options.speed+options.pause)
 						timeout = setTimeout(function(){
 							animate("next",false);
-						},diff*options.speed+options.pause);
+						},options.speed+options.pause);
 					};
 			
 				};
