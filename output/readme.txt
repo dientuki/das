@@ -15,14 +15,10 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 		
 		
-		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/pikachoose.css" />
-		
+		<link rel="stylesheet" type="text/css" media="all" href="css/das-site.css" />
 		<!--[if IE ]>
-			<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
+			<link rel="stylesheet" href="css/ie-min.css" type="text/css" media="all"/>
 		<![endif]-->
-		
 				
 		
 		<script src="js/libs/head-min.js" type="text/javascript"></script>
@@ -246,7 +242,7 @@ segun corresponda, js se dara cuenta y no usara que los menues se queden fixed e
 	
 	<script type="text/javascript" charset="utf-8">
 	
-		head.js("js/myhead-dev.js");
+		head.js("js/myhead-prod.js");
 	</script>	
 	</body>
 </html>
