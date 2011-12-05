@@ -82,7 +82,8 @@ $(document).ready(function() {
 				controlsFade:	true,
 				auto:			true,
 				continuous:		true,
-				numeric: false
+				numeric: false,
+				pause: 5000
 			});			
 		break;
 		case 'clients':
