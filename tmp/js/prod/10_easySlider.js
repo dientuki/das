@@ -1,0 +1,10 @@
+(function(a){a.fn.easySlider=function(b){var c={prevId:"prevBtn",prevText:"Previous",nextId:"nextBtn",nextText:"Next",controlsPlace:false,controlsId:"controls",controlsFade:true,firstId:"firstBtn",firstText:"First",firstShow:false,lastId:"lastBtn",lastText:"Last",lastShow:false,vertical:false,speed:800,auto:true,pause:2000,continuous:false,numeric:false};
+var b=a.extend(c,b);this.each(function(){var d=a(this);var m=d.find("li");var j=d.find("ul");var y=m.length;var u=m.width();var l=m.height();var n=true;d.width(u);d.height(l);d.css("overflow","hidden");
+j.css("width",y*u);var o=y-1;var x=0;if(b.continuous){j.prepend(a("ul li:last-child",d).clone().css("margin-left","-"+u+"px"));j.append(a("ul li:nth-child(2)",d).clone());j.css("width",(y+1)*u);m=d.find("li")
+}if(!b.vertical){m.css("float","left")}if(b.controlsPlace!=false){var k=new Array();k[0]='<ol id="'+b.controlsId+'" class="clearfix">';for(var g=1;g<=y;g++){if(b.numeric){k[g]='<li><a href="#" data-id="'+g+'">'+g+"</a></li>"
+}else{k[g]='<li><a href="#" data-id="'+g+'">&nbsp;</a></li>'}}k[k.length]="</ol>";var v=a(b.controlsPlace);v.append(k.join("\n"));v.find("a").live("click",function(){e(a(this).data("id")-1,true);return false
+})}function f(h){if(b.controlsPlace!=false){h=parseInt(h);v.find("li").removeClass("current");v.find("li:eq("+h+")").addClass("current")}}function r(){if(x>o){x=0}if(x<0){x=o}if(!b.vertical){j.css("margin-left",(x*u*-1))
+}else{j.css("margin-left",(x*l*-1))}n=true;f(x)}function e(h,i){if(n){n=false;var s=x;switch(h){case"next":x=(s>=o)?(b.continuous?0:o):x+1;break;case"prev":x=(x<=0)?(b.continuous?x-1:0):x-1;break;case"first":x=0;
+break;case"last":x=o;break;default:x=h;break}var z=Math.abs(s-x);var w=y-1;var t=z*b.speed;if(z==w){t=b.speed}if(!b.vertical){p=(x*u*-1);j.animate({marginLeft:p},{queue:false,duration:t,complete:r})}else{p=(x*l*-1);
+j.animate({marginTop:p},{queue:false,duration:t,complete:r})}if(i){clearTimeout(q)}if(b.auto&&h=="next"&&!i){q=setTimeout(function(){e("next",false)},b.speed+b.pause)}}}var q;if(b.auto){q=setTimeout(function(){e("next",false)
+},b.pause)}f(0)})}})(jQuery);
