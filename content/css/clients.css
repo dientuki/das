@@ -1,0 +1,5 @@
+<% for i in 1..20 %>
+.client-list .items-<%= i %> {
+	height: <%= 15 * i + 28 %>px;
+}
+<% end %>

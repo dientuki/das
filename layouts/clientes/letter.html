@@ -1,5 +1,5 @@
 
-<li <% if (@last == 0) %>class="last"<%end%>>
+<li class="items-<%= @items %> <% if (@last == 0) %> last<%end%>">
 	<h3><%= @letter %></h3>
 	<ul class="clearfix">
 		<% @jobs.each do |client| %>

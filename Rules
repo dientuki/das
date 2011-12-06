@@ -19,6 +19,10 @@ end
 compile '/images/*' do
 end
 
+compile '/css/client*' do
+	filter :erb
+end
+
 compile '/css/*' do
 end
 
