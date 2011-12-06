@@ -35,6 +35,7 @@ java -jar /usr/share/yui/yuicompressor-2.4.7.jar --type js --line-break 200 -o t
 
 cat tmp/js/ie/* > output/js/png-fix-min.js
 
-# rm -rf tmp
+rm -rf tmp/css
+rm -rf tmp/js
 
 echo 'Ta dan!'

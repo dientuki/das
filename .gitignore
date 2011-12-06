@@ -3,4 +3,5 @@
 .buildpath
 .swp
 *.swp
-tmp/dependencies
+tmp/
+output/
