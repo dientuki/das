@@ -213,6 +213,13 @@ header ul li:hover a {
 	padding-bottom: 17px;
 }
 
+#slider,
+#slider  a,
+#slider  img,
+#slider  figure {
+  height:382px;
+}
+
 #home #slider,
 #home #slider  a,
 #home #slider  img,
